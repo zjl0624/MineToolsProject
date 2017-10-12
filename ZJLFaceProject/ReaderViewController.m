@@ -92,7 +92,8 @@
 	float y = percent/100 * collectionview.contentSize.height;
 	float sliderWidth = CGRectGetWidth(sliderView.slider.frame);
 	sliderView.percentLabel.frame = CGRectMake(sliderWidth * percent / 100 + 64, 0, 40, 20);
-	sliderView.percentLabel.text = [NSString stringWithFormat:@"%.4f",percent/100];
+	NSString *str = @"%";
+	sliderView.percentLabel.text = [NSString stringWithFormat:@"%.2f%@",percent,str];
 	NSLog(@"%.2f",percent/100);
 	if (isSetY) {
 		[collectionview setContentOffset:CGPointMake(0, y) animated:NO];
@@ -279,6 +280,7 @@
 	sliderView.hidden = NO;
 	float currentValue = [UserSettings sharedInstance].index /collectionview.contentSize.height * 100;
 	sliderView.currentValue = currentValue;
+	[self finishSlide:currentValue];
 	[UIView animateWithDuration:0.25 animations:^{
 		sliderView.frame = CGRectMake(0, ScreenHeight - SliderViewHeight, ScreenWidth, SliderViewHeight);
 	}];
