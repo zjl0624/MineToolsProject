@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProgressSliderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="KYk-hi-SJz">
+                    <rect key="frame" x="62" y="0.0" width="251" height="65"/>
+                    <color key="minimumTrackTintColor" red="0.0" green="0.97323328350000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </slider>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leftSlider.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gnZ-NY-gwU">
+                    <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="VV1-lC-q7f"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightSlider.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="GtI-qL-qA8">
+                    <rect key="frame" x="311" y="0.0" width="64" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="S0U-EY-uLY"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="KYk-hi-SJz" secondAttribute="bottom" id="0Kt-HP-vHI"/>
+                <constraint firstAttribute="trailing" secondItem="GtI-qL-qA8" secondAttribute="trailing" id="0kM-ph-HEV"/>
+                <constraint firstItem="KYk-hi-SJz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="PVJ-VP-u03"/>
+                <constraint firstItem="gnZ-NY-gwU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="T0a-0Y-Isq"/>
+                <constraint firstAttribute="bottom" secondItem="GtI-qL-qA8" secondAttribute="bottom" id="frq-JD-XZ1"/>
+                <constraint firstAttribute="trailing" secondItem="KYk-hi-SJz" secondAttribute="trailing" constant="64" id="nb8-61-1VS"/>
+                <constraint firstItem="GtI-qL-qA8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pWT-r1-LJk"/>
+                <constraint firstAttribute="bottom" secondItem="gnZ-NY-gwU" secondAttribute="bottom" id="qka-fq-9gR"/>
+                <constraint firstItem="gnZ-NY-gwU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sgw-RY-3iR"/>
+                <constraint firstItem="KYk-hi-SJz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="64" id="vTu-oP-cZh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="slider" destination="KYk-hi-SJz" id="6J2-E4-cHN"/>
+            </connections>
+            <point key="canvasLocation" x="-15.5" y="84"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="leftSlider.jpg" width="192" height="192"/>
+        <image name="rightSlider.jpg" width="192" height="192"/>
+    </resources>
+</document>
