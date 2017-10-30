@@ -18,6 +18,7 @@
 #import "AnimationViewController.h"
 #import "ReaderViewController.h"
 #import "TestScrollerViewController.h"
+#import "StringViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource> {
 	UITableView *tableview;
@@ -91,6 +92,9 @@
 		case 10:
 			vc = [[TestScrollerViewController alloc] init];
 			break;
+		case 11:
+			vc = [[StringViewController alloc] init];
+			break;
 		default:
 			break;
 	}
@@ -115,6 +119,7 @@
 	[dataArray addObject:@"动画"];
 	[dataArray addObject:@"阅读器"];
 	[dataArray addObject:@"测试scroller的滚动"];
+	[dataArray addObject:@"字符串操作"];
 }
 
 @end
