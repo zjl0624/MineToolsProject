@@ -43,9 +43,9 @@
 - (void)changeStr {
 	NSArray *arr = [resultLabel.text componentsSeparatedByString:@"."];
 	NSMutableArray *resultArray = [[NSMutableArray alloc] initWithArray:@[@"",@"",@"",@""]];
-	for (int i = 0; i < arr.count; i++) {
-		resultArray[i] = arr[arr.count - i - 1];
-	}
+	[arr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+		resultArray[idx] = arr[arr.count - idx - 1];
+	}];
 	NSString *result = [resultArray componentsJoinedByString:@"/"];
 	resultLabel.text = result;
 }
