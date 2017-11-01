@@ -18,6 +18,7 @@
 		5F4289461F39824300F33D0C /* PassValueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4289451F39824300F33D0C /* PassValueViewController.m */; };
 		5F42894C1F39838100F33D0C /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F42894B1F39838100F33D0C /* SecondViewController.m */; };
 		5F42894F1F39885E00F33D0C /* ButtonCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F42894E1F39885E00F33D0C /* ButtonCollectionViewCell.m */; };
+		5F443EA11FA8488600C5BF8A /* Static.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F443EA01FA8488600C5BF8A /* Static.m */; };
 		5F4878411EF2294D00CCE3B4 /* SaveDataMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4878401EF2294D00CCE3B4 /* SaveDataMainViewController.m */; };
 		5F4878441EF22C5300CCE3B4 /* UserDefaultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4878431EF22C5300CCE3B4 /* UserDefaultViewController.m */; };
 		5F4878471EF24FD800CCE3B4 /* SQLiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4878461EF24FD800CCE3B4 /* SQLiteViewController.m */; };
@@ -43,6 +44,9 @@
 		5F5A15A01F3D9E8B0048F147 /* ReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A159F1F3D9E8B0048F147 /* ReaderViewController.m */; };
 		5F5A15A41F3DA9000048F147 /* 冰火魔厨.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F5A15A31F3DA9000048F147 /* 冰火魔厨.txt */; };
 		5F5B044E1EEFC5A20056FF57 /* NSObject+SwithToModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5B044D1EEFC5A20056FF57 /* NSObject+SwithToModel.m */; };
+		5F87AA991FA9ABA8004221AB /* ZJLHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F87AA981FA9ABA8004221AB /* ZJLHud.m */; };
+		5F87AA9C1FA9ABD4004221AB /* CustomHudView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F87AA9B1FA9ABD4004221AB /* CustomHudView.m */; };
+		5F87AAA01FA9B2D5004221AB /* ShowHudViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F87AA9F1FA9B2D5004221AB /* ShowHudViewController.m */; };
 		5FA344571F3C040A00DAE2F2 /* CollectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA344561F3C040A00DAE2F2 /* CollectionModel.m */; };
 		5FA3445B1F3C044E00DAE2F2 /* FirstCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA344591F3C044E00DAE2F2 /* FirstCollectionViewCell.m */; };
 		5FA3445C1F3C044E00DAE2F2 /* FirstCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FA3445A1F3C044E00DAE2F2 /* FirstCollectionViewCell.xib */; };
@@ -108,6 +112,8 @@
 		5F42894B1F39838100F33D0C /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		5F42894D1F39885E00F33D0C /* ButtonCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonCollectionViewCell.h; sourceTree = "<group>"; };
 		5F42894E1F39885E00F33D0C /* ButtonCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonCollectionViewCell.m; sourceTree = "<group>"; };
+		5F443E9F1FA8488600C5BF8A /* Static.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Static.h; sourceTree = "<group>"; };
+		5F443EA01FA8488600C5BF8A /* Static.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Static.m; sourceTree = "<group>"; };
 		5F48783F1EF2294D00CCE3B4 /* SaveDataMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveDataMainViewController.h; sourceTree = "<group>"; };
 		5F4878401EF2294D00CCE3B4 /* SaveDataMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveDataMainViewController.m; sourceTree = "<group>"; };
 		5F4878421EF22C5300CCE3B4 /* UserDefaultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultViewController.h; sourceTree = "<group>"; };
@@ -147,6 +153,13 @@
 		5F5A15A31F3DA9000048F147 /* 冰火魔厨.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "冰火魔厨.txt"; sourceTree = "<group>"; };
 		5F5B044C1EEFC5A20056FF57 /* NSObject+SwithToModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SwithToModel.h"; sourceTree = "<group>"; };
 		5F5B044D1EEFC5A20056FF57 /* NSObject+SwithToModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SwithToModel.m"; sourceTree = "<group>"; };
+		5F87AA971FA9ABA8004221AB /* ZJLHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLHud.h; sourceTree = "<group>"; };
+		5F87AA981FA9ABA8004221AB /* ZJLHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLHud.m; sourceTree = "<group>"; };
+		5F87AA9A1FA9ABD4004221AB /* CustomHudView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomHudView.h; sourceTree = "<group>"; };
+		5F87AA9B1FA9ABD4004221AB /* CustomHudView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomHudView.m; sourceTree = "<group>"; };
+		5F87AA9D1FA9AE7A004221AB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		5F87AA9E1FA9B2D5004221AB /* ShowHudViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowHudViewController.h; sourceTree = "<group>"; };
+		5F87AA9F1FA9B2D5004221AB /* ShowHudViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowHudViewController.m; sourceTree = "<group>"; };
 		5FA344551F3C040A00DAE2F2 /* CollectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionModel.h; sourceTree = "<group>"; };
 		5FA344561F3C040A00DAE2F2 /* CollectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionModel.m; sourceTree = "<group>"; };
 		5FA344581F3C044E00DAE2F2 /* FirstCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstCollectionViewCell.h; sourceTree = "<group>"; };
@@ -326,6 +339,19 @@
 			name = Reader;
 			sourceTree = "<group>";
 		};
+		5F87AA961FA9AB4F004221AB /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				5F87AA971FA9ABA8004221AB /* ZJLHud.h */,
+				5F87AA981FA9ABA8004221AB /* ZJLHud.m */,
+				5F87AA9A1FA9ABD4004221AB /* CustomHudView.h */,
+				5F87AA9B1FA9ABD4004221AB /* CustomHudView.m */,
+				5F87AA9E1FA9B2D5004221AB /* ShowHudViewController.h */,
+				5F87AA9F1FA9B2D5004221AB /* ShowHudViewController.m */,
+			);
+			name = AlertView;
+			sourceTree = "<group>";
+		};
 		5FEB54311EEFAE2C0055163A = {
 			isa = PBXGroup;
 			children = (
@@ -350,6 +376,7 @@
 		5FEB543C1EEFAE2C0055163A /* ZJLFaceProject */ = {
 			isa = PBXGroup;
 			children = (
+				5F87AA961FA9AB4F004221AB /* AlertView */,
 				5F39617A1FA6F3F500839F0B /* String */,
 				5F5A159D1F3D9E410048F147 /* Reader */,
 				5F5A15941F3D4AEF0048F147 /* animation */,
@@ -370,6 +397,9 @@
 				5FEB544B1EEFAE2C0055163A /* LaunchScreen.storyboard */,
 				5FEB544E1EEFAE2C0055163A /* Info.plist */,
 				5FEB543D1EEFAE2C0055163A /* Supporting Files */,
+				5F443E9F1FA8488600C5BF8A /* Static.h */,
+				5F443EA01FA8488600C5BF8A /* Static.m */,
+				5F87AA9D1FA9AE7A004221AB /* PrefixHeader.pch */,
 			);
 			path = ZJLFaceProject;
 			sourceTree = "<group>";
@@ -629,6 +659,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F443EA11FA8488600C5BF8A /* Static.m in Sources */,
 				5F0B4FCF1F441A8500150272 /* ProgressSliderView.m in Sources */,
 				5FF03D851F3AD3DC00C003DF /* TableViewController.m in Sources */,
 				5FF49C6F1EF1145100D04410 /* TimerViewController.m in Sources */,
@@ -637,6 +668,7 @@
 				5FEB54451EEFAE2C0055163A /* ViewController.m in Sources */,
 				5F4878471EF24FD800CCE3B4 /* SQLiteViewController.m in Sources */,
 				5F42894C1F39838100F33D0C /* SecondViewController.m in Sources */,
+				5F87AAA01FA9B2D5004221AB /* ShowHudViewController.m in Sources */,
 				5FEB54421EEFAE2C0055163A /* AppDelegate.m in Sources */,
 				5FF49C6B1EF105AA00D04410 /* KVOModel.m in Sources */,
 				5FF03D8E1F3AE4DE00C003DF /* FirstModel.m in Sources */,
@@ -645,6 +677,7 @@
 				5FF03D821F3AD3C900C003DF /* DataSource.m in Sources */,
 				5FF49C641EF0DEB700D04410 /* Student.m in Sources */,
 				5FA344571F3C040A00DAE2F2 /* CollectionModel.m in Sources */,
+				5F87AA9C1FA9ABD4004221AB /* CustomHudView.m in Sources */,
 				5F49A13D1F42CDE500044718 /* MenuCollectionViewCell.m in Sources */,
 				5F5B044E1EEFC5A20056FF57 /* NSObject+SwithToModel.m in Sources */,
 				5F49A12E1F429EA300044718 /* UILabel+ChangeLineSpaceAndWordSpace.m in Sources */,
@@ -660,6 +693,7 @@
 				5FEB54761EEFBA690055163A /* JsonModel.m in Sources */,
 				5FCF20ED1F414CB900F5CB7C /* SaveIndex.m in Sources */,
 				5F4878411EF2294D00CCE3B4 /* SaveDataMainViewController.m in Sources */,
+				5F87AA991FA9ABA8004221AB /* ZJLHud.m in Sources */,
 				5F0F3EED1F41715600587097 /* TestScrollerViewController.m in Sources */,
 				5F48784F1EF265AA00CCE3B4 /* ArchiverViewController.m in Sources */,
 				5FF49C761EF1270600D04410 /* GCDFinishAllAsyncViewController.m in Sources */,
@@ -818,6 +852,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B72ARJ86E3;
+				GCC_PREFIX_HEADER = ZJLFaceProject/PrefixHeader.pch;
 				INFOPLIST_FILE = ZJLFaceProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -832,6 +867,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B72ARJ86E3;
+				GCC_PREFIX_HEADER = ZJLFaceProject/PrefixHeader.pch;
 				INFOPLIST_FILE = ZJLFaceProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

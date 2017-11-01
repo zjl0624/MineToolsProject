@@ -19,7 +19,7 @@
 #import "ReaderViewController.h"
 #import "TestScrollerViewController.h"
 #import "StringViewController.h"
-
+#import "ShowHudViewController.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource> {
 	UITableView *tableview;
 	NSMutableArray *dataArray;
@@ -95,6 +95,9 @@
 		case 11:
 			vc = [[StringViewController alloc] init];
 			break;
+		case 12:
+			vc = [[ShowHudViewController alloc] init];
+			break;
 		default:
 			break;
 	}
@@ -120,6 +123,7 @@
 	[dataArray addObject:@"阅读器"];
 	[dataArray addObject:@"测试scroller的滚动"];
 	[dataArray addObject:@"字符串操作"];
+	[dataArray addObject:@"显示提示框"];
 }
 
 @end
