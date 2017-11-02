@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F01245D1FA9BDA30007D4B3 /* DragViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F01245C1FA9BDA30007D4B3 /* DragViewController.m */; };
+		5F0124601FA9BF870007D4B3 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F01245F1FA9BF870007D4B3 /* BaseViewController.m */; };
 		5F0B4FCF1F441A8500150272 /* ProgressSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B4FCE1F441A8500150272 /* ProgressSliderView.m */; };
 		5F0B4FD11F441A9500150272 /* ProgressSliderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F0B4FD01F441A9500150272 /* ProgressSliderView.xib */; };
 		5F0B4FD31F4423F700150272 /* rightback.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5F0B4FD21F4423F700150272 /* rightback.jpg */; };
@@ -94,6 +96,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F01245B1FA9BDA30007D4B3 /* DragViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragViewController.h; sourceTree = "<group>"; };
+		5F01245C1FA9BDA30007D4B3 /* DragViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragViewController.m; sourceTree = "<group>"; };
+		5F01245E1FA9BF870007D4B3 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		5F01245F1FA9BF870007D4B3 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		5F0B4FCD1F441A8500150272 /* ProgressSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressSliderView.h; sourceTree = "<group>"; };
 		5F0B4FCE1F441A8500150272 /* ProgressSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressSliderView.m; sourceTree = "<group>"; };
 		5F0B4FD01F441A9500150272 /* ProgressSliderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressSliderView.xib; sourceTree = "<group>"; };
@@ -242,6 +248,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F01245A1FA9BD850007D4B3 /* Drag */ = {
+			isa = PBXGroup;
+			children = (
+				5F01245B1FA9BDA30007D4B3 /* DragViewController.h */,
+				5F01245C1FA9BDA30007D4B3 /* DragViewController.m */,
+			);
+			name = Drag;
+			sourceTree = "<group>";
+		};
 		5F39617A1FA6F3F500839F0B /* String */ = {
 			isa = PBXGroup;
 			children = (
@@ -376,6 +391,7 @@
 		5FEB543C1EEFAE2C0055163A /* ZJLFaceProject */ = {
 			isa = PBXGroup;
 			children = (
+				5F01245A1FA9BD850007D4B3 /* Drag */,
 				5F87AA961FA9AB4F004221AB /* AlertView */,
 				5F39617A1FA6F3F500839F0B /* String */,
 				5F5A159D1F3D9E410048F147 /* Reader */,
@@ -400,6 +416,8 @@
 				5F443E9F1FA8488600C5BF8A /* Static.h */,
 				5F443EA01FA8488600C5BF8A /* Static.m */,
 				5F87AA9D1FA9AE7A004221AB /* PrefixHeader.pch */,
+				5F01245E1FA9BF870007D4B3 /* BaseViewController.h */,
+				5F01245F1FA9BF870007D4B3 /* BaseViewController.m */,
 			);
 			path = ZJLFaceProject;
 			sourceTree = "<group>";
@@ -684,6 +702,7 @@
 				5F39617D1FA6F41400839F0B /* StringViewController.m in Sources */,
 				5FA3445B1F3C044E00DAE2F2 /* FirstCollectionViewCell.m in Sources */,
 				5F5A159C1F3D8CAE0048F147 /* Delegate.m in Sources */,
+				5F0124601FA9BF870007D4B3 /* BaseViewController.m in Sources */,
 				5F4289461F39824300F33D0C /* PassValueViewController.m in Sources */,
 				5F42894F1F39885E00F33D0C /* ButtonCollectionViewCell.m in Sources */,
 				5F49A12A1F42900900044718 /* ContentCollectionViewCell.m in Sources */,
@@ -705,6 +724,7 @@
 				5F5A15981F3D4B8C0048F147 /* AnimationViewController.m in Sources */,
 				5FEB543F1EEFAE2C0055163A /* main.m in Sources */,
 				5FEB54731EEFB3960055163A /* JsonToModelViewController.m in Sources */,
+				5F01245D1FA9BDA30007D4B3 /* DragViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

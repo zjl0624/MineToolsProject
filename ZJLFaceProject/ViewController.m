@@ -20,6 +20,8 @@
 #import "TestScrollerViewController.h"
 #import "StringViewController.h"
 #import "ShowHudViewController.h"
+#import "DragViewController.h"
+
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource> {
 	UITableView *tableview;
 	NSMutableArray *dataArray;
@@ -98,6 +100,9 @@
 		case 12:
 			vc = [[ShowHudViewController alloc] init];
 			break;
+		case 13:
+			vc = [[DragViewController alloc] init];
+			break;
 		default:
 			break;
 	}
@@ -124,6 +129,7 @@
 	[dataArray addObject:@"测试scroller的滚动"];
 	[dataArray addObject:@"字符串操作"];
 	[dataArray addObject:@"显示提示框"];
+	[dataArray addObject:@"拖拽移动"];
 }
 
 @end
