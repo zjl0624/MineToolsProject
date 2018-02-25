@@ -29,7 +29,7 @@
 
 - (void)initUI {
 	alertHudButton = [UIButton buttonWithType:UIButtonTypeSystem];
-	alertHudButton.frame = CGRectMake(0, 64, 120, 30);
+	alertHudButton.frame = CGRectMake(0, 88, 120, 30);
 	[alertHudButton setTitle:@"弹出提示框" forState:UIControlStateNormal];
 	[alertHudButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
 	[self.view addSubview:alertHudButton];

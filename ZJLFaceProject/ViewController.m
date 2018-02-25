@@ -33,6 +33,7 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
+	self.navigationItem.title = @"我的知识点";
 	[self initTableview];
 }
 

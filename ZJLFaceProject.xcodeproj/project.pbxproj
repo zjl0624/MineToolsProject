@@ -21,6 +21,7 @@
 		5F42894C1F39838100F33D0C /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F42894B1F39838100F33D0C /* SecondViewController.m */; };
 		5F42894F1F39885E00F33D0C /* ButtonCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F42894E1F39885E00F33D0C /* ButtonCollectionViewCell.m */; };
 		5F443EA11FA8488600C5BF8A /* Static.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F443EA01FA8488600C5BF8A /* Static.m */; };
+		5F450BC3203FB0550039593B /* MagicCoinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F450BC2203FB0550039593B /* MagicCoinViewController.m */; };
 		5F4878411EF2294D00CCE3B4 /* SaveDataMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4878401EF2294D00CCE3B4 /* SaveDataMainViewController.m */; };
 		5F4878441EF22C5300CCE3B4 /* UserDefaultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4878431EF22C5300CCE3B4 /* UserDefaultViewController.m */; };
 		5F4878471EF24FD800CCE3B4 /* SQLiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4878461EF24FD800CCE3B4 /* SQLiteViewController.m */; };
@@ -120,6 +121,8 @@
 		5F42894E1F39885E00F33D0C /* ButtonCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonCollectionViewCell.m; sourceTree = "<group>"; };
 		5F443E9F1FA8488600C5BF8A /* Static.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Static.h; sourceTree = "<group>"; };
 		5F443EA01FA8488600C5BF8A /* Static.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Static.m; sourceTree = "<group>"; };
+		5F450BC1203FB0550039593B /* MagicCoinViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MagicCoinViewController.h; sourceTree = "<group>"; };
+		5F450BC2203FB0550039593B /* MagicCoinViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagicCoinViewController.m; sourceTree = "<group>"; };
 		5F48783F1EF2294D00CCE3B4 /* SaveDataMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveDataMainViewController.h; sourceTree = "<group>"; };
 		5F4878401EF2294D00CCE3B4 /* SaveDataMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveDataMainViewController.m; sourceTree = "<group>"; };
 		5F4878421EF22C5300CCE3B4 /* UserDefaultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultViewController.h; sourceTree = "<group>"; };
@@ -279,6 +282,15 @@
 			name = PassValue;
 			sourceTree = "<group>";
 		};
+		5F450BC0203FB0180039593B /* Nowcoder */ = {
+			isa = PBXGroup;
+			children = (
+				5F450BC1203FB0550039593B /* MagicCoinViewController.h */,
+				5F450BC2203FB0550039593B /* MagicCoinViewController.m */,
+			);
+			name = Nowcoder;
+			sourceTree = "<group>";
+		};
 		5F48783E1EF2293100CCE3B4 /* SaveData */ = {
 			isa = PBXGroup;
 			children = (
@@ -391,6 +403,7 @@
 		5FEB543C1EEFAE2C0055163A /* ZJLFaceProject */ = {
 			isa = PBXGroup;
 			children = (
+				5F450BC0203FB0180039593B /* Nowcoder */,
 				5F01245A1FA9BD850007D4B3 /* Drag */,
 				5F87AA961FA9AB4F004221AB /* AlertView */,
 				5F39617A1FA6F3F500839F0B /* String */,
@@ -706,6 +719,7 @@
 				5F4289461F39824300F33D0C /* PassValueViewController.m in Sources */,
 				5F42894F1F39885E00F33D0C /* ButtonCollectionViewCell.m in Sources */,
 				5F49A12A1F42900900044718 /* ContentCollectionViewCell.m in Sources */,
+				5F450BC3203FB0550039593B /* MagicCoinViewController.m in Sources */,
 				5FF49C731EF1263B00D04410 /* GCDMainViewController.m in Sources */,
 				5F49A1331F42C62300044718 /* MenuView.m in Sources */,
 				5F0F3EF01F41808B00587097 /* UserSettings.m in Sources */,
