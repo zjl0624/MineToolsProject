@@ -21,6 +21,7 @@
 #import "StringViewController.h"
 #import "ShowHudViewController.h"
 #import "DragViewController.h"
+#import "SortViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource> {
 	UITableView *tableview;
@@ -104,6 +105,9 @@
 		case 13:
 			vc = [[DragViewController alloc] init];
 			break;
+		case 14:
+			vc = [[SortViewController alloc] init];
+			break;
 		default:
 			break;
 	}
@@ -131,6 +135,7 @@
 	[dataArray addObject:@"字符串操作"];
 	[dataArray addObject:@"显示提示框"];
 	[dataArray addObject:@"拖拽移动"];
+	[dataArray addObject:@"各种排序方法"];
 }
 
 @end

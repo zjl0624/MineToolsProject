@@ -17,6 +17,7 @@
 		5F0F3EED1F41715600587097 /* TestScrollerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3EEC1F41715600587097 /* TestScrollerViewController.m */; };
 		5F0F3EF01F41808B00587097 /* UserSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3EEF1F41808B00587097 /* UserSettings.m */; };
 		5F39617D1FA6F41400839F0B /* StringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F39617C1FA6F41400839F0B /* StringViewController.m */; };
+		5F3AD2C220427FF100052CBB /* SortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3AD2C120427FF100052CBB /* SortViewController.m */; };
 		5F4289461F39824300F33D0C /* PassValueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4289451F39824300F33D0C /* PassValueViewController.m */; };
 		5F42894C1F39838100F33D0C /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F42894B1F39838100F33D0C /* SecondViewController.m */; };
 		5F42894F1F39885E00F33D0C /* ButtonCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F42894E1F39885E00F33D0C /* ButtonCollectionViewCell.m */; };
@@ -113,6 +114,8 @@
 		5F0F3EEF1F41808B00587097 /* UserSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSettings.m; sourceTree = "<group>"; };
 		5F39617B1FA6F41400839F0B /* StringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringViewController.h; sourceTree = "<group>"; };
 		5F39617C1FA6F41400839F0B /* StringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringViewController.m; sourceTree = "<group>"; };
+		5F3AD2C020427FF100052CBB /* SortViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortViewController.h; sourceTree = "<group>"; };
+		5F3AD2C120427FF100052CBB /* SortViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortViewController.m; sourceTree = "<group>"; };
 		5F4289441F39824300F33D0C /* PassValueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassValueViewController.h; sourceTree = "<group>"; };
 		5F4289451F39824300F33D0C /* PassValueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassValueViewController.m; sourceTree = "<group>"; };
 		5F42894A1F39838100F33D0C /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
@@ -269,6 +272,15 @@
 			name = String;
 			sourceTree = "<group>";
 		};
+		5F3AD2BF20427FD000052CBB /* Sortways */ = {
+			isa = PBXGroup;
+			children = (
+				5F3AD2C020427FF100052CBB /* SortViewController.h */,
+				5F3AD2C120427FF100052CBB /* SortViewController.m */,
+			);
+			name = Sortways;
+			sourceTree = "<group>";
+		};
 		5F4289431F39820300F33D0C /* PassValue */ = {
 			isa = PBXGroup;
 			children = (
@@ -403,6 +415,7 @@
 		5FEB543C1EEFAE2C0055163A /* ZJLFaceProject */ = {
 			isa = PBXGroup;
 			children = (
+				5F3AD2BF20427FD000052CBB /* Sortways */,
 				5F450BC0203FB0180039593B /* Nowcoder */,
 				5F01245A1FA9BD850007D4B3 /* Drag */,
 				5F87AA961FA9AB4F004221AB /* AlertView */,
@@ -722,6 +735,7 @@
 				5F450BC3203FB0550039593B /* MagicCoinViewController.m in Sources */,
 				5FF49C731EF1263B00D04410 /* GCDMainViewController.m in Sources */,
 				5F49A1331F42C62300044718 /* MenuView.m in Sources */,
+				5F3AD2C220427FF100052CBB /* SortViewController.m in Sources */,
 				5F0F3EF01F41808B00587097 /* UserSettings.m in Sources */,
 				5FEB54761EEFBA690055163A /* JsonModel.m in Sources */,
 				5FCF20ED1F414CB900F5CB7C /* SaveIndex.m in Sources */,
