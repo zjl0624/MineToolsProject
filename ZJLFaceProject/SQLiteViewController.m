@@ -55,7 +55,9 @@
 }
 
 - (void)openDb {
-	NSString *path = [NSHomeDirectory() stringByAppendingString:@"/ZJLFaceProjectDB.sqlite"];
+	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	NSString *documentDirectory = [paths objectAtIndex:0];
+	NSString *path = [documentDirectory stringByAppendingString:@"/ZJLFaceProjectDB.sqlite"];
 	if (sqlite3_open([path UTF8String], &db) == SQLITE_OK) {
 		NSLog(@"开启数据库成功");
 	}else {

@@ -56,13 +56,17 @@
 	tableview.delegate = self;
 	tableview.dataSource = self;
 	dataArray = [[NSMutableArray alloc] init];
-	timer = [NSTimer timerWithTimeInterval:1 repeats:YES block:^(NSTimer * _Nonnull timer) {
-		num++;
-		[tableview reloadData];
-	}];
+	timer = [NSTimer timerWithTimeInterval:1 target:self selector:@selector(timerClick) userInfo:nil repeats:YES];
+//	timer = [NSTimer timerWithTimeInterval:1 repeats:YES block:^(NSTimer * _Nonnull timer) {
+//		num++;
+//		[tableview reloadData];
+//	}];
 	[[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
 }
-
+- (void)timerClick {
+	num++;
+	[tableview reloadData];
+}
 
 - (void)dealloc {
 
