@@ -22,6 +22,7 @@ static id _instance;
 
 - (void)initManager {
 	_manager = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:@""]];
+	_manager.responseSerializer = [AFImageResponseSerializer serializer];
 }
 - (void)getWithUrl:(NSString *)url param:(NSDictionary *)param success:(void(^)(id response))success  {
 //	NSString *completeUrl = [NSString stringWithFormat:@"%@",url];
