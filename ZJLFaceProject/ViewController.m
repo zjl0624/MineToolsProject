@@ -22,6 +22,7 @@
 #import "ShowHudViewController.h"
 #import "DragViewController.h"
 #import "SortViewController.h"
+#import "CicleImageViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource> {
 	UITableView *tableview;
@@ -108,6 +109,9 @@
 		case 14:
 			vc = [[SortViewController alloc] init];
 			break;
+		case 15:
+			vc = [[CicleImageViewController alloc] initWithNibName:@"CicleImageViewController" bundle:nil];
+			break;
 		default:
 			break;
 	}
@@ -136,6 +140,7 @@
 	[dataArray addObject:@"显示提示框"];
 	[dataArray addObject:@"拖拽移动"];
 	[dataArray addObject:@"各种排序方法"];
+	[dataArray addObject:@"图片圆角处理"];
 }
 
 @end

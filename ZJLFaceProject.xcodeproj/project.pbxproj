@@ -54,6 +54,10 @@
 		5FA344571F3C040A00DAE2F2 /* CollectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA344561F3C040A00DAE2F2 /* CollectionModel.m */; };
 		5FA3445B1F3C044E00DAE2F2 /* FirstCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA344591F3C044E00DAE2F2 /* FirstCollectionViewCell.m */; };
 		5FA3445C1F3C044E00DAE2F2 /* FirstCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FA3445A1F3C044E00DAE2F2 /* FirstCollectionViewCell.xib */; };
+		5FA9C3E42043DD3C002EEB44 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FA9C3E32043DD3C002EEB44 /* 2.jpg */; };
+		5FCB51122043D9AB00D9958D /* UIImage+CircleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCB51112043D9AB00D9958D /* UIImage+CircleImage.m */; };
+		5FCB51162043DADC00D9958D /* CicleImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCB51142043DADC00D9958D /* CicleImageViewController.m */; };
+		5FCB51172043DADC00D9958D /* CicleImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FCB51152043DADC00D9958D /* CicleImageViewController.xib */; };
 		5FCF20ED1F414CB900F5CB7C /* SaveIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCF20EC1F414CB900F5CB7C /* SaveIndex.m */; };
 		5FEB543F1EEFAE2C0055163A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEB543E1EEFAE2C0055163A /* main.m */; };
 		5FEB54421EEFAE2C0055163A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEB54411EEFAE2C0055163A /* AppDelegate.m */; };
@@ -177,6 +181,12 @@
 		5FA344581F3C044E00DAE2F2 /* FirstCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstCollectionViewCell.h; sourceTree = "<group>"; };
 		5FA344591F3C044E00DAE2F2 /* FirstCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstCollectionViewCell.m; sourceTree = "<group>"; };
 		5FA3445A1F3C044E00DAE2F2 /* FirstCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstCollectionViewCell.xib; sourceTree = "<group>"; };
+		5FA9C3E32043DD3C002EEB44 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		5FCB51102043D9AB00D9958D /* UIImage+CircleImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+CircleImage.h"; sourceTree = "<group>"; };
+		5FCB51112043D9AB00D9958D /* UIImage+CircleImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CircleImage.m"; sourceTree = "<group>"; };
+		5FCB51132043DADC00D9958D /* CicleImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CicleImageViewController.h; sourceTree = "<group>"; };
+		5FCB51142043DADC00D9958D /* CicleImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CicleImageViewController.m; sourceTree = "<group>"; };
+		5FCB51152043DADC00D9958D /* CicleImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CicleImageViewController.xib; sourceTree = "<group>"; };
 		5FCF20EB1F414CB900F5CB7C /* SaveIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveIndex.h; sourceTree = "<group>"; };
 		5FCF20EC1F414CB900F5CB7C /* SaveIndex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveIndex.m; sourceTree = "<group>"; };
 		5FEB543A1EEFAE2C0055163A /* ZJLFaceProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJLFaceProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -391,6 +401,19 @@
 			name = AlertView;
 			sourceTree = "<group>";
 		};
+		5FCB510C2043D91600D9958D /* CircleImage */ = {
+			isa = PBXGroup;
+			children = (
+				5FA9C3E32043DD3C002EEB44 /* 2.jpg */,
+				5FCB51102043D9AB00D9958D /* UIImage+CircleImage.h */,
+				5FCB51112043D9AB00D9958D /* UIImage+CircleImage.m */,
+				5FCB51132043DADC00D9958D /* CicleImageViewController.h */,
+				5FCB51142043DADC00D9958D /* CicleImageViewController.m */,
+				5FCB51152043DADC00D9958D /* CicleImageViewController.xib */,
+			);
+			name = CircleImage;
+			sourceTree = "<group>";
+		};
 		5FEB54311EEFAE2C0055163A = {
 			isa = PBXGroup;
 			children = (
@@ -415,6 +438,7 @@
 		5FEB543C1EEFAE2C0055163A /* ZJLFaceProject */ = {
 			isa = PBXGroup;
 			children = (
+				5FCB510C2043D91600D9958D /* CircleImage */,
 				5F3AD2BF20427FD000052CBB /* Sortways */,
 				5F450BC0203FB0180039593B /* Nowcoder */,
 				5F01245A1FA9BD850007D4B3 /* Drag */,
@@ -667,9 +691,11 @@
 				5F0B4FDB1F4426EA00150272 /* leftSlider.jpg in Resources */,
 				5F49A1401F42D38E00044718 /* application_default.png in Resources */,
 				5FEB544D1EEFAE2C0055163A /* LaunchScreen.storyboard in Resources */,
+				5FCB51172043DADC00D9958D /* CicleImageViewController.xib in Resources */,
 				5F0B4FD31F4423F700150272 /* rightback.jpg in Resources */,
 				5F5A15991F3D4B8C0048F147 /* AnimationViewController.xib in Resources */,
 				5F49A1391F42CCE300044718 /* approval_default.png in Resources */,
+				5FA9C3E42043DD3C002EEB44 /* 2.jpg in Resources */,
 				5F49A1351F42C71C00044718 /* MenuView.xib in Resources */,
 				5FEB544A1EEFAE2C0055163A /* Assets.xcassets in Resources */,
 				5F49A13E1F42CDE500044718 /* MenuCollectionViewCell.xib in Resources */,
@@ -732,7 +758,9 @@
 				5F4289461F39824300F33D0C /* PassValueViewController.m in Sources */,
 				5F42894F1F39885E00F33D0C /* ButtonCollectionViewCell.m in Sources */,
 				5F49A12A1F42900900044718 /* ContentCollectionViewCell.m in Sources */,
+				5FCB51122043D9AB00D9958D /* UIImage+CircleImage.m in Sources */,
 				5F450BC3203FB0550039593B /* MagicCoinViewController.m in Sources */,
+				5FCB51162043DADC00D9958D /* CicleImageViewController.m in Sources */,
 				5FF49C731EF1263B00D04410 /* GCDMainViewController.m in Sources */,
 				5F49A1331F42C62300044718 /* MenuView.m in Sources */,
 				5F3AD2C220427FF100052CBB /* SortViewController.m in Sources */,
@@ -847,7 +875,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -888,7 +916,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -902,7 +930,7 @@
 				DEVELOPMENT_TEAM = B72ARJ86E3;
 				GCC_PREFIX_HEADER = ZJLFaceProject/PrefixHeader.pch;
 				INFOPLIST_FILE = ZJLFaceProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_BUNDLE_IDENTIFIER = zjlch.ZJLFaceProject;
@@ -917,7 +945,7 @@
 				DEVELOPMENT_TEAM = B72ARJ86E3;
 				GCC_PREFIX_HEADER = ZJLFaceProject/PrefixHeader.pch;
 				INFOPLIST_FILE = ZJLFaceProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_BUNDLE_IDENTIFIER = zjlch.ZJLFaceProject;
