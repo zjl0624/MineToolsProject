@@ -23,6 +23,7 @@
 #import "DragViewController.h"
 #import "SortViewController.h"
 #import "CicleImageViewController.h"
+#import "UseAFNetworkingViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource> {
 	UITableView *tableview;
@@ -112,6 +113,9 @@
 		case 15:
 			vc = [[CicleImageViewController alloc] initWithNibName:@"CicleImageViewController" bundle:nil];
 			break;
+		case 16:
+			vc = [[UseAFNetworkingViewController alloc] initWithNibName:@"UseAFNetworkingViewController" bundle:nil];
+			break;
 		default:
 			break;
 	}
@@ -141,6 +145,7 @@
 	[dataArray addObject:@"拖拽移动"];
 	[dataArray addObject:@"各种排序方法"];
 	[dataArray addObject:@"图片圆角处理"];
+	[dataArray addObject:@"封装AFNetworking"];
 }
 
 @end
