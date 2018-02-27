@@ -24,6 +24,7 @@
 #import "SortViewController.h"
 #import "CicleImageViewController.h"
 #import "UseAFNetworkingViewController.h"
+#import "LocalNotificationViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource> {
 	UITableView *tableview;
@@ -116,6 +117,9 @@
 		case 16:
 			vc = [[UseAFNetworkingViewController alloc] initWithNibName:@"UseAFNetworkingViewController" bundle:nil];
 			break;
+		case 17:
+			vc = [[LocalNotificationViewController alloc] initWithNibName:@"LocalNotificationViewController" bundle:nil];
+			break;
 		default:
 			break;
 	}
@@ -146,6 +150,7 @@
 	[dataArray addObject:@"各种排序方法"];
 	[dataArray addObject:@"图片圆角处理"];
 	[dataArray addObject:@"封装AFNetworking"];
+	[dataArray addObject:@"设置本地推送"];
 }
 
 @end

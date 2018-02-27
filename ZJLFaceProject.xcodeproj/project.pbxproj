@@ -51,6 +51,9 @@
 		5F87AA991FA9ABA8004221AB /* ZJLHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F87AA981FA9ABA8004221AB /* ZJLHud.m */; };
 		5F87AA9C1FA9ABD4004221AB /* CustomHudView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F87AA9B1FA9ABD4004221AB /* CustomHudView.m */; };
 		5F87AAA01FA9B2D5004221AB /* ShowHudViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F87AA9F1FA9B2D5004221AB /* ShowHudViewController.m */; };
+		5F8B69E720453B12006E8E50 /* LocalNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8B69E620453B12006E8E50 /* LocalNotification.m */; };
+		5F8B69EB20453D98006E8E50 /* LocalNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8B69E920453D98006E8E50 /* LocalNotificationViewController.m */; };
+		5F8B69EC20453D98006E8E50 /* LocalNotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F8B69EA20453D98006E8E50 /* LocalNotificationViewController.xib */; };
 		5FA344571F3C040A00DAE2F2 /* CollectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA344561F3C040A00DAE2F2 /* CollectionModel.m */; };
 		5FA3445B1F3C044E00DAE2F2 /* FirstCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA344591F3C044E00DAE2F2 /* FirstCollectionViewCell.m */; };
 		5FA3445C1F3C044E00DAE2F2 /* FirstCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FA3445A1F3C044E00DAE2F2 /* FirstCollectionViewCell.xib */; };
@@ -194,6 +197,11 @@
 		5F87AA9D1FA9AE7A004221AB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		5F87AA9E1FA9B2D5004221AB /* ShowHudViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowHudViewController.h; sourceTree = "<group>"; };
 		5F87AA9F1FA9B2D5004221AB /* ShowHudViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowHudViewController.m; sourceTree = "<group>"; };
+		5F8B69E520453B12006E8E50 /* LocalNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalNotification.h; sourceTree = "<group>"; };
+		5F8B69E620453B12006E8E50 /* LocalNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalNotification.m; sourceTree = "<group>"; };
+		5F8B69E820453D98006E8E50 /* LocalNotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalNotificationViewController.h; sourceTree = "<group>"; };
+		5F8B69E920453D98006E8E50 /* LocalNotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalNotificationViewController.m; sourceTree = "<group>"; };
+		5F8B69EA20453D98006E8E50 /* LocalNotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalNotificationViewController.xib; sourceTree = "<group>"; };
 		5FA344551F3C040A00DAE2F2 /* CollectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionModel.h; sourceTree = "<group>"; };
 		5FA344561F3C040A00DAE2F2 /* CollectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionModel.m; sourceTree = "<group>"; };
 		5FA344581F3C044E00DAE2F2 /* FirstCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstCollectionViewCell.h; sourceTree = "<group>"; };
@@ -457,6 +465,18 @@
 			name = AlertView;
 			sourceTree = "<group>";
 		};
+		5F8B69E420453AF1006E8E50 /* LocalNotification */ = {
+			isa = PBXGroup;
+			children = (
+				5F8B69E520453B12006E8E50 /* LocalNotification.h */,
+				5F8B69E620453B12006E8E50 /* LocalNotification.m */,
+				5F8B69E820453D98006E8E50 /* LocalNotificationViewController.h */,
+				5F8B69E920453D98006E8E50 /* LocalNotificationViewController.m */,
+				5F8B69EA20453D98006E8E50 /* LocalNotificationViewController.xib */,
+			);
+			name = LocalNotification;
+			sourceTree = "<group>";
+		};
 		5FA9C3E52043EED0002EEB44 /* UseAFNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -555,6 +575,7 @@
 		5FEB543C1EEFAE2C0055163A /* ZJLFaceProject */ = {
 			isa = PBXGroup;
 			children = (
+				5F8B69E420453AF1006E8E50 /* LocalNotification */,
 				5FA9C3E52043EED0002EEB44 /* UseAFNetworking */,
 				5FCB510C2043D91600D9958D /* CircleImage */,
 				5F3AD2BF20427FD000052CBB /* Sortways */,
@@ -808,6 +829,7 @@
 				5F49A12B1F42900900044718 /* ContentCollectionViewCell.xib in Resources */,
 				5F0B4FDB1F4426EA00150272 /* leftSlider.jpg in Resources */,
 				5F49A1401F42D38E00044718 /* application_default.png in Resources */,
+				5F8B69EC20453D98006E8E50 /* LocalNotificationViewController.xib in Resources */,
 				5FEB544D1EEFAE2C0055163A /* LaunchScreen.storyboard in Resources */,
 				5FCB51172043DADC00D9958D /* CicleImageViewController.xib in Resources */,
 				5F0B4FD31F4423F700150272 /* rightback.jpg in Resources */,
@@ -903,6 +925,7 @@
 				5F4878411EF2294D00CCE3B4 /* SaveDataMainViewController.m in Sources */,
 				5F87AA991FA9ABA8004221AB /* ZJLHud.m in Sources */,
 				5FA9C41E2043F8ED002EEB44 /* UseAFNetworkingViewController.m in Sources */,
+				5F8B69EB20453D98006E8E50 /* LocalNotificationViewController.m in Sources */,
 				5F0F3EED1F41715600587097 /* TestScrollerViewController.m in Sources */,
 				5FA9C40F2043EF01002EEB44 /* UIProgressView+AFNetworking.m in Sources */,
 				5F48784F1EF265AA00CCE3B4 /* ArchiverViewController.m in Sources */,
@@ -916,6 +939,7 @@
 				5FA9C4142043EF01002EEB44 /* AFSecurityPolicy.m in Sources */,
 				5FEB543F1EEFAE2C0055163A /* main.m in Sources */,
 				5FEB54731EEFB3960055163A /* JsonToModelViewController.m in Sources */,
+				5F8B69E720453B12006E8E50 /* LocalNotification.m in Sources */,
 				5F01245D1FA9BDA30007D4B3 /* DragViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
