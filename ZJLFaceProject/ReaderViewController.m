@@ -132,23 +132,28 @@
 		self.view.backgroundColor = [UIColor redColor];
 	}
 
-	contentTextView = [[UITextView alloc] initWithFrame:CGRectMake(0, 64, ScreenWidth, ScreenHeight - 64)];
-	contentTextView.editable = NO;
-	if ([UserSettings sharedInstance].fontSize == 0) {
-		[UserSettings sharedInstance].fontSize = 18;
-	}
-	contentTextView.font = [UIFont systemFontOfSize:[UserSettings sharedInstance].fontSize];
-	[self.view addSubview:contentTextView];
-	contentTextView.text = [self read];
-	UITapGestureRecognizer *tap1 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapTextView:)];
-	[contentTextView addGestureRecognizer:tap1];
-	contentTextView.delegate = self;
-	contentTextView.hidden = YES;
+//	contentTextView = [[UITextView alloc] initWithFrame:CGRectMake(0, 64, ScreenWidth, ScreenHeight - 64)];
+//	contentTextView.editable = YES;
+////	if ([UserSettings sharedInstance].fontSize == 0) {
+////		[UserSettings sharedInstance].fontSize = 18;
+////	}
+////	contentTextView.font = [UIFont systemFontOfSize:[UserSettings sharedInstance].fontSize];
+//	[self.view addSubview:contentTextView];
+////	contentTextView.text = [self read];
+//	NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
+//	style.lineSpacing = 500;
+//	NSDictionary *attributes = @{NSFontAttributeName:[UIFont systemFontOfSize:[UserSettings sharedInstance].fontSize],NSParagraphStyleAttributeName:style};
+//	contentTextView.attributedText = [[NSAttributedString alloc] initWithString:[self read] attributes:attributes];
+//	UITapGestureRecognizer *tap1 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapTextView:)];
+//	[contentTextView addGestureRecognizer:tap1];
+//	contentTextView.delegate = self;
+//	contentTextView.hidden = YES;
 
 	
 //	UIBarButtonItem *rightBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(clickRightBtn)];
 //	self.navigationItem.rightBarButtonItem = rightBtn;
 	
+	//使用collectionview来显示文字，方便做切换页面
 	dataArray = [[NSMutableArray alloc] init];
 	UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
 	layout.minimumLineSpacing = 0;

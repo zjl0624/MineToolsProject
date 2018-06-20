@@ -73,7 +73,7 @@ static id _instance;
 	[UserSettings sharedInstance].bgColor = userSettings.bgColor;
 	[UserSettings sharedInstance].fontSize = userSettings.fontSize;
 	if (userSettings.fontSize == 0) {
-		[UserSettings sharedInstance].fontSize = 18;
+		[UserSettings sharedInstance].fontSize = 15;
 	}
 	[UserSettings sharedInstance].isPage = userSettings.isPage;
 	[UserSettings sharedInstance].allContentLength = userSettings.allContentLength;

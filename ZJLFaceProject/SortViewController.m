@@ -67,7 +67,7 @@
 
 - (void)selectionSortBtnClick:(UIButton *)sender {
 	for (int i = 0; i < _dataArray.count; i++) {
-		NSInteger min = i;
+//		NSInteger min = i;
 		
 	}
 }

@@ -26,7 +26,7 @@
 	NSString *content = (NSString *)model;
 	_contentLabel.text = content;
 	_contentLabel.font = [UIFont systemFontOfSize:[UserSettings sharedInstance].fontSize];
-	[UILabel changeSpaceForLabel:_contentLabel withLineSpace:0 WordSpace:0];
+	[UILabel changeSpaceForLabel:_contentLabel withLineSpace:5 WordSpace:0];
 }
 
 @end
