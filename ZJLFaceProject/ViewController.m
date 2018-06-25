@@ -25,6 +25,7 @@
 #import "CicleImageViewController.h"
 #import "UseAFNetworkingViewController.h"
 #import "LocalNotificationViewController.h"
+#import "MagicCoinViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource> {
 	UITableView *tableview;
@@ -120,6 +121,9 @@
 		case 17:
 			vc = [[LocalNotificationViewController alloc] initWithNibName:@"LocalNotificationViewController" bundle:nil];
 			break;
+		case 18:
+			vc = [[MagicCoinViewController alloc] init];
+			break;
 		default:
 			break;
 	}
@@ -151,6 +155,7 @@
 	[dataArray addObject:@"图片圆角处理"];
 	[dataArray addObject:@"封装AFNetworking"];
 	[dataArray addObject:@"设置本地推送"];
+	[dataArray addObject:@"牛客网编程题"];
 }
 
 @end
