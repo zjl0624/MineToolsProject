@@ -76,6 +76,9 @@
 		5FA9C41A2043EF26002EEB44 /* NetManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA9C4192043EF26002EEB44 /* NetManger.m */; };
 		5FA9C41E2043F8ED002EEB44 /* UseAFNetworkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA9C41C2043F8ED002EEB44 /* UseAFNetworkingViewController.m */; };
 		5FA9C41F2043F8ED002EEB44 /* UseAFNetworkingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FA9C41D2043F8ED002EEB44 /* UseAFNetworkingViewController.xib */; };
+		5FCB0A3D20E0C40400A8D839 /* AvPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCB0A3B20E0C40400A8D839 /* AvPlayerViewController.m */; };
+		5FCB0A3E20E0C40400A8D839 /* AvPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FCB0A3C20E0C40400A8D839 /* AvPlayerViewController.xib */; };
+		5FCB0A4020E0C90A00A8D839 /* localvideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5FCB0A3F20E0C90900A8D839 /* localvideo.mp4 */; };
 		5FCB51122043D9AB00D9958D /* UIImage+CircleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCB51112043D9AB00D9958D /* UIImage+CircleImage.m */; };
 		5FCB51162043DADC00D9958D /* CicleImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCB51142043DADC00D9958D /* CicleImageViewController.m */; };
 		5FCB51172043DADC00D9958D /* CicleImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FCB51152043DADC00D9958D /* CicleImageViewController.xib */; };
@@ -246,6 +249,10 @@
 		5FA9C41B2043F8ED002EEB44 /* UseAFNetworkingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UseAFNetworkingViewController.h; sourceTree = "<group>"; };
 		5FA9C41C2043F8ED002EEB44 /* UseAFNetworkingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UseAFNetworkingViewController.m; sourceTree = "<group>"; };
 		5FA9C41D2043F8ED002EEB44 /* UseAFNetworkingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UseAFNetworkingViewController.xib; sourceTree = "<group>"; };
+		5FCB0A3A20E0C40400A8D839 /* AvPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AvPlayerViewController.h; sourceTree = "<group>"; };
+		5FCB0A3B20E0C40400A8D839 /* AvPlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AvPlayerViewController.m; sourceTree = "<group>"; };
+		5FCB0A3C20E0C40400A8D839 /* AvPlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvPlayerViewController.xib; sourceTree = "<group>"; };
+		5FCB0A3F20E0C90900A8D839 /* localvideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = localvideo.mp4; sourceTree = "<group>"; };
 		5FCB51102043D9AB00D9958D /* UIImage+CircleImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+CircleImage.h"; sourceTree = "<group>"; };
 		5FCB51112043D9AB00D9958D /* UIImage+CircleImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CircleImage.m"; sourceTree = "<group>"; };
 		5FCB51132043DADC00D9958D /* CicleImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CicleImageViewController.h; sourceTree = "<group>"; };
@@ -538,6 +545,17 @@
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
+		5FCB0A3920E0BFED00A8D839 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				5FCB0A3F20E0C90900A8D839 /* localvideo.mp4 */,
+				5FCB0A3A20E0C40400A8D839 /* AvPlayerViewController.h */,
+				5FCB0A3B20E0C40400A8D839 /* AvPlayerViewController.m */,
+				5FCB0A3C20E0C40400A8D839 /* AvPlayerViewController.xib */,
+			);
+			name = Player;
+			sourceTree = "<group>";
+		};
 		5FCB510C2043D91600D9958D /* CircleImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -575,6 +593,7 @@
 		5FEB543C1EEFAE2C0055163A /* ZJLFaceProject */ = {
 			isa = PBXGroup;
 			children = (
+				5FCB0A3920E0BFED00A8D839 /* Player */,
 				5F8B69E420453AF1006E8E50 /* LocalNotification */,
 				5FA9C3E52043EED0002EEB44 /* UseAFNetworking */,
 				5FCB510C2043D91600D9958D /* CircleImage */,
@@ -835,6 +854,7 @@
 				5F0B4FD31F4423F700150272 /* rightback.jpg in Resources */,
 				5F5A15991F3D4B8C0048F147 /* AnimationViewController.xib in Resources */,
 				5F49A1391F42CCE300044718 /* approval_default.png in Resources */,
+				5FCB0A3E20E0C40400A8D839 /* AvPlayerViewController.xib in Resources */,
 				5FA9C3E42043DD3C002EEB44 /* 2.jpg in Resources */,
 				5F49A1351F42C71C00044718 /* MenuView.xib in Resources */,
 				5FA9C41F2043F8ED002EEB44 /* UseAFNetworkingViewController.xib in Resources */,
@@ -846,6 +866,7 @@
 				5FA3445C1F3C044E00DAE2F2 /* FirstCollectionViewCell.xib in Resources */,
 				5F5A15A41F3DA9000048F147 /* 冰火魔厨.txt in Resources */,
 				5F0B4FD91F4426E400150272 /* rightSlider.jpg in Resources */,
+				5FCB0A4020E0C90A00A8D839 /* localvideo.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -916,6 +937,7 @@
 				5FA9C41A2043EF26002EEB44 /* NetManger.m in Sources */,
 				5F450BC3203FB0550039593B /* MagicCoinViewController.m in Sources */,
 				5FCB51162043DADC00D9958D /* CicleImageViewController.m in Sources */,
+				5FCB0A3D20E0C40400A8D839 /* AvPlayerViewController.m in Sources */,
 				5FF49C731EF1263B00D04410 /* GCDMainViewController.m in Sources */,
 				5F49A1331F42C62300044718 /* MenuView.m in Sources */,
 				5F3AD2C220427FF100052CBB /* SortViewController.m in Sources */,

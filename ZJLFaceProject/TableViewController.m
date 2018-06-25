@@ -26,6 +26,7 @@
 	DataSource *collectionDataSource;
 	Delegate *tableDelegate;
 	Delegate *collectDelegate;
+	NSCache *tableCellHeightCache;
 }
 
 @end
@@ -48,6 +49,7 @@
 	self.automaticallyAdjustsScrollViewInsets = NO;
 	UIBarButtonItem *rightBarButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(swichCollection:)];
 	self.navigationItem.rightBarButtonItem = rightBarButton;
+	tableCellHeightCache = [[NSCache alloc] init];
 	tableview = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, ScreenWidth, ScreenHeight - 64)];
 	[self.view addSubview:tableview];
 	dataArray = [[NSMutableArray alloc] init];
@@ -81,9 +83,9 @@
 	tableDelegate = [[Delegate alloc] initWithSelectedBlock:^(NSIndexPath *indexPath) {
 		NSLog(@"点了一发");
 	} TableviewCellHeightBlock:nil TableviewSectionHeaderHeightBlock:^CGFloat(NSInteger section) {
-		return 10;
+		return 50;
 	} TableviewSectionFooterHeightBlock:^CGFloat(NSInteger section) {
-		return 20;
+		return 100;
 	}];
 	tableview.delegate = tableDelegate;
 	collectionDataArray = [[NSMutableArray alloc] init];

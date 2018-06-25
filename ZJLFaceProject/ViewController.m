@@ -26,6 +26,7 @@
 #import "UseAFNetworkingViewController.h"
 #import "LocalNotificationViewController.h"
 #import "MagicCoinViewController.h"
+#import "AvPlayerViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource> {
 	UITableView *tableview;
@@ -124,6 +125,9 @@
 		case 18:
 			vc = [[MagicCoinViewController alloc] init];
 			break;
+		case 19:
+			vc = [[AvPlayerViewController alloc] initWithNibName:@"AvPlayerViewController" bundle:nil];
+			break;
 		default:
 			break;
 	}
@@ -156,6 +160,7 @@
 	[dataArray addObject:@"封装AFNetworking"];
 	[dataArray addObject:@"设置本地推送"];
 	[dataArray addObject:@"牛客网编程题"];
+	[dataArray addObject:@"AVPlayer"];
 }
 
 @end
