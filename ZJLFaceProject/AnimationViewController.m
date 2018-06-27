@@ -10,6 +10,7 @@
 
 @interface AnimationViewController ()
 @property (strong, nonatomic)  UIView *easyChangeView;
+@property (strong,nonatomic) UIView *centerView;
 
 @end
 
@@ -17,11 +18,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	_easyChangeView = [[UIView alloc] initWithFrame:CGRectMake(10, 74, 60, 60)];
+	_easyChangeView = [[UIView alloc] initWithFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, 50)];
 	_easyChangeView.backgroundColor = [UIColor redColor];
 	[self.view addSubview:_easyChangeView];
 	UITapGestureRecognizer *easyChangeViewGes = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(easyAnimation:)];
 	[_easyChangeView addGestureRecognizer:easyChangeViewGes];
+	_centerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+	_centerView.backgroundColor = [UIColor yellowColor];
+	[_easyChangeView addSubview:_centerView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,9 +35,9 @@
 
 #pragma mark - gestureRecognizer
 - (void)easyAnimation:(UITapGestureRecognizer *)tap {
-	[UIView animateWithDuration:3 delay:1 options:UIViewAnimationOptionLayoutSubviews animations:^{
-		_easyChangeView.transform = CGAffineTransformMakeRotation(M_PI_4);
-		_easyChangeView.frame = CGRectMake(60, 74, 60, 60);
+	[UIView animateWithDuration:0.25 delay:0 options:UIViewAnimationOptionLayoutSubviews animations:^{
+		_easyChangeView.transform = CGAffineTransformMakeRotation(M_PI_2);
+		_easyChangeView.frame = CGRectMake(0, 0, 50, [UIScreen mainScreen].bounds.size.height);
 	} completion:nil];
 }
 
