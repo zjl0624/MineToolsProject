@@ -16,6 +16,8 @@
 		5F0B4FDB1F4426EA00150272 /* leftSlider.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5F0B4FDA1F4426EA00150272 /* leftSlider.jpg */; };
 		5F0F3EED1F41715600587097 /* TestScrollerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3EEC1F41715600587097 /* TestScrollerViewController.m */; };
 		5F0F3EF01F41808B00587097 /* UserSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3EEF1F41808B00587097 /* UserSettings.m */; };
+		5F1B88ED20E36A1000B34B52 /* GCDSyncQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1B88EC20E36A1000B34B52 /* GCDSyncQueueViewController.m */; };
+		5F1B88F020E36E8400B34B52 /* GCDAsyncQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1B88EF20E36E8400B34B52 /* GCDAsyncQueueViewController.m */; };
 		5F39617D1FA6F41400839F0B /* StringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F39617C1FA6F41400839F0B /* StringViewController.m */; };
 		5F3AD2C220427FF100052CBB /* SortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3AD2C120427FF100052CBB /* SortViewController.m */; };
 		5F4289461F39824300F33D0C /* PassValueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4289451F39824300F33D0C /* PassValueViewController.m */; };
@@ -140,6 +142,10 @@
 		5F0F3EEC1F41715600587097 /* TestScrollerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestScrollerViewController.m; sourceTree = "<group>"; };
 		5F0F3EEE1F41808B00587097 /* UserSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSettings.h; sourceTree = "<group>"; };
 		5F0F3EEF1F41808B00587097 /* UserSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSettings.m; sourceTree = "<group>"; };
+		5F1B88EB20E36A1000B34B52 /* GCDSyncQueueViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDSyncQueueViewController.h; sourceTree = "<group>"; };
+		5F1B88EC20E36A1000B34B52 /* GCDSyncQueueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDSyncQueueViewController.m; sourceTree = "<group>"; };
+		5F1B88EE20E36E8400B34B52 /* GCDAsyncQueueViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDAsyncQueueViewController.h; sourceTree = "<group>"; };
+		5F1B88EF20E36E8400B34B52 /* GCDAsyncQueueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncQueueViewController.m; sourceTree = "<group>"; };
 		5F39617B1FA6F41400839F0B /* StringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringViewController.h; sourceTree = "<group>"; };
 		5F39617C1FA6F41400839F0B /* StringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringViewController.m; sourceTree = "<group>"; };
 		5F3AD2C020427FF100052CBB /* SortViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortViewController.h; sourceTree = "<group>"; };
@@ -733,6 +739,10 @@
 				5FF49C721EF1263B00D04410 /* GCDMainViewController.m */,
 				5FF49C741EF1270600D04410 /* GCDFinishAllAsyncViewController.h */,
 				5FF49C751EF1270600D04410 /* GCDFinishAllAsyncViewController.m */,
+				5F1B88EB20E36A1000B34B52 /* GCDSyncQueueViewController.h */,
+				5F1B88EC20E36A1000B34B52 /* GCDSyncQueueViewController.m */,
+				5F1B88EE20E36E8400B34B52 /* GCDAsyncQueueViewController.h */,
+				5F1B88EF20E36E8400B34B52 /* GCDAsyncQueueViewController.m */,
 			);
 			name = GCD;
 			sourceTree = "<group>";
@@ -895,6 +905,7 @@
 				5F0B4FCF1F441A8500150272 /* ProgressSliderView.m in Sources */,
 				5FA9C4102043EF01002EEB44 /* UIRefreshControl+AFNetworking.m in Sources */,
 				5FF03D851F3AD3DC00C003DF /* TableViewController.m in Sources */,
+				5F1B88ED20E36A1000B34B52 /* GCDSyncQueueViewController.m in Sources */,
 				5FA9C4162043EF01002EEB44 /* AFURLResponseSerialization.m in Sources */,
 				5FF49C6F1EF1145100D04410 /* TimerViewController.m in Sources */,
 				5FA9C40B2043EF01002EEB44 /* AFNetworkActivityIndicatorManager.m in Sources */,
@@ -920,6 +931,7 @@
 				5F49A13D1F42CDE500044718 /* MenuCollectionViewCell.m in Sources */,
 				5F5B044E1EEFC5A20056FF57 /* NSObject+SwithToModel.m in Sources */,
 				5FA9C4112043EF01002EEB44 /* UIWebView+AFNetworking.m in Sources */,
+				5F1B88F020E36E8400B34B52 /* GCDAsyncQueueViewController.m in Sources */,
 				5FA9C4092043EF01002EEB44 /* AFAutoPurgingImageCache.m in Sources */,
 				5F49A12E1F429EA300044718 /* UILabel+ChangeLineSpaceAndWordSpace.m in Sources */,
 				5F39617D1FA6F41400839F0B /* StringViewController.m in Sources */,

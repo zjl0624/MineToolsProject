@@ -8,6 +8,8 @@
 
 #import "GCDMainViewController.h"
 #import "GCDFinishAllAsyncViewController.h"
+#import "GCDSyncQueueViewController.h"
+#import "GCDAsyncQueueViewController.h"
 
 @interface GCDMainViewController ()<UITableViewDelegate,UITableViewDataSource> {
 	UITableView *tableview;
@@ -49,6 +51,12 @@
 		case 0:
 			vc = [[GCDFinishAllAsyncViewController alloc] init];
 			break;
+		case 1:
+			vc = [[GCDSyncQueueViewController alloc] init];
+			break;
+		case 2:
+			vc = [[GCDAsyncQueueViewController alloc] init];
+			break;
 		default:
 			break;
 	}
@@ -62,6 +70,8 @@
 	tableview.dataSource = self;
 	dataArray = [[NSMutableArray alloc] init];
 	[dataArray addObject:@"多个异步请求全部执行完成"];
+	[dataArray addObject:@"串行队列"];
+	[dataArray addObject:@"并行队列"];
 
 }
 
