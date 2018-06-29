@@ -50,6 +50,9 @@
 		5F5A15A01F3D9E8B0048F147 /* ReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A159F1F3D9E8B0048F147 /* ReaderViewController.m */; };
 		5F5A15A41F3DA9000048F147 /* 冰火魔厨.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F5A15A31F3DA9000048F147 /* 冰火魔厨.txt */; };
 		5F5B044E1EEFC5A20056FF57 /* NSObject+SwithToModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5B044D1EEFC5A20056FF57 /* NSObject+SwithToModel.m */; };
+		5F82C59620E5D481000A4FA0 /* HorizontalscreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F82C59420E5D481000A4FA0 /* HorizontalscreenViewController.m */; };
+		5F82C59720E5D481000A4FA0 /* HorizontalscreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F82C59520E5D481000A4FA0 /* HorizontalscreenViewController.xib */; };
+		5F82C59A20E6049E000A4FA0 /* MyNaviVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F82C59920E6049E000A4FA0 /* MyNaviVController.m */; };
 		5F87AA991FA9ABA8004221AB /* ZJLHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F87AA981FA9ABA8004221AB /* ZJLHud.m */; };
 		5F87AA9C1FA9ABD4004221AB /* CustomHudView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F87AA9B1FA9ABD4004221AB /* CustomHudView.m */; };
 		5F87AAA01FA9B2D5004221AB /* ShowHudViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F87AA9F1FA9B2D5004221AB /* ShowHudViewController.m */; };
@@ -199,6 +202,11 @@
 		5F5A15A31F3DA9000048F147 /* 冰火魔厨.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "冰火魔厨.txt"; sourceTree = "<group>"; };
 		5F5B044C1EEFC5A20056FF57 /* NSObject+SwithToModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SwithToModel.h"; sourceTree = "<group>"; };
 		5F5B044D1EEFC5A20056FF57 /* NSObject+SwithToModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SwithToModel.m"; sourceTree = "<group>"; };
+		5F82C59320E5D481000A4FA0 /* HorizontalscreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HorizontalscreenViewController.h; sourceTree = "<group>"; };
+		5F82C59420E5D481000A4FA0 /* HorizontalscreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HorizontalscreenViewController.m; sourceTree = "<group>"; };
+		5F82C59520E5D481000A4FA0 /* HorizontalscreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorizontalscreenViewController.xib; sourceTree = "<group>"; };
+		5F82C59820E6049E000A4FA0 /* MyNaviVController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyNaviVController.h; sourceTree = "<group>"; };
+		5F82C59920E6049E000A4FA0 /* MyNaviVController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyNaviVController.m; sourceTree = "<group>"; };
 		5F87AA971FA9ABA8004221AB /* ZJLHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLHud.h; sourceTree = "<group>"; };
 		5F87AA981FA9ABA8004221AB /* ZJLHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLHud.m; sourceTree = "<group>"; };
 		5F87AA9A1FA9ABD4004221AB /* CustomHudView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomHudView.h; sourceTree = "<group>"; };
@@ -465,6 +473,16 @@
 			name = Reader;
 			sourceTree = "<group>";
 		};
+		5F82C58D20E5D3F7000A4FA0 /* Horizontalscreen */ = {
+			isa = PBXGroup;
+			children = (
+				5F82C59320E5D481000A4FA0 /* HorizontalscreenViewController.h */,
+				5F82C59420E5D481000A4FA0 /* HorizontalscreenViewController.m */,
+				5F82C59520E5D481000A4FA0 /* HorizontalscreenViewController.xib */,
+			);
+			name = Horizontalscreen;
+			sourceTree = "<group>";
+		};
 		5F87AA961FA9AB4F004221AB /* AlertView */ = {
 			isa = PBXGroup;
 			children = (
@@ -599,6 +617,7 @@
 		5FEB543C1EEFAE2C0055163A /* ZJLFaceProject */ = {
 			isa = PBXGroup;
 			children = (
+				5F82C58D20E5D3F7000A4FA0 /* Horizontalscreen */,
 				5FCB0A3920E0BFED00A8D839 /* Player */,
 				5F8B69E420453AF1006E8E50 /* LocalNotification */,
 				5FA9C3E52043EED0002EEB44 /* UseAFNetworking */,
@@ -632,6 +651,8 @@
 				5F87AA9D1FA9AE7A004221AB /* PrefixHeader.pch */,
 				5F01245E1FA9BF870007D4B3 /* BaseViewController.h */,
 				5F01245F1FA9BF870007D4B3 /* BaseViewController.m */,
+				5F82C59820E6049E000A4FA0 /* MyNaviVController.h */,
+				5F82C59920E6049E000A4FA0 /* MyNaviVController.m */,
 			);
 			path = ZJLFaceProject;
 			sourceTree = "<group>";
@@ -858,6 +879,7 @@
 				5F49A12B1F42900900044718 /* ContentCollectionViewCell.xib in Resources */,
 				5F0B4FDB1F4426EA00150272 /* leftSlider.jpg in Resources */,
 				5F49A1401F42D38E00044718 /* application_default.png in Resources */,
+				5F82C59720E5D481000A4FA0 /* HorizontalscreenViewController.xib in Resources */,
 				5F8B69EC20453D98006E8E50 /* LocalNotificationViewController.xib in Resources */,
 				5FEB544D1EEFAE2C0055163A /* LaunchScreen.storyboard in Resources */,
 				5FCB51172043DADC00D9958D /* CicleImageViewController.xib in Resources */,
@@ -949,7 +971,9 @@
 				5FA9C41A2043EF26002EEB44 /* NetManger.m in Sources */,
 				5F450BC3203FB0550039593B /* MagicCoinViewController.m in Sources */,
 				5FCB51162043DADC00D9958D /* CicleImageViewController.m in Sources */,
+				5F82C59A20E6049E000A4FA0 /* MyNaviVController.m in Sources */,
 				5FCB0A3D20E0C40400A8D839 /* AvPlayerViewController.m in Sources */,
+				5F82C59620E5D481000A4FA0 /* HorizontalscreenViewController.m in Sources */,
 				5FF49C731EF1263B00D04410 /* GCDMainViewController.m in Sources */,
 				5F49A1331F42C62300044718 /* MenuView.m in Sources */,
 				5F3AD2C220427FF100052CBB /* SortViewController.m in Sources */,

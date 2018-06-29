@@ -27,6 +27,7 @@
 #import "LocalNotificationViewController.h"
 #import "MagicCoinViewController.h"
 #import "AvPlayerViewController.h"
+#import "HorizontalscreenViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource> {
 	UITableView *tableview;
@@ -128,6 +129,9 @@
 		case 19:
 			vc = [[AvPlayerViewController alloc] initWithNibName:@"AvPlayerViewController" bundle:nil];
 			break;
+		case 20:
+			vc = [[HorizontalscreenViewController alloc] initWithNibName:@"HorizontalscreenViewController" bundle:nil];
+			break;
 		default:
 			break;
 	}
@@ -161,6 +165,7 @@
 	[dataArray addObject:@"设置本地推送"];
 	[dataArray addObject:@"牛客网编程题"];
 	[dataArray addObject:@"AVPlayer"];
+	[dataArray addObject:@"强制横屏"];
 }
 
 @end

@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "LocalNotification.h"
+#import "MyNaviVController.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,6 +20,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	// Override point for customization after application launch.
+	self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+	ViewController *vc = [[ViewController alloc] init];
+	MyNaviVController *navi = [[MyNaviVController alloc] initWithRootViewController:vc];
+	[self.window setRootViewController:navi];
+	[self.window makeKeyAndVisible];
 	[LocalNotification registerLocalNotification];
 	return YES;
 }

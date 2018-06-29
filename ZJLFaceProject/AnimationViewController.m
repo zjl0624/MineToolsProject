@@ -18,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+	
 	_easyChangeView = [[UIView alloc] initWithFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, 50)];
 	_easyChangeView.backgroundColor = [UIColor redColor];
 	[self.view addSubview:_easyChangeView];
