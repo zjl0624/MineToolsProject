@@ -15,6 +15,8 @@
 
 @property (nonatomic,strong) UIButton *selectionSortBtn;
 
+@property (nonatomic,strong) UIButton *quickSortBtn;
+
 @property (nonatomic,strong) NSMutableArray *dataArray;
 @end
 
@@ -37,9 +39,15 @@
 	
 	_selectionSortBtn = [UIButton buttonWithType:UIButtonTypeSystem];
 	[_selectionSortBtn setTitle:@"选择排序" forState:UIControlStateNormal];
-	_selectionSortBtn.frame = CGRectMake(CGRectGetMinX(_bubbleSortBtn.frame) + 10, CGRectGetMaxY(_arrLabel.frame) + 10, 80, 30);
+	_selectionSortBtn.frame = CGRectMake(CGRectGetMaxX(_bubbleSortBtn.frame) + 10, CGRectGetMaxY(_arrLabel.frame) + 10, 80, 30);
 	[_selectionSortBtn addTarget:self action:@selector(selectionSortBtnClick:) forControlEvents:UIControlEventTouchUpInside];
 	[self.view addSubview:_selectionSortBtn];
+	
+	_quickSortBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+	[_quickSortBtn setTitle:@"选择排序" forState:UIControlStateNormal];
+	_quickSortBtn.frame = CGRectMake(CGRectGetMaxX(_selectionSortBtn.frame) + 10, CGRectGetMaxY(_arrLabel.frame) + 10, 80, 30);
+	[_quickSortBtn addTarget:self action:@selector(quickSortBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+	[self.view addSubview:_quickSortBtn];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -70,5 +78,10 @@
 //		NSInteger min = i;
 		
 	}
+}
+
+
+- (void)quickSortBtnClick:(UIButton *)sender {
+	
 }
 @end

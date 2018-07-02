@@ -11,6 +11,7 @@
 @interface NetManger : NSObject
 @property (nonatomic,strong) AFHTTPSessionManager *manager;
 
+@property (nonatomic,assign) BOOL isUseHttps;
 + (instancetype)sharedInstance;
 
 - (void)getWithUrl:(NSString *)url param:(NSDictionary *)param success:(void(^)(id response))success;

@@ -28,6 +28,7 @@
 #import "MagicCoinViewController.h"
 #import "AvPlayerViewController.h"
 #import "HorizontalscreenViewController.h"
+#import "TestJSPatchViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource> {
 	UITableView *tableview;
@@ -132,6 +133,9 @@
 		case 20:
 			vc = [[HorizontalscreenViewController alloc] initWithNibName:@"HorizontalscreenViewController" bundle:nil];
 			break;
+		case 21:
+			vc = [[TestJSPatchViewController alloc] init];
+			break;
 		default:
 			break;
 	}
@@ -166,6 +170,7 @@
 	[dataArray addObject:@"牛客网编程题"];
 	[dataArray addObject:@"AVPlayer"];
 	[dataArray addObject:@"强制横屏"];
+	[dataArray addObject:@"JSPatch"];
 }
 
 @end

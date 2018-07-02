@@ -10,6 +10,7 @@
 #import "UserDefaultViewController.h"
 #import "SQLiteViewController.h"
 #import "ArchiverViewController.h"
+#import "KeychainViewController.h"
 
 @interface SaveDataMainViewController ()<UITableViewDelegate,UITableViewDataSource> {
 	UITableView *tableview;
@@ -56,6 +57,9 @@
 		case 2:
 			vc = [[ArchiverViewController alloc] init];
 			break;
+		case 3:
+			vc = [[KeychainViewController alloc] init];
+			break;
 		default:
 			break;
 	}
@@ -71,6 +75,7 @@
 	[dataArray addObject:@"Userdefaults"];
 	[dataArray addObject:@"数据库"];
 	[dataArray addObject:@"对象序列化"];
+	[dataArray addObject:@"Keychain"];
 	
 }
 @end

@@ -10,6 +10,7 @@
 #import "LocalNotification.h"
 #import "MyNaviVController.h"
 #import "ViewController.h"
+#import "JPEngine.h"
 
 @interface AppDelegate ()
 
@@ -21,6 +22,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	// Override point for customization after application launch.
 	self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+	[JPEngine startEngine];
+	NSString *sourcePath = [[NSBundle mainBundle] pathForResource:@"demo" ofType:@"js"];
+	NSString *script = [NSString stringWithContentsOfFile:sourcePath encoding:NSUTF8StringEncoding error:nil];
+	[JPEngine evaluateScript:script];
 	ViewController *vc = [[ViewController alloc] init];
 	MyNaviVController *navi = [[MyNaviVController alloc] initWithRootViewController:vc];
 	[self.window setRootViewController:navi];
