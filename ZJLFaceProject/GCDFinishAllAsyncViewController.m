@@ -7,13 +7,13 @@
 //
 
 #import "GCDFinishAllAsyncViewController.h"
+void(^finishBlock)(void);
 
 @interface GCDFinishAllAsyncViewController () {
 	BOOL first;
 	BOOL second;
 	BOOL third;
 }
-
 @end
 
 @implementation GCDFinishAllAsyncViewController
@@ -37,15 +37,27 @@
 		third = YES;
 		NSLog(@"第三个完成");
 	});
-	dispatch_group_notify(group, dispatch_get_main_queue(), ^{
-		NSLog(@"first = %@ second = %@ third = %@",@(first),@(second),@(third));
-	});
+//	dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+//		[self FinishAll];
+//	});
+	__weak GCDFinishAllAsyncViewController *weakself = self;
+	finishBlock = ^(){
+		[weakself FinishAll];
+	};
+	dispatch_group_notify(group, dispatch_get_main_queue(), finishBlock);
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
 
+- (void)FinishAll {
+	NSLog(@"first = %@ second = %@ third = %@",@(first),@(second),@(third));
 
+}
 
+- (void)dealloc {
+	NSLog(@"%@释放",[self class]);
+}
 @end
