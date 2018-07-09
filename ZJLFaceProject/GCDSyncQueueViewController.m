@@ -28,9 +28,9 @@
 
 - (void)sync {
 	NSLog(@"%d",1);
-	dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+//	dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
 
-	dispatch_sync(queue, ^{
+	dispatch_sync(dispatch_get_main_queue(), ^{
 		NSLog(@"%d",2);
 	});
 	NSLog(@"%d",3);

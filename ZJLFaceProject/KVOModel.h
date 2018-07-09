@@ -12,6 +12,7 @@
 
 @property (nonatomic,strong) NSString *text;
 
+- (void)changeText:(NSString *)text;
 
 + (instancetype)sharedKVOModel;
 @end

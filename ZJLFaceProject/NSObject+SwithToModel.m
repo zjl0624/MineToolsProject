@@ -11,6 +11,8 @@
 
 @implementation NSObject (SwithToModel)
 - (id)jsonToModel:(NSString *)jsonStr {
+
+//	Class cls = [self class];
 	NSDictionary *jsonDic;
 	if (![jsonStr isEqualToString:@""]) {
 		NSData *jsonData = [jsonStr dataUsingEncoding:NSUTF8StringEncoding];
@@ -18,26 +20,44 @@
 	}else {
 		jsonDic = @{@"Code":@"1000",@"Msg":@"获取成功",@"Data":@[@{@"userId":@"2",@"bookName":@"书籍4"},@{@"userId":@"3",@"bookName":@"书籍5"}]};
 	}
-	
-	NSArray *propertiesArray = [self getAllProperties:[self class]];
+	[self finishToModel:[self class] jsonDic:jsonDic object:self];
+	return self;
+
+}
+
+- (id)finishToModel:(Class)class jsonDic:(NSDictionary *)jsonDic object:(id)object{
+	NSArray *propertiesArray = [self getAllProperties:class];
 	for (NSString *key in jsonDic) {
+//		id objc = [[class alloc] init];
 		for (NSString *prop in propertiesArray) {
 			if ([prop isEqualToString:key]) {
-				if ([jsonDic[key] isKindOfClass:[NSDictionary class]]) {
+//				NSString *str = prop;
+//				if (![superProp isEqualToString:@""]) {
+//					str = [NSString stringWithFormat:@"%@.%@",superProp,prop];
+//				}
 
+//				[self setValue:jsonDic[key] forKey:str];
+				if ([jsonDic[key] isKindOfClass:[NSDictionary class]]) {
+					break;
 				}else if ([jsonDic[key] isKindOfClass:[NSArray class]]) {
-					
+					NSArray *jsonArr = jsonDic[key];
+					NSMutableArray *arr = [[NSMutableArray alloc] init];
+					[jsonArr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+					id o = [self finishToModel:[NSClassFromString(key) class] jsonDic:obj object:[[NSClassFromString(key) alloc] init]];
+						[arr addObject:o];
+					}];
+					Ivar ivar = class_getInstanceVariable(class, [[NSString stringWithFormat:@"_%@",key] UTF8String]);
+					object_setIvar(object, ivar, arr);
+					break;
 				}else {
-					[self setValue:jsonDic[key] forKey:prop];
+					Ivar ivar = class_getInstanceVariable(class, [[NSString stringWithFormat:@"_%@",key] UTF8String]);
+					object_setIvar(object, ivar, jsonDic[key]);
 					break;
 				}
-
 			}
 		}
 	}
-	
-	return self;
-
+	return object;
 }
 
 
@@ -75,7 +95,7 @@
 }
 
 /* 获取对象的所有方法 */
--(void)printMothList
+- (void)printMothList
 {
 	unsigned int mothCout_f =0;
 	Method* mothList_f = class_copyMethodList([self class],&mothCout_f);

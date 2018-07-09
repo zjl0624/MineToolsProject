@@ -36,4 +36,12 @@ static id _instance;
 - (id)mutableCopyWithZone:(NSZone *)zone {
 	return _instance;
 }
+
+- (void)changeText:(NSString *)text {
+	_text = text;
+}
+
+- (void)setText:(NSString *)text {
+	_text = text;
+}
 @end

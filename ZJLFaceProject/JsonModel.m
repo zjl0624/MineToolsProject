@@ -11,3 +11,8 @@
 @implementation JsonModel
 
 @end
+
+
+@implementation Data
+
+@end

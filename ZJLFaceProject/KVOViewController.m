@@ -51,7 +51,9 @@
 
 #pragma mark - private method
 - (void)textfieldChange {
-	[[KVOModel sharedKVOModel] setText:textfield.text];
+//	[[KVOModel sharedKVOModel] setText:textfield.text];
+	[[KVOModel sharedKVOModel] setValue:textfield.text forKey:@"text"];
+//	[[KVOModel sharedKVOModel] changeText:textfield.text];
 }
 
 - (void)dealloc {

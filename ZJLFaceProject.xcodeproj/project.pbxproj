@@ -136,6 +136,8 @@
 		5FCB51122043D9AB00D9958D /* UIImage+CircleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCB51112043D9AB00D9958D /* UIImage+CircleImage.m */; };
 		5FCB51162043DADC00D9958D /* CicleImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCB51142043DADC00D9958D /* CicleImageViewController.m */; };
 		5FCB51172043DADC00D9958D /* CicleImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FCB51152043DADC00D9958D /* CicleImageViewController.xib */; };
+		5FCD105020EE166400EBB33A /* RecordingVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD104E20EE166400EBB33A /* RecordingVideoViewController.m */; };
+		5FCD105120EE166400EBB33A /* RecordingVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FCD104F20EE166400EBB33A /* RecordingVideoViewController.xib */; };
 		5FCF20ED1F414CB900F5CB7C /* SaveIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCF20EC1F414CB900F5CB7C /* SaveIndex.m */; };
 		5FEB543F1EEFAE2C0055163A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEB543E1EEFAE2C0055163A /* main.m */; };
 		5FEB54421EEFAE2C0055163A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEB54411EEFAE2C0055163A /* AppDelegate.m */; };
@@ -423,6 +425,9 @@
 		5FCB51132043DADC00D9958D /* CicleImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CicleImageViewController.h; sourceTree = "<group>"; };
 		5FCB51142043DADC00D9958D /* CicleImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CicleImageViewController.m; sourceTree = "<group>"; };
 		5FCB51152043DADC00D9958D /* CicleImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CicleImageViewController.xib; sourceTree = "<group>"; };
+		5FCD104D20EE166400EBB33A /* RecordingVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordingVideoViewController.h; sourceTree = "<group>"; };
+		5FCD104E20EE166400EBB33A /* RecordingVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordingVideoViewController.m; sourceTree = "<group>"; };
+		5FCD104F20EE166400EBB33A /* RecordingVideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordingVideoViewController.xib; sourceTree = "<group>"; };
 		5FCF20EB1F414CB900F5CB7C /* SaveIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveIndex.h; sourceTree = "<group>"; };
 		5FCF20EC1F414CB900F5CB7C /* SaveIndex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveIndex.m; sourceTree = "<group>"; };
 		5FEB543A1EEFAE2C0055163A /* ZJLFaceProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJLFaceProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -967,6 +972,9 @@
 				5FCB0A3A20E0C40400A8D839 /* AvPlayerViewController.h */,
 				5FCB0A3B20E0C40400A8D839 /* AvPlayerViewController.m */,
 				5FCB0A3C20E0C40400A8D839 /* AvPlayerViewController.xib */,
+				5FCD104D20EE166400EBB33A /* RecordingVideoViewController.h */,
+				5FCD104E20EE166400EBB33A /* RecordingVideoViewController.m */,
+				5FCD104F20EE166400EBB33A /* RecordingVideoViewController.xib */,
 			);
 			name = Player;
 			sourceTree = "<group>";
@@ -1289,6 +1297,7 @@
 				5FA9C3E42043DD3C002EEB44 /* 2.jpg in Resources */,
 				5F8E4A8520EA11A900D00657 /* packer.php in Resources */,
 				5F49A1351F42C71C00044718 /* MenuView.xib in Resources */,
+				5FCD105120EE166400EBB33A /* RecordingVideoViewController.xib in Resources */,
 				5FA9C41F2043F8ED002EEB44 /* UseAFNetworkingViewController.xib in Resources */,
 				5FEB544A1EEFAE2C0055163A /* Assets.xcassets in Resources */,
 				5F49A13E1F42CDE500044718 /* MenuCollectionViewCell.xib in Resources */,
@@ -1331,6 +1340,7 @@
 				5F8E4A5E20EA11A900D00657 /* JPCFunction.m in Sources */,
 				5FA9C4102043EF01002EEB44 /* UIRefreshControl+AFNetworking.m in Sources */,
 				5FF03D851F3AD3DC00C003DF /* TableViewController.m in Sources */,
+				5FCD105020EE166400EBB33A /* RecordingVideoViewController.m in Sources */,
 				5F8E4A6220EA11A900D00657 /* JPCGColor.m in Sources */,
 				5F8E4A7620EA11A900D00657 /* JPDevErrorView.m in Sources */,
 				5F1B88ED20E36A1000B34B52 /* GCDSyncQueueViewController.m in Sources */,

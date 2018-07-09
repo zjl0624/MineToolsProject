@@ -29,6 +29,7 @@
 #import "AvPlayerViewController.h"
 #import "HorizontalscreenViewController.h"
 #import "TestJSPatchViewController.h"
+#import "RecordingVideoViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource> {
 	UITableView *tableview;
@@ -136,6 +137,9 @@
 		case 21:
 			vc = [[TestJSPatchViewController alloc] init];
 			break;
+		case 22:
+			vc = [[RecordingVideoViewController alloc] initWithNibName:@"RecordingVideoViewController" bundle:nil];
+			break;
 		default:
 			break;
 	}
@@ -171,6 +175,7 @@
 	[dataArray addObject:@"AVPlayer"];
 	[dataArray addObject:@"强制横屏"];
 	[dataArray addObject:@"JSPatch"];
+	[dataArray addObject:@"录制视频"];
 }
 
 @end
