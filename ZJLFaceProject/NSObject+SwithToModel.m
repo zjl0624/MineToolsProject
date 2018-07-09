@@ -10,7 +10,7 @@
 #import <objc/runtime.h>
 
 @implementation NSObject (SwithToModel)
-- (id)jsonToModel:(NSString *)jsonStr {
++ (id)jsonToModel:(NSString *)jsonStr {
 
 //	Class cls = [self class];
 	NSDictionary *jsonDic;
@@ -20,8 +20,8 @@
 	}else {
 		jsonDic = @{@"Code":@"1000",@"Msg":@"获取成功",@"Data":@[@{@"userId":@"2",@"bookName":@"书籍4"},@{@"userId":@"3",@"bookName":@"书籍5"}]};
 	}
-	[self finishToModel:[self class] jsonDic:jsonDic object:self];
-	return self;
+	id obj = [self finishToModel:[self class] jsonDic:jsonDic object:[[[self class] alloc] init]];
+	return obj;
 
 }
 

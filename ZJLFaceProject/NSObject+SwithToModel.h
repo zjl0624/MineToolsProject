@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface NSObject (SwithToModel)
-- (id)jsonToModel:(NSString *)jsonStr;
++ (id)jsonToModel:(NSString *)jsonStr;
 @end

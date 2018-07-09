@@ -84,7 +84,6 @@
 	if ([textView.text isEqualToString:@""]) {
 
 	}
-	JsonModel *model = [[JsonModel alloc] init];
-	model = [model jsonToModel:textView.text];
+	JsonModel *model = [JsonModel jsonToModel:textView.text];
 }
 @end
