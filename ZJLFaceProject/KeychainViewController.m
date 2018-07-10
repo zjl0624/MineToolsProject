@@ -47,7 +47,7 @@
 
 
 - (void)clickWriteBtn {
-	NSString *pwd = @"Aa123456";
+	NSString *pwd = [NSUUID UUID].UUIDString;
 	[KeychainTools save:@"password" data:pwd];
 }
 @end

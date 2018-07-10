@@ -30,6 +30,9 @@
 #import "HorizontalscreenViewController.h"
 #import "TestJSPatchViewController.h"
 #import "RecordingVideoViewController.h"
+#import "CopyViewController.h"
+#import "FBViewController.h"
+#import "CALyerViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource> {
 	UITableView *tableview;
@@ -140,6 +143,15 @@
 		case 22:
 			vc = [[RecordingVideoViewController alloc] initWithNibName:@"RecordingVideoViewController" bundle:nil];
 			break;
+		case 23:
+			vc = [[CopyViewController alloc] init];
+			break;
+		case 24:
+			vc = [[FBViewController alloc] initWithNibName:@"FBViewController" bundle:nil];
+			break;
+		case 25:
+			vc = [[CALyerViewController alloc] init];
+			break;
 		default:
 			break;
 	}
@@ -176,6 +188,9 @@
 	[dataArray addObject:@"强制横屏"];
 	[dataArray addObject:@"JSPatch"];
 	[dataArray addObject:@"录制视频"];
+	[dataArray addObject:@"Copy"];
+	[dataArray addObject:@"frame和bounds"];
+	[dataArray addObject:@"CAlayer动画"];
 }
 
 @end

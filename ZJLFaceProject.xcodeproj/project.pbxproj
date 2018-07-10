@@ -52,6 +52,10 @@
 		5F5A15A01F3D9E8B0048F147 /* ReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A159F1F3D9E8B0048F147 /* ReaderViewController.m */; };
 		5F5A15A41F3DA9000048F147 /* 冰火魔厨.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F5A15A31F3DA9000048F147 /* 冰火魔厨.txt */; };
 		5F5B044E1EEFC5A20056FF57 /* NSObject+SwithToModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5B044D1EEFC5A20056FF57 /* NSObject+SwithToModel.m */; };
+		5F7300DF20F4465B00B1782A /* CopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7300DE20F4465B00B1782A /* CopyViewController.m */; };
+		5F7300E420F4A41000B1782A /* FBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7300E220F4A41000B1782A /* FBViewController.m */; };
+		5F7300E520F4A41000B1782A /* FBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F7300E320F4A41000B1782A /* FBViewController.xib */; };
+		5F7300E820F4B2D700B1782A /* CALyerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7300E720F4B2D700B1782A /* CALyerViewController.m */; };
 		5F82C59620E5D481000A4FA0 /* HorizontalscreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F82C59420E5D481000A4FA0 /* HorizontalscreenViewController.m */; };
 		5F82C59720E5D481000A4FA0 /* HorizontalscreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F82C59520E5D481000A4FA0 /* HorizontalscreenViewController.xib */; };
 		5F82C59A20E6049E000A4FA0 /* MyNaviVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F82C59920E6049E000A4FA0 /* MyNaviVController.m */; };
@@ -258,6 +262,13 @@
 		5F5A15A31F3DA9000048F147 /* 冰火魔厨.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "冰火魔厨.txt"; sourceTree = "<group>"; };
 		5F5B044C1EEFC5A20056FF57 /* NSObject+SwithToModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SwithToModel.h"; sourceTree = "<group>"; };
 		5F5B044D1EEFC5A20056FF57 /* NSObject+SwithToModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SwithToModel.m"; sourceTree = "<group>"; };
+		5F7300DD20F4465B00B1782A /* CopyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyViewController.h; sourceTree = "<group>"; };
+		5F7300DE20F4465B00B1782A /* CopyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyViewController.m; sourceTree = "<group>"; };
+		5F7300E120F4A41000B1782A /* FBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBViewController.h; sourceTree = "<group>"; };
+		5F7300E220F4A41000B1782A /* FBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBViewController.m; sourceTree = "<group>"; };
+		5F7300E320F4A41000B1782A /* FBViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FBViewController.xib; sourceTree = "<group>"; };
+		5F7300E620F4B2D700B1782A /* CALyerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CALyerViewController.h; sourceTree = "<group>"; };
+		5F7300E720F4B2D700B1782A /* CALyerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CALyerViewController.m; sourceTree = "<group>"; };
 		5F82C59320E5D481000A4FA0 /* HorizontalscreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HorizontalscreenViewController.h; sourceTree = "<group>"; };
 		5F82C59420E5D481000A4FA0 /* HorizontalscreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HorizontalscreenViewController.m; sourceTree = "<group>"; };
 		5F82C59520E5D481000A4FA0 /* HorizontalscreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorizontalscreenViewController.xib; sourceTree = "<group>"; };
@@ -597,6 +608,8 @@
 				5F5A15951F3D4B8C0048F147 /* AnimationViewController.h */,
 				5F5A15961F3D4B8C0048F147 /* AnimationViewController.m */,
 				5F5A15971F3D4B8C0048F147 /* AnimationViewController.xib */,
+				5F7300E620F4B2D700B1782A /* CALyerViewController.h */,
+				5F7300E720F4B2D700B1782A /* CALyerViewController.m */,
 			);
 			name = animation;
 			sourceTree = "<group>";
@@ -638,6 +651,25 @@
 				5F0B4FD01F441A9500150272 /* ProgressSliderView.xib */,
 			);
 			name = Reader;
+			sourceTree = "<group>";
+		};
+		5F7300DC20F4464600B1782A /* Copy */ = {
+			isa = PBXGroup;
+			children = (
+				5F7300DD20F4465B00B1782A /* CopyViewController.h */,
+				5F7300DE20F4465B00B1782A /* CopyViewController.m */,
+			);
+			path = Copy;
+			sourceTree = "<group>";
+		};
+		5F7300E020F4A3FA00B1782A /* FrameAndBounds */ = {
+			isa = PBXGroup;
+			children = (
+				5F7300E120F4A41000B1782A /* FBViewController.h */,
+				5F7300E220F4A41000B1782A /* FBViewController.m */,
+				5F7300E320F4A41000B1782A /* FBViewController.xib */,
+			);
+			path = FrameAndBounds;
 			sourceTree = "<group>";
 		};
 		5F82C58D20E5D3F7000A4FA0 /* Horizontalscreen */ = {
@@ -1016,6 +1048,8 @@
 		5FEB543C1EEFAE2C0055163A /* ZJLFaceProject */ = {
 			isa = PBXGroup;
 			children = (
+				5F7300E020F4A3FA00B1782A /* FrameAndBounds */,
+				5F7300DC20F4464600B1782A /* Copy */,
 				5F52A84420EA69C500FC3491 /* ZJLFaceProject.entitlements */,
 				5F8E49F020EA117D00D00657 /* JSPatch */,
 				5F82C58D20E5D3F7000A4FA0 /* Horizontalscreen */,
@@ -1309,6 +1343,7 @@
 				5F5A15A41F3DA9000048F147 /* 冰火魔厨.txt in Resources */,
 				5F0B4FD91F4426E400150272 /* rightSlider.jpg in Resources */,
 				5FCB0A4020E0C90A00A8D839 /* localvideo.mp4 in Resources */,
+				5F7300E520F4A41000B1782A /* FBViewController.xib in Resources */,
 				5F8E4A9420EA27FD00D00657 /* demo.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1378,6 +1413,7 @@
 				5F8E4A7820EA11A900D00657 /* JPDevTipView.m in Sources */,
 				5F87AA9C1FA9ABD4004221AB /* CustomHudView.m in Sources */,
 				5F8E4A5D20EA11A900D00657 /* JPBlockWrapper.m in Sources */,
+				5F7300E420F4A41000B1782A /* FBViewController.m in Sources */,
 				5F49A13D1F42CDE500044718 /* MenuCollectionViewCell.m in Sources */,
 				5F8E4A6D20EA11A900D00657 /* JPCleaner.m in Sources */,
 				5F5B044E1EEFC5A20056FF57 /* NSObject+SwithToModel.m in Sources */,
@@ -1404,6 +1440,7 @@
 				5F42894F1F39885E00F33D0C /* ButtonCollectionViewCell.m in Sources */,
 				5FA9C40A2043EF01002EEB44 /* AFImageDownloader.m in Sources */,
 				5F8E4A5C20EA11A900D00657 /* JPBlock.m in Sources */,
+				5F7300E820F4B2D700B1782A /* CALyerViewController.m in Sources */,
 				5F49A12A1F42900900044718 /* ContentCollectionViewCell.m in Sources */,
 				5FCB51122043D9AB00D9958D /* UIImage+CircleImage.m in Sources */,
 				5FA9C40E2043EF01002EEB44 /* UIImageView+AFNetworking.m in Sources */,
@@ -1420,6 +1457,7 @@
 				5F49A1331F42C62300044718 /* MenuView.m in Sources */,
 				5F3AD2C220427FF100052CBB /* SortViewController.m in Sources */,
 				5F8E4A7320EA11A900D00657 /* JPPlayground.m in Sources */,
+				5F7300DF20F4465B00B1782A /* CopyViewController.m in Sources */,
 				5F8E4A7E20EA11A900D00657 /* JPLoader.m in Sources */,
 				5F8E4A7C20EA11A900D00657 /* JPEngine.m in Sources */,
 				5F0F3EF01F41808B00587097 /* UserSettings.m in Sources */,
