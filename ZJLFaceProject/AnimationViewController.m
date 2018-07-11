@@ -36,9 +36,10 @@
 
 #pragma mark - gestureRecognizer
 - (void)easyAnimation:(UITapGestureRecognizer *)tap {
-	[UIView animateWithDuration:0.25 delay:0 options:UIViewAnimationOptionLayoutSubviews animations:^{
+	[UIView animateWithDuration:5 delay:0 options:UIViewAnimationOptionLayoutSubviews animations:^{
 		_easyChangeView.transform = CGAffineTransformMakeRotation(M_PI_2);
 		_easyChangeView.frame = CGRectMake(0, 0, 50, [UIScreen mainScreen].bounds.size.height);
+		_easyChangeView.backgroundColor = [UIColor blackColor];
 	} completion:nil];
 }
 
