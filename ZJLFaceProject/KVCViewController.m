@@ -8,6 +8,7 @@
 
 #import "KVCViewController.h"
 #import "Student.h"
+#import "Student+AddProperty.h"
 
 @interface KVCViewController ()
 
@@ -32,7 +33,8 @@
 	[stu setValue:@"哈哈" forKey:@"name"];
 	[stu setValue:@20 forKey:@"age"];
 	[stu setValue:@(woman) forKey:@"sex"];
-	NSLog(@"%@,%@,%@",[stu valueForKey:@"name"],[stu valueForKey:@"age"],[stu valueForKey:@"sex"]);
+	stu.gender = @(2);
+	NSLog(@"%@,%@,%@,%@",[stu valueForKey:@"name"],[stu valueForKey:@"age"],[stu valueForKey:@"sex"],stu.gender);
 	
 	Course *yuwen = [[Course alloc] init];
 	yuwen.name = @"语文";

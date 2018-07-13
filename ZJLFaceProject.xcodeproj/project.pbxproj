@@ -150,6 +150,7 @@
 		5FD6AF6A20F86C9800D48727 /* URLSchemesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD6AF6820F86C9800D48727 /* URLSchemesViewController.m */; };
 		5FD6AF6B20F86C9800D48727 /* URLSchemesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FD6AF6920F86C9800D48727 /* URLSchemesViewController.xib */; };
 		5FD6AF7420F8771900D48727 /* UIViewController+ExchangeViewDidLoadImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD6AF7320F8771900D48727 /* UIViewController+ExchangeViewDidLoadImp.m */; };
+		5FD6AF7720F8A66000D48727 /* Student+AddProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD6AF7620F8A66000D48727 /* Student+AddProperty.m */; };
 		5FEB543F1EEFAE2C0055163A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEB543E1EEFAE2C0055163A /* main.m */; };
 		5FEB54421EEFAE2C0055163A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEB54411EEFAE2C0055163A /* AppDelegate.m */; };
 		5FEB54451EEFAE2C0055163A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEB54441EEFAE2C0055163A /* ViewController.m */; };
@@ -459,6 +460,8 @@
 		5FD6AF6920F86C9800D48727 /* URLSchemesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = URLSchemesViewController.xib; sourceTree = "<group>"; };
 		5FD6AF7220F8771900D48727 /* UIViewController+ExchangeViewDidLoadImp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ExchangeViewDidLoadImp.h"; sourceTree = "<group>"; };
 		5FD6AF7320F8771900D48727 /* UIViewController+ExchangeViewDidLoadImp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ExchangeViewDidLoadImp.m"; sourceTree = "<group>"; };
+		5FD6AF7520F8A66000D48727 /* Student+AddProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Student+AddProperty.h"; sourceTree = "<group>"; };
+		5FD6AF7620F8A66000D48727 /* Student+AddProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Student+AddProperty.m"; sourceTree = "<group>"; };
 		5FEB543A1EEFAE2C0055163A /* ZJLFaceProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJLFaceProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FEB543E1EEFAE2C0055163A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5FEB54401EEFAE2C0055163A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1217,6 +1220,8 @@
 				5FF49C601EF0DE9700D04410 /* KVCViewController.m */,
 				5FF49C621EF0DEB700D04410 /* Student.h */,
 				5FF49C631EF0DEB700D04410 /* Student.m */,
+				5FD6AF7520F8A66000D48727 /* Student+AddProperty.h */,
+				5FD6AF7620F8A66000D48727 /* Student+AddProperty.m */,
 			);
 			name = KVC;
 			sourceTree = "<group>";
@@ -1501,6 +1506,7 @@
 				5F7300E820F4B2D700B1782A /* CALyerViewController.m in Sources */,
 				5F49A12A1F42900900044718 /* ContentCollectionViewCell.m in Sources */,
 				5FCB51122043D9AB00D9958D /* UIImage+CircleImage.m in Sources */,
+				5FD6AF7720F8A66000D48727 /* Student+AddProperty.m in Sources */,
 				5FA9C40E2043EF01002EEB44 /* UIImageView+AFNetworking.m in Sources */,
 				5FA9C41A2043EF26002EEB44 /* NetManger.m in Sources */,
 				5F8E4A6A20EA11A900D00657 /* JPUIGraphics.m in Sources */,
