@@ -147,6 +147,9 @@
 		5FCD105120EE166400EBB33A /* RecordingVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FCD104F20EE166400EBB33A /* RecordingVideoViewController.xib */; };
 		5FCF20ED1F414CB900F5CB7C /* SaveIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCF20EC1F414CB900F5CB7C /* SaveIndex.m */; };
 		5FD6AF6520F84BE700D48727 /* OCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD6AF6420F84BE700D48727 /* OCModel.m */; };
+		5FD6AF6A20F86C9800D48727 /* URLSchemesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD6AF6820F86C9800D48727 /* URLSchemesViewController.m */; };
+		5FD6AF6B20F86C9800D48727 /* URLSchemesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FD6AF6920F86C9800D48727 /* URLSchemesViewController.xib */; };
+		5FD6AF7420F8771900D48727 /* UIViewController+ExchangeViewDidLoadImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD6AF7320F8771900D48727 /* UIViewController+ExchangeViewDidLoadImp.m */; };
 		5FEB543F1EEFAE2C0055163A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEB543E1EEFAE2C0055163A /* main.m */; };
 		5FEB54421EEFAE2C0055163A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEB54411EEFAE2C0055163A /* AppDelegate.m */; };
 		5FEB54451EEFAE2C0055163A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEB54441EEFAE2C0055163A /* ViewController.m */; };
@@ -451,6 +454,11 @@
 		5FCF20EC1F414CB900F5CB7C /* SaveIndex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveIndex.m; sourceTree = "<group>"; };
 		5FD6AF6320F84BE700D48727 /* OCModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCModel.h; sourceTree = "<group>"; };
 		5FD6AF6420F84BE700D48727 /* OCModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCModel.m; sourceTree = "<group>"; };
+		5FD6AF6720F86C9800D48727 /* URLSchemesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLSchemesViewController.h; sourceTree = "<group>"; };
+		5FD6AF6820F86C9800D48727 /* URLSchemesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = URLSchemesViewController.m; sourceTree = "<group>"; };
+		5FD6AF6920F86C9800D48727 /* URLSchemesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = URLSchemesViewController.xib; sourceTree = "<group>"; };
+		5FD6AF7220F8771900D48727 /* UIViewController+ExchangeViewDidLoadImp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ExchangeViewDidLoadImp.h"; sourceTree = "<group>"; };
+		5FD6AF7320F8771900D48727 /* UIViewController+ExchangeViewDidLoadImp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ExchangeViewDidLoadImp.m"; sourceTree = "<group>"; };
 		5FEB543A1EEFAE2C0055163A /* ZJLFaceProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJLFaceProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FEB543E1EEFAE2C0055163A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5FEB54401EEFAE2C0055163A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1047,6 +1055,25 @@
 			name = CircleImage;
 			sourceTree = "<group>";
 		};
+		5FD6AF6620F86C7A00D48727 /* URLSchemes */ = {
+			isa = PBXGroup;
+			children = (
+				5FD6AF6720F86C9800D48727 /* URLSchemesViewController.h */,
+				5FD6AF6820F86C9800D48727 /* URLSchemesViewController.m */,
+				5FD6AF6920F86C9800D48727 /* URLSchemesViewController.xib */,
+			);
+			path = URLSchemes;
+			sourceTree = "<group>";
+		};
+		5FD6AF6C20F8753C00D48727 /* ExchangeImp */ = {
+			isa = PBXGroup;
+			children = (
+				5FD6AF7220F8771900D48727 /* UIViewController+ExchangeViewDidLoadImp.h */,
+				5FD6AF7320F8771900D48727 /* UIViewController+ExchangeViewDidLoadImp.m */,
+			);
+			path = ExchangeImp;
+			sourceTree = "<group>";
+		};
 		5FEB54311EEFAE2C0055163A = {
 			isa = PBXGroup;
 			children = (
@@ -1071,6 +1098,8 @@
 		5FEB543C1EEFAE2C0055163A /* ZJLFaceProject */ = {
 			isa = PBXGroup;
 			children = (
+				5FD6AF6C20F8753C00D48727 /* ExchangeImp */,
+				5FD6AF6620F86C7A00D48727 /* URLSchemes */,
 				5F151BDE20F74C670086705C /* OCAndJs */,
 				5F7300E020F4A3FA00B1782A /* FrameAndBounds */,
 				5F7300DC20F4464600B1782A /* Copy */,
@@ -1365,6 +1394,7 @@
 				5F151BE320F74C850086705C /* JSOCViewController.xib in Resources */,
 				5FEB54481EEFAE2C0055163A /* Main.storyboard in Resources */,
 				5FA3445C1F3C044E00DAE2F2 /* FirstCollectionViewCell.xib in Resources */,
+				5FD6AF6B20F86C9800D48727 /* URLSchemesViewController.xib in Resources */,
 				5F8E4A7D20EA11A900D00657 /* JSPatch.js in Resources */,
 				5F5A15A41F3DA9000048F147 /* 冰火魔厨.txt in Resources */,
 				5F0B4FD91F4426E400150272 /* rightSlider.jpg in Resources */,
@@ -1415,6 +1445,7 @@
 				5FA9C40C2043EF01002EEB44 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				5F5A15A01F3D9E8B0048F147 /* ReaderViewController.m in Sources */,
 				5FA9C4122043EF01002EEB44 /* AFHTTPSessionManager.m in Sources */,
+				5FD6AF7420F8771900D48727 /* UIViewController+ExchangeViewDidLoadImp.m in Sources */,
 				5F52A84A20EA6D0900FC3491 /* KeychainTools.m in Sources */,
 				5FA9C4172043EF01002EEB44 /* AFURLSessionManager.m in Sources */,
 				5FA9C4132043EF01002EEB44 /* AFNetworkReachabilityManager.m in Sources */,
@@ -1490,6 +1521,7 @@
 				5F0F3EF01F41808B00587097 /* UserSettings.m in Sources */,
 				5F8E4A7120EA11A900D00657 /* JPLocker.m in Sources */,
 				5FEB54761EEFBA690055163A /* JsonModel.m in Sources */,
+				5FD6AF6A20F86C9800D48727 /* URLSchemesViewController.m in Sources */,
 				5FCF20ED1F414CB900F5CB7C /* SaveIndex.m in Sources */,
 				5F4878411EF2294D00CCE3B4 /* SaveDataMainViewController.m in Sources */,
 				5F8E4A6320EA11A900D00657 /* JPCGContext.m in Sources */,

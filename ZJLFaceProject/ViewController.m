@@ -34,6 +34,7 @@
 #import "FBViewController.h"
 #import "CALyerViewController.h"
 #import "JSOCViewController.h"
+#import "URLSchemesViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource> {
 	UITableView *tableview;
@@ -156,6 +157,9 @@
 		case 26:
 			vc = [[JSOCViewController alloc] initWithNibName:@"JSOCViewController" bundle:nil];
 			break;
+		case 27:
+			vc = [[URLSchemesViewController alloc] initWithNibName:@"URLSchemesViewController" bundle:nil];
+			break;
 		default:
 			break;
 	}
@@ -196,6 +200,7 @@
 	[dataArray addObject:@"frame和bounds"];
 	[dataArray addObject:@"CAlayer动画"];
 	[dataArray addObject:@"jsOC互相调用"];
+	[dataArray addObject:@"URLSchemes用法"];
 }
 
 @end
