@@ -19,7 +19,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {
@@ -27,7 +26,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+#pragma mark - Button Action
 - (IBAction)testBtn:(id)sender {
 	UILocalNotification *localNotification = [[UILocalNotification alloc] init];
 	localNotification.alertBody = @"测试";
@@ -38,4 +37,15 @@
 	[[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
 	
 }
+
+
+#pragma mark - private method
+- (NSString *)getCurrentTime {
+	NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+	[formatter setDateFormat:@"YYYY-MM-dd HH:mm:ss"];
+	NSDate *datenow = [NSDate date];
+	NSString *currentTime = [formatter stringFromDate:datenow];
+	return currentTime;
+}
+
 @end

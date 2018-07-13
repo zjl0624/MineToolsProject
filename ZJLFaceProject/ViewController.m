@@ -33,6 +33,7 @@
 #import "CopyViewController.h"
 #import "FBViewController.h"
 #import "CALyerViewController.h"
+#import "JSOCViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource> {
 	UITableView *tableview;
@@ -152,6 +153,9 @@
 		case 25:
 			vc = [[CALyerViewController alloc] init];
 			break;
+		case 26:
+			vc = [[JSOCViewController alloc] initWithNibName:@"JSOCViewController" bundle:nil];
+			break;
 		default:
 			break;
 	}
@@ -191,6 +195,7 @@
 	[dataArray addObject:@"Copy"];
 	[dataArray addObject:@"frame和bounds"];
 	[dataArray addObject:@"CAlayer动画"];
+	[dataArray addObject:@"jsOC互相调用"];
 }
 
 @end

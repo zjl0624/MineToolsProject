@@ -1,0 +1,30 @@
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<html>
+	<body>zzzzzzz
+	
+	<div>
+		<input type="button" value="用block实现JS调用OC方法并回调" onclick="ccc('11','22')">
+	</div>
+	
+	<div>
+		<input type="button" value="用协议实现JS调用OC对象的方法" onclick="ddd('11','22')">
+	</div>
+	</body>
+</html>
+<script>
+	function callback(a){
+		alert(a);
+	}
+
+	function ccc(a,b) {
+		doSomethingThenCallBack(a,b);
+	}
+
+	function ddd(a,b){
+		OCModel.showAB(a,b);
+	}
+	function showABcallback(a,b){
+		alert(a + b);
+	}
+
+</script>
