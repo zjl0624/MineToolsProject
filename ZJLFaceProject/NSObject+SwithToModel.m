@@ -33,7 +33,7 @@
 			if ([self propertyIsEqual:prop toKey:key withClass:class]) {
 				if ([jsonDic[key] isKindOfClass:[NSDictionary class]]) {
 					NSDictionary *subDic = jsonDic[key];
-					id o = [self finishToModel:[NSClassFromString(prop) class] jsonDic:subDic];
+					id o = [self finishToModel:[NSClassFromString(key) class] jsonDic:subDic];
 					Ivar ivar = class_getInstanceVariable(class, [[NSString stringWithFormat:@"_%@",prop] UTF8String]);
 					object_setIvar(object, ivar, o);
 					break;
@@ -41,7 +41,7 @@
 					NSArray *jsonArr = jsonDic[key];
 					NSMutableArray *arr = [[NSMutableArray alloc] init];
 					[jsonArr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-					id o = [self finishToModel:[NSClassFromString(prop) class] jsonDic:obj];
+					id o = [self finishToModel:[NSClassFromString(key) class] jsonDic:obj];
 						[arr addObject:o];
 					}];
 					Ivar ivar = class_getInstanceVariable(class, [[NSString stringWithFormat:@"_%@",prop] UTF8String]);
@@ -59,19 +59,7 @@
 }
 
 
-- (NSString *)getPropertyName:(NSString *)key withClass:(Class)class{
-	NSDictionary *propertyNameDic = nil;
-	if ([class respondsToSelector:@selector(propertyNameDic)]) {
-		propertyNameDic = [class propertyNameDic];
-	}
-	for (NSString *k in propertyNameDic) {
-		if ([propertyNameDic[k] isEqualToString:key]) {
-			return k;
-		}
-	}
-	return key;
-}
-
+//比较传进来的key是否和属性能对应上
 - (BOOL)propertyIsEqual:(NSString *)prop toKey:(NSString *)key withClass:(Class)class{
 	if ([prop isEqualToString:key]) {
 		return YES;

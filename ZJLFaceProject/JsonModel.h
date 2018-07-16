@@ -12,20 +12,20 @@
 @class Data;
 @class Content;
 
-@interface JsonModel : NSObject
+@interface JsonModel : BaseModel
 @property (nonatomic,strong) NSString *Code;
 
 @property (nonatomic,strong) NSString *Msg;
 
-@property (nonatomic,strong) NSArray<Data *> *Data;
+@property (nonatomic,strong) NSArray<Data *> *Da;
 
-@property (nonatomic,strong) Content *Content;
+@property (nonatomic,strong) Content *Con;
 @end
 
 @interface Data : BaseModel
 @property (nonatomic,strong) NSString *usrId;
 
-@property (nonatomic,strong) NSString *bookName;
+@property (nonatomic,strong) NSString *book;
 @end
 
 @interface Content : NSObject

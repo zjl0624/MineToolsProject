@@ -9,13 +9,15 @@
 #import "JsonModel.h"
 
 @implementation JsonModel
-
++ (NSDictionary *)propertyNameDic {
+	return @{@"Content":@"Con",@"Data":@"Da"};
+}
 @end
 
 
 @implementation Data
 + (NSDictionary *)propertyNameDic {
-	return @{@"userId":@"usrId"};
+	return @{@"userId":@"usrId",@"bookName":@"book"};
 }
 @end
 
