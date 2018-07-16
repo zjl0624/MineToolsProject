@@ -9,7 +9,8 @@
 #import "CopyViewController.h"
 
 @interface CopyViewController ()
-
+@property (nonatomic,strong) NSString *strongStr;
+@property (nonatomic,copy) NSString *cStr;
 @end
 
 @implementation CopyViewController
@@ -17,9 +18,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	NSMutableString *test = [NSMutableString stringWithString:@"哈哈"];
-	NSString *newStr = test;
+	NSString *noTest = @"hello";
+	NSLog(@"%p %p",noTest,&noTest);
+	self.strongStr = noTest;
+	self.cStr = noTest;
+	NSLog(@"%p %p",_strongStr,&_strongStr);
+	NSLog(@"%p %p",_cStr,&_cStr);
 	[test appendString:@"呵呵"];
-	NSLog(@"%@",newStr);
+	NSLog(@"%p %p",_strongStr,&_strongStr);
+	NSLog(@"%p %p",_cStr,&_cStr);
+	self.strongStr = @"nihao";
+	NSLog(@"%p %p",test,&test);
+	NSLog(@"%p %p",_strongStr,&_strongStr);
 }
 
 - (void)didReceiveMemoryWarning {

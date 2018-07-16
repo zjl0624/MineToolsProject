@@ -14,5 +14,12 @@
 
 
 @implementation Data
++ (NSDictionary *)propertyNameDic {
+	return @{@"userId":@"usrId"};
+}
+@end
+
+
+@implementation Content
 
 @end

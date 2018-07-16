@@ -8,49 +8,47 @@
 
 #import "NSObject+SwithToModel.h"
 #import <objc/runtime.h>
+#import "BaseModel.h"
 
 @implementation NSObject (SwithToModel)
 + (id)jsonToModel:(NSString *)jsonStr {
 
-//	Class cls = [self class];
 	NSDictionary *jsonDic;
 	if (![jsonStr isEqualToString:@""]) {
 		NSData *jsonData = [jsonStr dataUsingEncoding:NSUTF8StringEncoding];
 		jsonDic = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:nil];
 	}else {
-		jsonDic = @{@"Code":@"1000",@"Msg":@"获取成功",@"Data":@[@{@"userId":@"2",@"bookName":@"书籍4"},@{@"userId":@"3",@"bookName":@"书籍5"}]};
+		jsonDic = @{@"Content":@{@"author":@"haha",@"age":@"40"},@"Code":@"1000",@"Msg":@"获取成功",@"Data":@[@{@"userId":@"2",@"bookName":@"书籍4"},@{@"userId":@"3",@"bookName":@"书籍5"}]};
 	}
-	id obj = [self finishToModel:[self class] jsonDic:jsonDic object:[[[self class] alloc] init]];
+	id obj = [self finishToModel:[self class] jsonDic:jsonDic];
 	return obj;
 
 }
 
-- (id)finishToModel:(Class)class jsonDic:(NSDictionary *)jsonDic object:(id)object{
+- (id)finishToModel:(Class)class jsonDic:(NSDictionary *)jsonDic{
+	id object = [[class alloc] init];
 	NSArray *propertiesArray = [self getAllProperties:class];
 	for (NSString *key in jsonDic) {
-//		id objc = [[class alloc] init];
 		for (NSString *prop in propertiesArray) {
-			if ([prop isEqualToString:key]) {
-//				NSString *str = prop;
-//				if (![superProp isEqualToString:@""]) {
-//					str = [NSString stringWithFormat:@"%@.%@",superProp,prop];
-//				}
-
-//				[self setValue:jsonDic[key] forKey:str];
+			if ([self propertyIsEqual:prop toKey:key withClass:class]) {
 				if ([jsonDic[key] isKindOfClass:[NSDictionary class]]) {
+					NSDictionary *subDic = jsonDic[key];
+					id o = [self finishToModel:[NSClassFromString(prop) class] jsonDic:subDic];
+					Ivar ivar = class_getInstanceVariable(class, [[NSString stringWithFormat:@"_%@",prop] UTF8String]);
+					object_setIvar(object, ivar, o);
 					break;
 				}else if ([jsonDic[key] isKindOfClass:[NSArray class]]) {
 					NSArray *jsonArr = jsonDic[key];
 					NSMutableArray *arr = [[NSMutableArray alloc] init];
 					[jsonArr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-					id o = [self finishToModel:[NSClassFromString(key) class] jsonDic:obj object:[[NSClassFromString(key) alloc] init]];
+					id o = [self finishToModel:[NSClassFromString(prop) class] jsonDic:obj];
 						[arr addObject:o];
 					}];
-					Ivar ivar = class_getInstanceVariable(class, [[NSString stringWithFormat:@"_%@",key] UTF8String]);
+					Ivar ivar = class_getInstanceVariable(class, [[NSString stringWithFormat:@"_%@",prop] UTF8String]);
 					object_setIvar(object, ivar, arr);
 					break;
 				}else {
-					Ivar ivar = class_getInstanceVariable(class, [[NSString stringWithFormat:@"_%@",key] UTF8String]);
+					Ivar ivar = class_getInstanceVariable(class, [[NSString stringWithFormat:@"_%@",prop] UTF8String]);
 					object_setIvar(object, ivar, jsonDic[key]);
 					break;
 				}
@@ -61,11 +59,39 @@
 }
 
 
+- (NSString *)getPropertyName:(NSString *)key withClass:(Class)class{
+	NSDictionary *propertyNameDic = nil;
+	if ([class respondsToSelector:@selector(propertyNameDic)]) {
+		propertyNameDic = [class propertyNameDic];
+	}
+	for (NSString *k in propertyNameDic) {
+		if ([propertyNameDic[k] isEqualToString:key]) {
+			return k;
+		}
+	}
+	return key;
+}
+
+- (BOOL)propertyIsEqual:(NSString *)prop toKey:(NSString *)key withClass:(Class)class{
+	if ([prop isEqualToString:key]) {
+		return YES;
+	}
+	
+	NSDictionary *propertyNameDic = nil;
+	if ([class respondsToSelector:@selector(propertyNameDic)]) {
+		propertyNameDic = [class propertyNameDic];
+	}
+	if ([propertyNameDic[key] isEqualToString:prop]) {
+		return YES;
+	}else {
+		return NO;
+	}
+}
 //获取对象的所有属性，不包括属性值
 - (NSArray *)getAllProperties:(Class)class
 {
 	u_int count;
-	objc_property_t *properties  =class_copyPropertyList(class, &count);
+	objc_property_t *properties  = class_copyPropertyList(class, &count);
 	NSMutableArray *propertiesArray = [NSMutableArray arrayWithCapacity:count];
 	for (int i = 0; i<count; i++)
 	{
@@ -74,6 +100,7 @@
 	}
 	free(properties);
 	return propertiesArray;
+
 }
 
 //获取对象的所有属性 以及属性值
