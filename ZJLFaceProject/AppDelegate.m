@@ -11,7 +11,8 @@
 #import "MyNaviVController.h"
 #import "ViewController.h"
 #import "JPEngine.h"
-
+#import "AMapFoundationKit.h"
+#define MapKey @"8421f13f7a017e7f8615e494b6178c79"
 @interface AppDelegate ()
 
 @end
@@ -31,6 +32,9 @@
 	[self.window setRootViewController:navi];
 	[self.window makeKeyAndVisible];
 	[LocalNotification registerLocalNotification];
+	
+	[AMapServices sharedServices].apiKey = MapKey;
+	[AMapServices sharedServices].enableHTTPS = YES;
 	return YES;
 }
 

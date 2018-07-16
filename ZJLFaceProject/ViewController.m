@@ -35,6 +35,7 @@
 #import "CALyerViewController.h"
 #import "JSOCViewController.h"
 #import "URLSchemesViewController.h"
+#import "MapViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource> {
 	UITableView *tableview;
@@ -160,6 +161,9 @@
 		case 27:
 			vc = [[URLSchemesViewController alloc] initWithNibName:@"URLSchemesViewController" bundle:nil];
 			break;
+		case 28:
+			vc = [[MapViewController alloc] init];
+			break;
 		default:
 			break;
 	}
@@ -201,6 +205,7 @@
 	[dataArray addObject:@"CAlayer动画"];
 	[dataArray addObject:@"jsOC互相调用"];
 	[dataArray addObject:@"URLSchemes用法"];
+	[dataArray addObject:@"地图"];
 }
 
 @end

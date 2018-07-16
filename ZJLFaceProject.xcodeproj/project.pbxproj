@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20E0E0E67DD094DEE36DF490 /* libPods-ZJLFaceProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD85B6481D041909EA8FA49 /* libPods-ZJLFaceProject.a */; };
 		5F01245D1FA9BDA30007D4B3 /* DragViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F01245C1FA9BDA30007D4B3 /* DragViewController.m */; };
 		5F0124601FA9BF870007D4B3 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F01245F1FA9BF870007D4B3 /* BaseViewController.m */; };
 		5F0B4FCF1F441A8500150272 /* ProgressSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B4FCE1F441A8500150272 /* ProgressSliderView.m */; };
@@ -55,6 +56,7 @@
 		5F5A15A01F3D9E8B0048F147 /* ReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A159F1F3D9E8B0048F147 /* ReaderViewController.m */; };
 		5F5A15A41F3DA9000048F147 /* 冰火魔厨.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F5A15A31F3DA9000048F147 /* 冰火魔厨.txt */; };
 		5F5B044E1EEFC5A20056FF57 /* NSObject+SwithToModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5B044D1EEFC5A20056FF57 /* NSObject+SwithToModel.m */; };
+		5F5F1D6E20F99A8F00C72F6A /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5F1D6D20F99A8F00C72F6A /* MapViewController.m */; };
 		5F7300DF20F4465B00B1782A /* CopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7300DE20F4465B00B1782A /* CopyViewController.m */; };
 		5F7300E420F4A41000B1782A /* FBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7300E220F4A41000B1782A /* FBViewController.m */; };
 		5F7300E520F4A41000B1782A /* FBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F7300E320F4A41000B1782A /* FBViewController.xib */; };
@@ -115,6 +117,16 @@
 		5F8E4A8C20EA11F500D00657 /* TestJSPatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8E4A8B20EA11F500D00657 /* TestJSPatchViewController.m */; };
 		5F8E4A8E20EA135500D00657 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F8E4A8D20EA135500D00657 /* libz.tbd */; };
 		5F8E4A9420EA27FD00D00657 /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F8E4A9320EA27FD00D00657 /* demo.js */; };
+		5F983EF820FC33F40076ED62 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F983EF720FC33F40076ED62 /* AdSupport.framework */; };
+		5F983EFA20FC34030076ED62 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F983EF920FC34030076ED62 /* Security.framework */; };
+		5F983EFC20FC34110076ED62 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F983EFB20FC34110076ED62 /* SystemConfiguration.framework */; };
+		5F983EFE20FC34260076ED62 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F983EFD20FC34260076ED62 /* QuartzCore.framework */; };
+		5F983F0120FC34590076ED62 /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F983EFF20FC34590076ED62 /* AMapSearchKit.framework */; };
+		5F983F0220FC34590076ED62 /* AMapLocationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F983F0020FC34590076ED62 /* AMapLocationKit.framework */; };
+		5F983F0420FC3DFF0076ED62 /* design_btn_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F983F0320FC3DFE0076ED62 /* design_btn_s@2x.png */; };
+		5F983F0620FC3E550076ED62 /* hongbao.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F983F0520FC3E550076ED62 /* hongbao.png */; };
+		5F983F0920FC45120076ED62 /* CallOutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F983F0820FC45120076ED62 /* CallOutView.m */; };
+		5F983F0B20FC5FD90076ED62 /* AMapNaviKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F983F0A20FC5FD90076ED62 /* AMapNaviKit.framework */; };
 		5FA344571F3C040A00DAE2F2 /* CollectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA344561F3C040A00DAE2F2 /* CollectionModel.m */; };
 		5FA3445B1F3C044E00DAE2F2 /* FirstCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA344591F3C044E00DAE2F2 /* FirstCollectionViewCell.m */; };
 		5FA3445C1F3C044E00DAE2F2 /* FirstCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FA3445A1F3C044E00DAE2F2 /* FirstCollectionViewCell.xib */; };
@@ -174,6 +186,15 @@
 		5FF49C6F1EF1145100D04410 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF49C6E1EF1145100D04410 /* TimerViewController.m */; };
 		5FF49C731EF1263B00D04410 /* GCDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF49C721EF1263B00D04410 /* GCDMainViewController.m */; };
 		5FF49C761EF1270600D04410 /* GCDFinishAllAsyncViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF49C751EF1270600D04410 /* GCDFinishAllAsyncViewController.m */; };
+		5FF9503120F9A06D00F141AB /* AMapFoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FF9503020F9A06D00F141AB /* AMapFoundationKit.framework */; };
+		5FF9503320F9A0B200F141AB /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FF9503220F9A0B200F141AB /* MAMapKit.framework */; };
+		5FF9503520F9A12800F141AB /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FF9503420F9A12800F141AB /* GLKit.framework */; };
+		5FF9503720F9A13600F141AB /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FF9503620F9A13600F141AB /* OpenGLES.framework */; };
+		5FF9503A20F9A14800F141AB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FF9503820F9A14800F141AB /* CoreGraphics.framework */; };
+		5FF9503B20F9A14800F141AB /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FF9503920F9A14800F141AB /* CoreTelephony.framework */; };
+		5FF9503D20F9A15500F141AB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FF9503C20F9A15500F141AB /* CoreLocation.framework */; };
+		5FF9503F20F9A18900F141AB /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FF9503E20F9A18900F141AB /* libc++.tbd */; };
+		5FF9504120F9A19A00F141AB /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FF9504020F9A19900F141AB /* libstdc++.6.0.9.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -194,6 +215,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A8FFB583F3CA3E48218E9DA /* Pods-ZJLFaceProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJLFaceProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZJLFaceProject/Pods-ZJLFaceProject.release.xcconfig"; sourceTree = "<group>"; };
 		5F01245B1FA9BDA30007D4B3 /* DragViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragViewController.h; sourceTree = "<group>"; };
 		5F01245C1FA9BDA30007D4B3 /* DragViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragViewController.m; sourceTree = "<group>"; };
 		5F01245E1FA9BF870007D4B3 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -274,6 +296,8 @@
 		5F5A15A31F3DA9000048F147 /* 冰火魔厨.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "冰火魔厨.txt"; sourceTree = "<group>"; };
 		5F5B044C1EEFC5A20056FF57 /* NSObject+SwithToModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SwithToModel.h"; sourceTree = "<group>"; };
 		5F5B044D1EEFC5A20056FF57 /* NSObject+SwithToModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SwithToModel.m"; sourceTree = "<group>"; };
+		5F5F1D6C20F99A8F00C72F6A /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		5F5F1D6D20F99A8F00C72F6A /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		5F7300DD20F4465B00B1782A /* CopyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyViewController.h; sourceTree = "<group>"; };
 		5F7300DE20F4465B00B1782A /* CopyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyViewController.m; sourceTree = "<group>"; };
 		5F7300E120F4A41000B1782A /* FBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBViewController.h; sourceTree = "<group>"; };
@@ -395,6 +419,17 @@
 		5F8E4A8B20EA11F500D00657 /* TestJSPatchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestJSPatchViewController.m; sourceTree = "<group>"; };
 		5F8E4A8D20EA135500D00657 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		5F8E4A9320EA27FD00D00657 /* demo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = demo.js; sourceTree = "<group>"; };
+		5F983EF720FC33F40076ED62 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		5F983EF920FC34030076ED62 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		5F983EFB20FC34110076ED62 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5F983EFD20FC34260076ED62 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5F983EFF20FC34590076ED62 /* AMapSearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AMapSearchKit.framework; path = Pods/AMapSearch/AMapSearchKit.framework; sourceTree = "<group>"; };
+		5F983F0020FC34590076ED62 /* AMapLocationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AMapLocationKit.framework; path = Pods/AMapLocation/AMapLocationKit.framework; sourceTree = "<group>"; };
+		5F983F0320FC3DFE0076ED62 /* design_btn_s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "design_btn_s@2x.png"; sourceTree = "<group>"; };
+		5F983F0520FC3E550076ED62 /* hongbao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hongbao.png; sourceTree = "<group>"; };
+		5F983F0720FC45120076ED62 /* CallOutView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallOutView.h; sourceTree = "<group>"; };
+		5F983F0820FC45120076ED62 /* CallOutView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallOutView.m; sourceTree = "<group>"; };
+		5F983F0A20FC5FD90076ED62 /* AMapNaviKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AMapNaviKit.framework; path = Pods/AMapNavi/AMapNaviKit.framework; sourceTree = "<group>"; };
 		5FA344551F3C040A00DAE2F2 /* CollectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionModel.h; sourceTree = "<group>"; };
 		5FA344561F3C040A00DAE2F2 /* CollectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionModel.m; sourceTree = "<group>"; };
 		5FA344581F3C044E00DAE2F2 /* FirstCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstCollectionViewCell.h; sourceTree = "<group>"; };
@@ -508,6 +543,17 @@
 		5FF49C721EF1263B00D04410 /* GCDMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDMainViewController.m; sourceTree = "<group>"; };
 		5FF49C741EF1270600D04410 /* GCDFinishAllAsyncViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDFinishAllAsyncViewController.h; sourceTree = "<group>"; };
 		5FF49C751EF1270600D04410 /* GCDFinishAllAsyncViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDFinishAllAsyncViewController.m; sourceTree = "<group>"; };
+		5FF9503020F9A06D00F141AB /* AMapFoundationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AMapFoundationKit.framework; path = Pods/AMapFoundation/AMapFoundationKit.framework; sourceTree = "<group>"; };
+		5FF9503220F9A0B200F141AB /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MAMapKit.framework; path = Pods/AMap3DMap/MAMapKit.framework; sourceTree = "<group>"; };
+		5FF9503420F9A12800F141AB /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		5FF9503620F9A13600F141AB /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		5FF9503820F9A14800F141AB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5FF9503920F9A14800F141AB /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		5FF9503C20F9A15500F141AB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5FF9503E20F9A18900F141AB /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		5FF9504020F9A19900F141AB /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		6BD85B6481D041909EA8FA49 /* libPods-ZJLFaceProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZJLFaceProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DC97600A40AEBCB67CC55A3 /* Pods-ZJLFaceProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJLFaceProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZJLFaceProject/Pods-ZJLFaceProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -515,12 +561,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F983F0B20FC5FD90076ED62 /* AMapNaviKit.framework in Frameworks */,
+				5F983F0120FC34590076ED62 /* AMapSearchKit.framework in Frameworks */,
+				5F983F0220FC34590076ED62 /* AMapLocationKit.framework in Frameworks */,
+				5F983EFE20FC34260076ED62 /* QuartzCore.framework in Frameworks */,
+				5F983EFC20FC34110076ED62 /* SystemConfiguration.framework in Frameworks */,
+				5F983EFA20FC34030076ED62 /* Security.framework in Frameworks */,
+				5F983EF820FC33F40076ED62 /* AdSupport.framework in Frameworks */,
+				5FF9504120F9A19A00F141AB /* libstdc++.6.0.9.tbd in Frameworks */,
+				5FF9503F20F9A18900F141AB /* libc++.tbd in Frameworks */,
 				5F8E4A8E20EA135500D00657 /* libz.tbd in Frameworks */,
+				5FF9503D20F9A15500F141AB /* CoreLocation.framework in Frameworks */,
+				5FF9503A20F9A14800F141AB /* CoreGraphics.framework in Frameworks */,
+				5FF9503B20F9A14800F141AB /* CoreTelephony.framework in Frameworks */,
+				5FF9503720F9A13600F141AB /* OpenGLES.framework in Frameworks */,
+				5FF9503520F9A12800F141AB /* GLKit.framework in Frameworks */,
+				5FF9503320F9A0B200F141AB /* MAMapKit.framework in Frameworks */,
+				5FF9503120F9A06D00F141AB /* AMapFoundationKit.framework in Frameworks */,
 				5F8E4A8920EA11D500D00657 /* libz.1.tbd in Frameworks */,
 				5F8E4A8720EA11B500D00657 /* JavaScriptCore.framework in Frameworks */,
 				5F48784B1EF251EB00CCE3B4 /* libsqlite3.0.tbd in Frameworks */,
 				5F8E4A7020EA11A900D00657 /* libffi.a in Frameworks */,
 				5F48784C1EF251EB00CCE3B4 /* libsqlite3.tbd in Frameworks */,
+				20E0E0E67DD094DEE36DF490 /* libPods-ZJLFaceProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,11 +690,28 @@
 		5F4878481EF251EB00CCE3B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5F983F0A20FC5FD90076ED62 /* AMapNaviKit.framework */,
+				5F983F0020FC34590076ED62 /* AMapLocationKit.framework */,
+				5F983EFF20FC34590076ED62 /* AMapSearchKit.framework */,
+				5F983EFD20FC34260076ED62 /* QuartzCore.framework */,
+				5F983EFB20FC34110076ED62 /* SystemConfiguration.framework */,
+				5F983EF920FC34030076ED62 /* Security.framework */,
+				5F983EF720FC33F40076ED62 /* AdSupport.framework */,
+				5FF9504020F9A19900F141AB /* libstdc++.6.0.9.tbd */,
+				5FF9503E20F9A18900F141AB /* libc++.tbd */,
+				5FF9503C20F9A15500F141AB /* CoreLocation.framework */,
+				5FF9503820F9A14800F141AB /* CoreGraphics.framework */,
+				5FF9503920F9A14800F141AB /* CoreTelephony.framework */,
+				5FF9503620F9A13600F141AB /* OpenGLES.framework */,
+				5FF9503420F9A12800F141AB /* GLKit.framework */,
+				5FF9503220F9A0B200F141AB /* MAMapKit.framework */,
+				5FF9503020F9A06D00F141AB /* AMapFoundationKit.framework */,
 				5F8E4A8D20EA135500D00657 /* libz.tbd */,
 				5F8E4A8820EA11D500D00657 /* libz.1.tbd */,
 				5F8E4A8620EA11B500D00657 /* JavaScriptCore.framework */,
 				5F4878491EF251EB00CCE3B4 /* libsqlite3.0.tbd */,
 				5F48784A1EF251EB00CCE3B4 /* libsqlite3.tbd */,
+				6BD85B6481D041909EA8FA49 /* libPods-ZJLFaceProject.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -685,6 +765,19 @@
 				5F0B4FD01F441A9500150272 /* ProgressSliderView.xib */,
 			);
 			name = Reader;
+			sourceTree = "<group>";
+		};
+		5F5F1D6B20F99A7500C72F6A /* MyMap */ = {
+			isa = PBXGroup;
+			children = (
+				5F983F0520FC3E550076ED62 /* hongbao.png */,
+				5F983F0320FC3DFE0076ED62 /* design_btn_s@2x.png */,
+				5F5F1D6C20F99A8F00C72F6A /* MapViewController.h */,
+				5F5F1D6D20F99A8F00C72F6A /* MapViewController.m */,
+				5F983F0720FC45120076ED62 /* CallOutView.h */,
+				5F983F0820FC45120076ED62 /* CallOutView.m */,
+			);
+			path = MyMap;
 			sourceTree = "<group>";
 		};
 		5F7300DC20F4464600B1782A /* Copy */ = {
@@ -1085,6 +1178,7 @@
 				5FEB54611EEFAE2C0055163A /* ZJLFaceProjectUITests */,
 				5FEB543B1EEFAE2C0055163A /* Products */,
 				5F4878481EF251EB00CCE3B4 /* Frameworks */,
+				C7A793F44D6234224C63F906 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1101,6 +1195,7 @@
 		5FEB543C1EEFAE2C0055163A /* ZJLFaceProject */ = {
 			isa = PBXGroup;
 			children = (
+				5F5F1D6B20F99A7500C72F6A /* MyMap */,
 				5FD6AF6C20F8753C00D48727 /* ExchangeImp */,
 				5FD6AF6620F86C7A00D48727 /* URLSchemes */,
 				5F151BDE20F74C670086705C /* OCAndJs */,
@@ -1261,6 +1356,15 @@
 			name = GCD;
 			sourceTree = "<group>";
 		};
+		C7A793F44D6234224C63F906 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7DC97600A40AEBCB67CC55A3 /* Pods-ZJLFaceProject.debug.xcconfig */,
+				1A8FFB583F3CA3E48218E9DA /* Pods-ZJLFaceProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1268,9 +1372,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5FEB54671EEFAE2C0055163A /* Build configuration list for PBXNativeTarget "ZJLFaceProject" */;
 			buildPhases = (
+				6B25036BAA1823C178B32598 /* [CP] Check Pods Manifest.lock */,
 				5FEB54361EEFAE2C0055163A /* Sources */,
 				5FEB54371EEFAE2C0055163A /* Frameworks */,
 				5FEB54381EEFAE2C0055163A /* Resources */,
+				87D90D844BD024D5048C9E10 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1388,6 +1494,7 @@
 				5F151BE520F750E90086705C /* Test.html in Resources */,
 				5F8E4A7920EA11A900D00657 /* README.md in Resources */,
 				5FA9C3E42043DD3C002EEB44 /* 2.jpg in Resources */,
+				5F983F0620FC3E550076ED62 /* hongbao.png in Resources */,
 				5F8E4A8520EA11A900D00657 /* packer.php in Resources */,
 				5F49A1351F42C71C00044718 /* MenuView.xib in Resources */,
 				5FCD105120EE166400EBB33A /* RecordingVideoViewController.xib in Resources */,
@@ -1406,6 +1513,7 @@
 				5FCB0A4020E0C90A00A8D839 /* localvideo.mp4 in Resources */,
 				5F7300E520F4A41000B1782A /* FBViewController.xib in Resources */,
 				5F8E4A9420EA27FD00D00657 /* demo.js in Resources */,
+				5F983F0420FC3DFF0076ED62 /* design_btn_s@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1424,6 +1532,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6B25036BAA1823C178B32598 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZJLFaceProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87D90D844BD024D5048C9E10 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZJLFaceProject/Pods-ZJLFaceProject-resources.sh",
+				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
+				"${PODS_ROOT}/AMapNavi/AMapNaviKit.framework/AMapNavi.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMapNavi.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZJLFaceProject/Pods-ZJLFaceProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5FEB54361EEFAE2C0055163A /* Sources */ = {
@@ -1454,6 +1603,7 @@
 				5F52A84A20EA6D0900FC3491 /* KeychainTools.m in Sources */,
 				5FA9C4172043EF01002EEB44 /* AFURLSessionManager.m in Sources */,
 				5FA9C4132043EF01002EEB44 /* AFNetworkReachabilityManager.m in Sources */,
+				5F5F1D6E20F99A8F00C72F6A /* MapViewController.m in Sources */,
 				5FEB54451EEFAE2C0055163A /* ViewController.m in Sources */,
 				5F8E4A6720EA11A900D00657 /* JPCGTransform.m in Sources */,
 				5F8E4A7A20EA11A900D00657 /* JPProtocol.m in Sources */,
@@ -1548,6 +1698,7 @@
 				5F4878441EF22C5300CCE3B4 /* UserDefaultViewController.m in Sources */,
 				5F5A15981F3D4B8C0048F147 /* AnimationViewController.m in Sources */,
 				5FA9C4142043EF01002EEB44 /* AFSecurityPolicy.m in Sources */,
+				5F983F0920FC45120076ED62 /* CallOutView.m in Sources */,
 				5F8E4A6820EA11A900D00657 /* JPCoreGraphics.m in Sources */,
 				5F8E4A8020EA11A900D00657 /* mztools.c in Sources */,
 				5F8E4A6F20EA11A900D00657 /* JPMethodSignature.m in Sources */,
@@ -1712,12 +1863,21 @@
 		};
 		5FEB54681EEFAE2C0055163A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DC97600A40AEBCB67CC55A3 /* Pods-ZJLFaceProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ZJLFaceProject/ZJLFaceProject.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XV89F2LKD5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/AMapFoundation",
+					"$(PROJECT_DIR)/Pods/AMap3DMap",
+					"$(PROJECT_DIR)/Pods/AMapSearch",
+					"$(PROJECT_DIR)/Pods/AMapLocation",
+					"$(PROJECT_DIR)/Pods/AMapNavi",
+				);
 				GCC_PREFIX_HEADER = ZJLFaceProject/PrefixHeader.pch;
 				INFOPLIST_FILE = ZJLFaceProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1730,17 +1890,27 @@
 				PRODUCT_BUNDLE_IDENTIFIER = zjlch.ZJLFaceProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
 		};
 		5FEB54691EEFAE2C0055163A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A8FFB583F3CA3E48218E9DA /* Pods-ZJLFaceProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ZJLFaceProject/ZJLFaceProject.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XV89F2LKD5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/AMapFoundation",
+					"$(PROJECT_DIR)/Pods/AMap3DMap",
+					"$(PROJECT_DIR)/Pods/AMapSearch",
+					"$(PROJECT_DIR)/Pods/AMapLocation",
+					"$(PROJECT_DIR)/Pods/AMapNavi",
+				);
 				GCC_PREFIX_HEADER = ZJLFaceProject/PrefixHeader.pch;
 				INFOPLIST_FILE = ZJLFaceProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1753,6 +1923,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = zjlch.ZJLFaceProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Release;
 		};
