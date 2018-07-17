@@ -5,7 +5,7 @@
 //  Created by zjl on 2018/7/10.
 //  Copyright © 2018年 zjlzjl. All rights reserved.
 //
-
+static NSNumber *a;
 #import "CopyViewController.h"
 
 @interface CopyViewController ()
@@ -17,6 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+	a = @(10);
+	NSLog(@"%p",a);
+	a = @(20);
+	NSLog(@"%p",a);
 	NSMutableString *test = [NSMutableString stringWithString:@"哈哈"];
 	NSString *noTest = @"hello";
 	NSLog(@"%p %p",noTest,&noTest);

@@ -61,5 +61,21 @@
 	NSLog(@"%@",[stu valueForKeyPath:@"course.@max.score"]);
 	NSLog(@"%@",[stu valueForKeyPath:@"course.@min.score"]);
 	
+	int isSuccess = [stu performSelector:@selector(eat) withObject:@"hh" withObject:@"xx"];
+	
+	NSMethodSignature *sign = [Student instanceMethodSignatureForSelector:@selector(eat)];
+	NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:sign];
+	invocation.selector = @selector(eat);
+	[invocation setTarget:stu];
+	NSString *paramA = @"你好";
+	NSString *paramB = @"拉阿拉";
+	[invocation setArgument:&paramA atIndex:2];
+	[invocation setArgument:&paramB atIndex:3];
+	[invocation retainArguments];
+	[invocation invoke];
+	[invocation getReturnValue:&isSuccess];
+	
+
+	
 }
 @end

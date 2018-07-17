@@ -19,6 +19,8 @@
 		jsonDic = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:nil];
 	}else {
 		jsonDic = @{@"Content":@{@"author":@"haha",@"age":@"40"},@"Code":@"1000",@"Msg":@"获取成功",@"Data":@[@{@"userId":@"2",@"bookName":@"书籍4"},@{@"userId":@"3",@"bookName":@"书籍5"}]};
+		NSData *data = [NSJSONSerialization dataWithJSONObject:jsonDic options:NSJSONWritingPrettyPrinted error:nil];
+		NSLog(@"%@",[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
 	}
 	id obj = [self finishToModel:[self class] jsonDic:jsonDic];
 	return obj;

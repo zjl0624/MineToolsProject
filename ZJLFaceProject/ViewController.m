@@ -36,6 +36,7 @@
 #import "JSOCViewController.h"
 #import "URLSchemesViewController.h"
 #import "MapViewController.h"
+#import "XMLViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource> {
 	UITableView *tableview;
@@ -164,6 +165,9 @@
 		case 28:
 			vc = [[MapViewController alloc] init];
 			break;
+		case 29:
+			vc = [[XMLViewController alloc] initWithNibName:@"XMLViewController" bundle:nil];
+			break;
 		default:
 			break;
 	}
@@ -206,6 +210,7 @@
 	[dataArray addObject:@"jsOC互相调用"];
 	[dataArray addObject:@"URLSchemes用法"];
 	[dataArray addObject:@"地图"];
+	[dataArray addObject:@"解析xml"];
 }
 
 @end

@@ -43,13 +43,16 @@ void(^finishBlock)(void);
 //		[self FinishAll];
 //	});
 	__weak GCDFinishAllAsyncViewController *weakself = self;
+	NSMutableString * str = [[NSMutableString alloc] initWithString:@"Hello,"];
 	finishBlock = ^(){
+		[str appendString:@"wrold"];
+//		str = [[NSMutableString alloc] initWithString:@"xxx"];
 		[weakself FinishAll];
 	};
-//	dispatch_group_notify(_group, dispatch_get_main_queue(), finishBlock);
-	dispatch_group_notify(_group, dispatch_get_main_queue(), ^{
-		[self FinishAll];
-	});
+	dispatch_group_notify(_group, dispatch_get_main_queue(), finishBlock);
+//	dispatch_group_notify(_group, dispatch_get_main_queue(), ^{
+//		[self FinishAll];
+//	});
 
 }
 
