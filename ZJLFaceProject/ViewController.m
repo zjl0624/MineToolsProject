@@ -37,7 +37,7 @@
 #import "URLSchemesViewController.h"
 #import "MapViewController.h"
 #import "XMLViewController.h"
-
+static NSString * const cellIdentifier = @"cell";
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource> {
 	UITableView *tableview;
 	NSMutableArray *dataArray;
@@ -65,10 +65,9 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-	static NSString *cellIdentifer = @"cell";
-	UITableViewCell *cell = [tableview dequeueReusableCellWithIdentifier:cellIdentifer];
+	UITableViewCell *cell = [tableview dequeueReusableCellWithIdentifier:cellIdentifier];
 	if (!cell) {
-		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifer];
+		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
 	}
 	cell.textLabel.text = dataArray[indexPath.row];
 	return cell;

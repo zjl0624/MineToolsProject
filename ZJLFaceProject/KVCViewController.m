@@ -63,9 +63,9 @@
 	
 	int isSuccess = [stu performSelector:@selector(eat) withObject:@"hh" withObject:@"xx"];
 	
-	NSMethodSignature *sign = [Student instanceMethodSignatureForSelector:@selector(eat)];
+	NSMethodSignature *sign = [Student instanceMethodSignatureForSelector:@selector(flyWithA:b:)];
 	NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:sign];
-	invocation.selector = @selector(eat);
+	invocation.selector = @selector(flyWithA:b:);
 	[invocation setTarget:stu];
 	NSString *paramA = @"你好";
 	NSString *paramB = @"拉阿拉";

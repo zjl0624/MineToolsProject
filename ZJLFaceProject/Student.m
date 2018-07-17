@@ -13,11 +13,18 @@
 int eat(id self,SEL sel,NSString *paramA,NSString *paramB){
 	
 	NSLog(@"eat--------%@   %@",paramA,paramB);
-	return 1;
+	return 222;
+}
+- (NSInteger)flyWithA:(NSString *)a b:(NSString *)b{
+	NSLog(@"fly --------%@   %@",a,b);
+	return 111;
 }
 + (BOOL)resolveInstanceMethod:(SEL)sel {
-	if (sel == NSSelectorFromString(@"eat")) {
-		class_addMethod(self, sel, (IMP)eat, "B@:@@");
+	if (sel == @selector(flyWithA:b:)) {
+		class_addMethod(self, sel, class_getMethodImplementation([self class], @selector(flyWithA:b:)), "i@:@@");
+		return YES;
+	}else if (sel == @selector(eat)){
+		class_addMethod(self, sel, (IMP)eat, "i@:@@");
 		return YES;
 	}else {
 		return [super resolveInstanceMethod:sel];
