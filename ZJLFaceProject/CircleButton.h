@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 @protocol DragButtonDelegate
 - (void)moves:(CGPoint)point;
+- (void)clickButton:(UIButton *)sender;
 @end
 @interface CircleButton : UIButton
 @property (nonatomic,weak) id<DragButtonDelegate> delegate;

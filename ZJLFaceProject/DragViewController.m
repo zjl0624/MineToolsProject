@@ -44,6 +44,10 @@
 	NSLog(@"%f   %f",point.x,point.y);
 	circleButton.frame = CGRectMake(CGRectGetMinX(circleButton.frame) + point.x - 30, CGRectGetMinY(circleButton.frame) + point.y - 30, 60, 60);
 }
+
+- (void)clickButton:(UIButton *)sender {
+	[ZJLHud showCustomHud:YES type:alertType title:@"点击了按钮"];
+}
 - (void)pan:(UIPanGestureRecognizer *)panGes {
 	CGPoint p = [panGesture translationInView:self.view];
 	NSLog(@"%f,%f--%f,%f",CGRectGetMinX(circleButton.frame),CGRectGetMinY(circleButton.frame),p.x,p.y);
