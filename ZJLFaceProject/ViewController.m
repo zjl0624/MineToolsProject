@@ -37,10 +37,12 @@
 #import "URLSchemesViewController.h"
 #import "MapViewController.h"
 #import "XMLViewController.h"
+
 static NSString * const cellIdentifier = @"cell";
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource> {
 	UITableView *tableview;
 	NSMutableArray *dataArray;
+
 }
 
 @end
@@ -50,6 +52,17 @@ static NSString * const cellIdentifier = @"cell";
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	self.navigationItem.title = @"我的知识点";
+    void (^block)(void);
+	BOOL x = YES;
+	if(x)
+	{
+		block = ^{ printf("x\n"); };
+	}
+	else
+	{
+		block = ^{ printf("not x\n"); };
+	}
+	block();
 	[self initTableview];
 }
 

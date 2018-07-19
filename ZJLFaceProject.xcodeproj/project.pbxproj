@@ -70,6 +70,7 @@
 		5F8B69E720453B12006E8E50 /* LocalNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8B69E620453B12006E8E50 /* LocalNotification.m */; };
 		5F8B69EB20453D98006E8E50 /* LocalNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8B69E920453D98006E8E50 /* LocalNotificationViewController.m */; };
 		5F8B69EC20453D98006E8E50 /* LocalNotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F8B69EA20453D98006E8E50 /* LocalNotificationViewController.xib */; };
+		5F8BEE0C21003A69004FBA39 /* CircleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8BEE0B21003A69004FBA39 /* CircleButton.m */; };
 		5F8E4A5C20EA11A900D00657 /* JPBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8E49F420EA11A800D00657 /* JPBlock.m */; };
 		5F8E4A5D20EA11A900D00657 /* JPBlockWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8E49F620EA11A800D00657 /* JPBlockWrapper.m */; };
 		5F8E4A5E20EA11A900D00657 /* JPCFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8E49F920EA11A800D00657 /* JPCFunction.m */; };
@@ -327,6 +328,8 @@
 		5F8B69E820453D98006E8E50 /* LocalNotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalNotificationViewController.h; sourceTree = "<group>"; };
 		5F8B69E920453D98006E8E50 /* LocalNotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalNotificationViewController.m; sourceTree = "<group>"; };
 		5F8B69EA20453D98006E8E50 /* LocalNotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalNotificationViewController.xib; sourceTree = "<group>"; };
+		5F8BEE0A21003A68004FBA39 /* CircleButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleButton.h; sourceTree = "<group>"; };
+		5F8BEE0B21003A69004FBA39 /* CircleButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleButton.m; sourceTree = "<group>"; };
 		5F8E49F320EA11A800D00657 /* JPBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPBlock.h; sourceTree = "<group>"; };
 		5F8E49F420EA11A800D00657 /* JPBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPBlock.m; sourceTree = "<group>"; };
 		5F8E49F520EA11A800D00657 /* JPBlockWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPBlockWrapper.h; sourceTree = "<group>"; };
@@ -622,6 +625,8 @@
 			children = (
 				5F01245B1FA9BDA30007D4B3 /* DragViewController.h */,
 				5F01245C1FA9BDA30007D4B3 /* DragViewController.m */,
+				5F8BEE0A21003A68004FBA39 /* CircleButton.h */,
+				5F8BEE0B21003A69004FBA39 /* CircleButton.m */,
 			);
 			name = Drag;
 			sourceTree = "<group>";
@@ -1682,6 +1687,7 @@
 				5F8E4A6520EA11A900D00657 /* JPCGImage.m in Sources */,
 				5F8E4A6B20EA11A900D00657 /* JPUIImage.m in Sources */,
 				5F4289461F39824300F33D0C /* PassValueViewController.m in Sources */,
+				5F8BEE0C21003A69004FBA39 /* CircleButton.m in Sources */,
 				5F42894F1F39885E00F33D0C /* ButtonCollectionViewCell.m in Sources */,
 				5FA9C40A2043EF01002EEB44 /* AFImageDownloader.m in Sources */,
 				5F8E4A5C20EA11A900D00657 /* JPBlock.m in Sources */,

@@ -18,6 +18,8 @@
 
 - (void)myViewDidLoad {
 	[self myViewDidLoad];
+	self.navigationItem.title = NSStringFromClass([self class]);
+//	[ZJLHud showCustomHud:YES type:alertType title:@"haha"];
 	NSLog(@"进入%@页面",NSStringFromClass([self class]));
 }
 @end

@@ -13,7 +13,7 @@
 #import <AMapLocationKit/AMapLocationKit.h>
 
 #import "CallOutView.h"
-
+static NSString * const MapKey = @"8421f13f7a017e7f8615e494b6178c79";
 @interface MapViewController ()<MAMapViewDelegate,AMapLocationManagerDelegate>
 @property (nonatomic,strong) MAMapView *mapView;
 @property (nonatomic,strong) AMapLocationManager *locationManager;
@@ -23,6 +23,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+	[AMapServices sharedServices].apiKey = MapKey;
+	[AMapServices sharedServices].enableHTTPS = YES;
 	self.mapView = [[MAMapView alloc] initWithFrame:self.view.bounds];
 	self.mapView.delegate = self;
 	self.mapView.showTraffic = YES;

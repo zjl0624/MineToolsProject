@@ -12,7 +12,7 @@
 #import "ViewController.h"
 #import "JPEngine.h"
 #import "AMapFoundationKit.h"
-#define MapKey @"8421f13f7a017e7f8615e494b6178c79"
+
 @interface AppDelegate ()
 
 @end
@@ -23,18 +23,17 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	// Override point for customization after application launch.
 	self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-	[JPEngine startEngine];
-	NSString *sourcePath = [[NSBundle mainBundle] pathForResource:@"demo" ofType:@"js"];
-	NSString *script = [NSString stringWithContentsOfFile:sourcePath encoding:NSUTF8StringEncoding error:nil];
-	[JPEngine evaluateScript:script];
+//	[JPEngine startEngine];
+//	NSString *sourcePath = [[NSBundle mainBundle] pathForResource:@"demo" ofType:@"js"];
+//	NSString *script = [NSString stringWithContentsOfFile:sourcePath encoding:NSUTF8StringEncoding error:nil];
+//	[JPEngine evaluateScript:script];
 	ViewController *vc = [[ViewController alloc] init];
 	MyNaviVController *navi = [[MyNaviVController alloc] initWithRootViewController:vc];
 	[self.window setRootViewController:navi];
 	[self.window makeKeyAndVisible];
 	[LocalNotification registerLocalNotification];
 	
-	[AMapServices sharedServices].apiKey = MapKey;
-	[AMapServices sharedServices].enableHTTPS = YES;
+
 	return YES;
 }
 
