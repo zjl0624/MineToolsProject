@@ -32,6 +32,7 @@
 	
 	// 1、获取媒体资源地址
 	NSString *path = [[NSBundle mainBundle] pathForAuxiliaryExecutable:@"localvideo.mp4"];
+	path = [NSTemporaryDirectory() stringByAppendingString:@"123.mp4"];
 	NSURL *sourceMovieURL = [NSURL fileURLWithPath:path];
 	
 	// 2、创建AVPlayerItem
@@ -88,4 +89,9 @@
 	NSLog(@"点击了播放器中间");
 }
 
+
+- (void)dealloc {
+	[_playerItem removeObserver:self forKeyPath:@"status"];
+	[_playerItem removeObserver:self forKeyPath:@"loadedTimeRanges"];
+}
 @end

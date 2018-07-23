@@ -20,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZZ0-kO-sHI">
-                    <rect key="frame" x="156" y="318.5" width="62" height="30"/>
+                    <rect key="frame" x="156" y="537" width="62" height="30"/>
                     <state key="normal" title="开始录制"/>
                     <connections>
                         <action selector="startAction:" destination="-1" eventType="touchUpInside" id="EQ2-0S-QSk"/>
@@ -29,7 +29,7 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="ZZ0-kO-sHI" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Wj3-J2-6Yg"/>
+                <constraint firstAttribute="bottom" secondItem="ZZ0-kO-sHI" secondAttribute="bottom" constant="100" id="T5z-eJ-Kr5"/>
                 <constraint firstItem="ZZ0-kO-sHI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="x84-lh-IK7"/>
             </constraints>
         </view>

@@ -90,17 +90,18 @@
 	CALayer *layer = self.view.layer;
 	layer.masksToBounds = true;
 	
-	_captureVideoPreviewLayer.frame = layer.bounds;
+	_captureVideoPreviewLayer = [AVCaptureVideoPreviewLayer layerWithSession:_captureSession];
+	_captureVideoPreviewLayer.frame = CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, 250);
 	_captureVideoPreviewLayer.masksToBounds = true;
 	_captureVideoPreviewLayer.videoGravity=AVLayerVideoGravityResizeAspectFill;//填充模式
 	[layer addSublayer:_captureVideoPreviewLayer];
 	
-	// 让输入输出，然后把视图渲染到预览层上
-	[_captureSession startRunning];
+
 }
 
 - (AVCaptureDevice *)getCameraDeviceWithPosition:(AVCaptureDevicePosition)pos {
-	AVCaptureDevice *videoDevice = [AVCaptureDevice defaultDeviceWithDeviceType:AVCaptureDeviceTypeBuiltInDuoCamera mediaType:AVMediaTypeVideo position:AVCaptureDevicePositionBack];
+//	AVCaptureDevice *videoDevice = [AVCaptureDevice defaultDeviceWithDeviceType:AVCaptureDeviceTypeBuiltInDuoCamera mediaType:AVMediaTypeVideo position:AVCaptureDevicePositionBack];
+	AVCaptureDevice *videoDevice = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
 	if ( ! videoDevice ) {
 		// If the back dual camera is not available, default to the back wide angle camera.
 		videoDevice = [AVCaptureDevice defaultDeviceWithDeviceType:AVCaptureDeviceTypeBuiltInWideAngleCamera mediaType:AVMediaTypeVideo position:AVCaptureDevicePositionBack];
@@ -137,6 +138,8 @@
 - (IBAction)startAction:(id)sender {
 	[(UIButton *)sender setSelected:![(UIButton *)sender isSelected]];
 	if ([(UIButton *)sender isSelected]) {
+		// 让输入输出，然后把视图渲染到预览层上
+		[_captureSession startRunning];
 		AVCaptureConnection *captureConnection=[self.caputureMovieFileOutput connectionWithMediaType:AVMediaTypeVideo];
 		// 开启视频防抖模式
 		AVCaptureVideoStabilizationMode stabilizationMode = AVCaptureVideoStabilizationModeCinematic;
@@ -152,7 +155,7 @@
 		captureConnection.videoOrientation=[self.captureVideoPreviewLayer connection].videoOrientation;
 		
 		// 设置视频输出的文件路径，这里设置为 temp 文件
-		NSString *outputFielPath=[NSTemporaryDirectory() stringByAppendingString:@"123"];
+		NSString *outputFielPath=[NSTemporaryDirectory() stringByAppendingString:@"123.mp4"];
 		
 		// 路径转换成 URL 要用这个方法，用 NSBundle 方法转换成 URL 的话可能会出现读取不到路径的错误
 		NSURL *fileUrl=[NSURL fileURLWithPath:outputFielPath];
@@ -177,5 +180,8 @@
 - (void)captureOutput:(AVCaptureFileOutput *)captureOutput didFinishRecordingToOutputFileAtURL:(NSURL *)outputFileURL fromConnections:(NSArray *)connections error:(NSError *)error
 {
 	NSLog(@"---- 录制结束 ----");
+	NSString *outputFielPath=[NSTemporaryDirectory() stringByAppendingString:@"123.mp4"];
+	NSDictionary *outputFileAttributes = [[NSFileManager defaultManager] attributesOfItemAtPath:outputFielPath error:nil];
+	NSLog (@"file size: %f", (unsigned long long)[outputFileAttributes fileSize]/1024.00 /1024.00);
 }
 @end
