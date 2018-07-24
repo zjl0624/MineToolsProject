@@ -37,6 +37,7 @@
 #import "URLSchemesViewController.h"
 #import "MapViewController.h"
 #import "XMLViewController.h"
+#import "ClickRangeViewController.h"
 
 static NSString * const cellIdentifier = @"cell";
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource> {
@@ -180,6 +181,9 @@ static NSString * const cellIdentifier = @"cell";
 		case 29:
 			vc = [[XMLViewController alloc] initWithNibName:@"XMLViewController" bundle:nil];
 			break;
+		case 30:
+			vc = [[ClickRangeViewController alloc] initWithNibName:@"ClickRangeViewController" bundle:nil];
+			break;
 		default:
 			break;
 	}
@@ -223,6 +227,7 @@ static NSString * const cellIdentifier = @"cell";
 	[dataArray addObject:@"URLSchemes用法"];
 	[dataArray addObject:@"地图"];
 	[dataArray addObject:@"解析xml"];
+	[dataArray addObject:@"扩大按钮点击范围"];
 }
 
 @end

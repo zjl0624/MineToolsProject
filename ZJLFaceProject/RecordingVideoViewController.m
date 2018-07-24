@@ -184,4 +184,8 @@
 	NSDictionary *outputFileAttributes = [[NSFileManager defaultManager] attributesOfItemAtPath:outputFielPath error:nil];
 	NSLog (@"file size: %f", (unsigned long long)[outputFileAttributes fileSize]/1024.00 /1024.00);
 }
+
+- (void)captureOutput:(AVCaptureFileOutput *)output didResumeRecordingToOutputFileAtURL:(NSURL *)fileURL fromConnections:(NSArray<AVCaptureConnection *> *)connections {
+	
+}
 @end

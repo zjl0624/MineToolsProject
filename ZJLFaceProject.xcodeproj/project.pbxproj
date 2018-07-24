@@ -57,6 +57,9 @@
 		5F5A15A41F3DA9000048F147 /* 冰火魔厨.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F5A15A31F3DA9000048F147 /* 冰火魔厨.txt */; };
 		5F5B044E1EEFC5A20056FF57 /* NSObject+SwithToModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5B044D1EEFC5A20056FF57 /* NSObject+SwithToModel.m */; };
 		5F5F1D6E20F99A8F00C72F6A /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5F1D6D20F99A8F00C72F6A /* MapViewController.m */; };
+		5F6401C32106B79F00040CCD /* ClickRangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F6401C12106B79F00040CCD /* ClickRangeViewController.m */; };
+		5F6401C42106B79F00040CCD /* ClickRangeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F6401C22106B79F00040CCD /* ClickRangeViewController.xib */; };
+		5F6401C72106BCD800040CCD /* UIButton+Enlarge.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F6401C62106BCD800040CCD /* UIButton+Enlarge.m */; };
 		5F7300DF20F4465B00B1782A /* CopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7300DE20F4465B00B1782A /* CopyViewController.m */; };
 		5F7300E420F4A41000B1782A /* FBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7300E220F4A41000B1782A /* FBViewController.m */; };
 		5F7300E520F4A41000B1782A /* FBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F7300E320F4A41000B1782A /* FBViewController.xib */; };
@@ -304,6 +307,11 @@
 		5F5B044D1EEFC5A20056FF57 /* NSObject+SwithToModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SwithToModel.m"; sourceTree = "<group>"; };
 		5F5F1D6C20F99A8F00C72F6A /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		5F5F1D6D20F99A8F00C72F6A /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		5F6401C02106B79F00040CCD /* ClickRangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClickRangeViewController.h; sourceTree = "<group>"; };
+		5F6401C12106B79F00040CCD /* ClickRangeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClickRangeViewController.m; sourceTree = "<group>"; };
+		5F6401C22106B79F00040CCD /* ClickRangeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClickRangeViewController.xib; sourceTree = "<group>"; };
+		5F6401C52106BCD800040CCD /* UIButton+Enlarge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Enlarge.h"; sourceTree = "<group>"; };
+		5F6401C62106BCD800040CCD /* UIButton+Enlarge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Enlarge.m"; sourceTree = "<group>"; };
 		5F7300DD20F4465B00B1782A /* CopyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyViewController.h; sourceTree = "<group>"; };
 		5F7300DE20F4465B00B1782A /* CopyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyViewController.m; sourceTree = "<group>"; };
 		5F7300E120F4A41000B1782A /* FBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBViewController.h; sourceTree = "<group>"; };
@@ -799,6 +807,18 @@
 			path = MyMap;
 			sourceTree = "<group>";
 		};
+		5F6401BF2106B6DC00040CCD /* ClickRange */ = {
+			isa = PBXGroup;
+			children = (
+				5F6401C02106B79F00040CCD /* ClickRangeViewController.h */,
+				5F6401C12106B79F00040CCD /* ClickRangeViewController.m */,
+				5F6401C22106B79F00040CCD /* ClickRangeViewController.xib */,
+				5F6401C52106BCD800040CCD /* UIButton+Enlarge.h */,
+				5F6401C62106BCD800040CCD /* UIButton+Enlarge.m */,
+			);
+			path = ClickRange;
+			sourceTree = "<group>";
+		};
 		5F7300DC20F4464600B1782A /* Copy */ = {
 			isa = PBXGroup;
 			children = (
@@ -1225,6 +1245,7 @@
 		5FEB543C1EEFAE2C0055163A /* ZJLFaceProject */ = {
 			isa = PBXGroup;
 			children = (
+				5F6401BF2106B6DC00040CCD /* ClickRange */,
 				5FA8130620FD80A40090171E /* Xml */,
 				5F5F1D6B20F99A7500C72F6A /* MyMap */,
 				5FD6AF6C20F8753C00D48727 /* ExchangeImp */,
@@ -1549,6 +1570,7 @@
 				5F8E4A9420EA27FD00D00657 /* demo.js in Resources */,
 				5FA8130B20FD80C40090171E /* XMLViewController.xib in Resources */,
 				5F983F0420FC3DFF0076ED62 /* design_btn_s@2x.png in Resources */,
+				5F6401C42106B79F00040CCD /* ClickRangeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1630,6 +1652,7 @@
 				5F8E4A7520EA11A900D00657 /* SGDirWatchdog.m in Sources */,
 				5F8E4A6120EA11A900D00657 /* JPCGBitmapContext.m in Sources */,
 				5FA9C40B2043EF01002EEB44 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				5F6401C72106BCD800040CCD /* UIButton+Enlarge.m in Sources */,
 				5FF03D881F3AE44800C003DF /* FirstTableViewCell.m in Sources */,
 				5FA9C40C2043EF01002EEB44 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				5FA8130A20FD80C40090171E /* XMLViewController.m in Sources */,
@@ -1733,6 +1756,7 @@
 				5F4878521EF265E600CCE3B4 /* CustomModel.m in Sources */,
 				5F49A1261F428B9500044718 /* CollectionDelegate.m in Sources */,
 				5FF03D8B1F3AE45500C003DF /* SecondTableViewCell.m in Sources */,
+				5F6401C32106B79F00040CCD /* ClickRangeViewController.m in Sources */,
 				5F4878441EF22C5300CCE3B4 /* UserDefaultViewController.m in Sources */,
 				5F5A15981F3D4B8C0048F147 /* AnimationViewController.m in Sources */,
 				5FA9C4142043EF01002EEB44 /* AFSecurityPolicy.m in Sources */,

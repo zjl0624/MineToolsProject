@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ClickRangeViewController">
+            <connections>
+                <outlet property="testButton" destination="v86-zm-KpN" id="TKC-fh-vsZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LkH-uY-8TD">
+                    <rect key="frame" x="157" y="283.5" width="60" height="120"/>
+                    <color key="backgroundColor" red="0.064301086369999996" green="1" blue="0.2198835475" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="R4V-xn-s82"/>
+                        <constraint firstAttribute="width" constant="60" id="o1z-lf-YZR"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v86-zm-KpN">
+                    <rect key="frame" x="172" y="328" width="30" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.00074269871969999998" blue="0.12604657380000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="clickButton:" destination="-1" eventType="touchUpInside" id="6eh-xs-iHT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wl7-Pa-gME">
+                    <rect key="frame" x="164" y="97" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="buttonAction:" destination="-1" eventType="touchUpInside" id="tAQ-f2-Qjn"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wl7-Pa-gME" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="0pF-fs-an0"/>
+                <constraint firstItem="v86-zm-KpN" firstAttribute="centerY" secondItem="Q5M-cg-NOt" secondAttribute="centerY" id="fUh-jg-635"/>
+                <constraint firstItem="v86-zm-KpN" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="gob-Ac-i52"/>
+                <constraint firstItem="LkH-uY-8TD" firstAttribute="centerY" secondItem="Q5M-cg-NOt" secondAttribute="centerY" id="jju-AN-kyC"/>
+                <constraint firstItem="LkH-uY-8TD" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="kYY-eZ-tqR"/>
+                <constraint firstItem="wl7-Pa-gME" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="77" id="rWV-Px-sG2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>
