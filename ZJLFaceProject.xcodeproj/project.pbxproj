@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14DAD739211A6F7400C9EB3F /* BGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DAD738211A6F7400C9EB3F /* BGViewController.m */; };
 		20E0E0E67DD094DEE36DF490 /* libPods-ZJLFaceProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD85B6481D041909EA8FA49 /* libPods-ZJLFaceProject.a */; };
 		5F01245D1FA9BDA30007D4B3 /* DragViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F01245C1FA9BDA30007D4B3 /* DragViewController.m */; };
 		5F0124601FA9BF870007D4B3 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F01245F1FA9BF870007D4B3 /* BaseViewController.m */; };
@@ -224,6 +225,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14DAD737211A6F7400C9EB3F /* BGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGViewController.h; sourceTree = "<group>"; };
+		14DAD738211A6F7400C9EB3F /* BGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGViewController.m; sourceTree = "<group>"; };
 		1A8FFB583F3CA3E48218E9DA /* Pods-ZJLFaceProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJLFaceProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZJLFaceProject/Pods-ZJLFaceProject.release.xcconfig"; sourceTree = "<group>"; };
 		5F01245B1FA9BDA30007D4B3 /* DragViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragViewController.h; sourceTree = "<group>"; };
 		5F01245C1FA9BDA30007D4B3 /* DragViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragViewController.m; sourceTree = "<group>"; };
@@ -628,6 +631,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14DAD736211A6EBF00C9EB3F /* bgView */ = {
+			isa = PBXGroup;
+			children = (
+				14DAD737211A6F7400C9EB3F /* BGViewController.h */,
+				14DAD738211A6F7400C9EB3F /* BGViewController.m */,
+			);
+			path = bgView;
+			sourceTree = "<group>";
+		};
 		5F01245A1FA9BD850007D4B3 /* Drag */ = {
 			isa = PBXGroup;
 			children = (
@@ -1245,6 +1257,7 @@
 		5FEB543C1EEFAE2C0055163A /* ZJLFaceProject */ = {
 			isa = PBXGroup;
 			children = (
+				14DAD736211A6EBF00C9EB3F /* bgView */,
 				5F6401BF2106B6DC00040CCD /* ClickRange */,
 				5FA8130620FD80A40090171E /* Xml */,
 				5F5F1D6B20F99A7500C72F6A /* MyMap */,
@@ -1659,6 +1672,7 @@
 				5FCE600520FC7A2300DA18E5 /* BaseModel.m in Sources */,
 				5F5A15A01F3D9E8B0048F147 /* ReaderViewController.m in Sources */,
 				5FA9C4122043EF01002EEB44 /* AFHTTPSessionManager.m in Sources */,
+				14DAD739211A6F7400C9EB3F /* BGViewController.m in Sources */,
 				5FD6AF7420F8771900D48727 /* UIViewController+ExchangeViewDidLoadImp.m in Sources */,
 				5F52A84A20EA6D0900FC3491 /* KeychainTools.m in Sources */,
 				5FA9C4172043EF01002EEB44 /* AFURLSessionManager.m in Sources */,
