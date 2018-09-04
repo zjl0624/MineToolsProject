@@ -23,6 +23,7 @@ static id _instance;
 - (void)initManager {
 	_manager = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:@""]];
 	_manager.requestSerializer = [AFHTTPRequestSerializer serializer];
+    [_manager.requestSerializer setValue:@"iPhone" forHTTPHeaderField:@"User-Agent"];
 	_manager.responseSerializer = [AFHTTPResponseSerializer serializer];
 	if (self.isUseHttps) {
 		_manager.securityPolicy = [self customSecurityPolicy];
