@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		143A0EA72141346500D1C12F /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143A0EA52141346400D1C12F /* ModalViewController.m */; };
+		143A0EA82141346500D1C12F /* ModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 143A0EA62141346400D1C12F /* ModalViewController.xib */; };
+		1444542121435E92006EC219 /* CoverStatusBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1444541F21435E92006EC219 /* CoverStatusBarViewController.m */; };
+		1444542221435E92006EC219 /* CoverStatusBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1444542021435E92006EC219 /* CoverStatusBarViewController.xib */; };
+		144454252143604C006EC219 /* CoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 144454242143604C006EC219 /* CoverView.m */; };
 		14DAD739211A6F7400C9EB3F /* BGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DAD738211A6F7400C9EB3F /* BGViewController.m */; };
 		20E0E0E67DD094DEE36DF490 /* libPods-ZJLFaceProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD85B6481D041909EA8FA49 /* libPods-ZJLFaceProject.a */; };
 		5F01245D1FA9BDA30007D4B3 /* DragViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F01245C1FA9BDA30007D4B3 /* DragViewController.m */; };
@@ -225,6 +230,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		143A0EA42141346400D1C12F /* ModalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
+		143A0EA52141346400D1C12F /* ModalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
+		143A0EA62141346400D1C12F /* ModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalViewController.xib; sourceTree = "<group>"; };
+		1444541E21435E92006EC219 /* CoverStatusBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoverStatusBarViewController.h; sourceTree = "<group>"; };
+		1444541F21435E92006EC219 /* CoverStatusBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoverStatusBarViewController.m; sourceTree = "<group>"; };
+		1444542021435E92006EC219 /* CoverStatusBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoverStatusBarViewController.xib; sourceTree = "<group>"; };
+		144454232143604C006EC219 /* CoverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoverView.h; sourceTree = "<group>"; };
+		144454242143604C006EC219 /* CoverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoverView.m; sourceTree = "<group>"; };
 		14DAD737211A6F7400C9EB3F /* BGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGViewController.h; sourceTree = "<group>"; };
 		14DAD738211A6F7400C9EB3F /* BGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGViewController.m; sourceTree = "<group>"; };
 		1A8FFB583F3CA3E48218E9DA /* Pods-ZJLFaceProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJLFaceProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZJLFaceProject/Pods-ZJLFaceProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -631,6 +644,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1444541D21435E62006EC219 /* coverStatusBar */ = {
+			isa = PBXGroup;
+			children = (
+				1444541E21435E92006EC219 /* CoverStatusBarViewController.h */,
+				1444541F21435E92006EC219 /* CoverStatusBarViewController.m */,
+				1444542021435E92006EC219 /* CoverStatusBarViewController.xib */,
+				144454232143604C006EC219 /* CoverView.h */,
+				144454242143604C006EC219 /* CoverView.m */,
+			);
+			path = coverStatusBar;
+			sourceTree = "<group>";
+		};
 		14DAD736211A6EBF00C9EB3F /* bgView */ = {
 			isa = PBXGroup;
 			children = (
@@ -856,6 +881,9 @@
 				5F82C59320E5D481000A4FA0 /* HorizontalscreenViewController.h */,
 				5F82C59420E5D481000A4FA0 /* HorizontalscreenViewController.m */,
 				5F82C59520E5D481000A4FA0 /* HorizontalscreenViewController.xib */,
+				143A0EA42141346400D1C12F /* ModalViewController.h */,
+				143A0EA52141346400D1C12F /* ModalViewController.m */,
+				143A0EA62141346400D1C12F /* ModalViewController.xib */,
 			);
 			name = Horizontalscreen;
 			sourceTree = "<group>";
@@ -1257,6 +1285,7 @@
 		5FEB543C1EEFAE2C0055163A /* ZJLFaceProject */ = {
 			isa = PBXGroup;
 			children = (
+				1444541D21435E62006EC219 /* coverStatusBar */,
 				14DAD736211A6EBF00C9EB3F /* bgView */,
 				5F6401BF2106B6DC00040CCD /* ClickRange */,
 				5FA8130620FD80A40090171E /* Xml */,
@@ -1501,7 +1530,7 @@
 				TargetAttributes = {
 					5FEB54391EEFAE2C0055163A = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = XV89F2LKD5;
+						DevelopmentTeam = 9263453KA3;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -1570,6 +1599,7 @@
 				5FEB544A1EEFAE2C0055163A /* Assets.xcassets in Resources */,
 				5F49A13E1F42CDE500044718 /* MenuCollectionViewCell.xib in Resources */,
 				5F49A1371F42CCD100044718 /* application.jpg in Resources */,
+				1444542221435E92006EC219 /* CoverStatusBarViewController.xib in Resources */,
 				5F0B4FD11F441A9500150272 /* ProgressSliderView.xib in Resources */,
 				5F151BE320F74C850086705C /* JSOCViewController.xib in Resources */,
 				5FEB54481EEFAE2C0055163A /* Main.storyboard in Resources */,
@@ -1584,6 +1614,7 @@
 				5FA8130B20FD80C40090171E /* XMLViewController.xib in Resources */,
 				5F983F0420FC3DFF0076ED62 /* design_btn_s@2x.png in Resources */,
 				5F6401C42106B79F00040CCD /* ClickRangeViewController.xib in Resources */,
+				143A0EA82141346500D1C12F /* ModalViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1705,6 +1736,7 @@
 				5F5B044E1EEFC5A20056FF57 /* NSObject+SwithToModel.m in Sources */,
 				5FA9C4112043EF01002EEB44 /* UIWebView+AFNetworking.m in Sources */,
 				5F8E4A8420EA11A900D00657 /* ZipArchive.m in Sources */,
+				1444542121435E92006EC219 /* CoverStatusBarViewController.m in Sources */,
 				5F1B88F020E36E8400B34B52 /* GCDAsyncQueueViewController.m in Sources */,
 				5F8E4A7420EA11A900D00657 /* JPKeyCommands.m in Sources */,
 				5FA9C4092043EF01002EEB44 /* AFAutoPurgingImageCache.m in Sources */,
@@ -1743,6 +1775,7 @@
 				5FCB0A3D20E0C40400A8D839 /* AvPlayerViewController.m in Sources */,
 				5F82C59620E5D481000A4FA0 /* HorizontalscreenViewController.m in Sources */,
 				5FF49C731EF1263B00D04410 /* GCDMainViewController.m in Sources */,
+				144454252143604C006EC219 /* CoverView.m in Sources */,
 				5F49A1331F42C62300044718 /* MenuView.m in Sources */,
 				5F3AD2C220427FF100052CBB /* SortViewController.m in Sources */,
 				5F8E4A7320EA11A900D00657 /* JPPlayground.m in Sources */,
@@ -1771,6 +1804,7 @@
 				5F49A1261F428B9500044718 /* CollectionDelegate.m in Sources */,
 				5FF03D8B1F3AE45500C003DF /* SecondTableViewCell.m in Sources */,
 				5F6401C32106B79F00040CCD /* ClickRangeViewController.m in Sources */,
+				143A0EA72141346500D1C12F /* ModalViewController.m in Sources */,
 				5F4878441EF22C5300CCE3B4 /* UserDefaultViewController.m in Sources */,
 				5F5A15981F3D4B8C0048F147 /* AnimationViewController.m in Sources */,
 				5FA9C4142043EF01002EEB44 /* AFSecurityPolicy.m in Sources */,
@@ -1945,7 +1979,7 @@
 				CODE_SIGN_ENTITLEMENTS = ZJLFaceProject/ZJLFaceProject.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XV89F2LKD5;
+				DEVELOPMENT_TEAM = 9263453KA3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/AMapFoundation",
@@ -1963,7 +1997,7 @@
 					"$(PROJECT_DIR)/ZJLFaceProject/JSPatch/Extensions/JPLibffi/libffi",
 				);
 				OTHER_LDFLAGS = "-lsqlite3.0";
-				PRODUCT_BUNDLE_IDENTIFIER = zjlch.ZJLFaceProject;
+				PRODUCT_BUNDLE_IDENTIFIER = zjlch.ZJLFaceProject1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
@@ -1978,7 +2012,7 @@
 				CODE_SIGN_ENTITLEMENTS = ZJLFaceProject/ZJLFaceProject.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XV89F2LKD5;
+				DEVELOPMENT_TEAM = 9263453KA3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/AMapFoundation",
@@ -1996,7 +2030,7 @@
 					"$(PROJECT_DIR)/ZJLFaceProject/JSPatch/Extensions/JPLibffi/libffi",
 				);
 				OTHER_LDFLAGS = "-lsqlite3.0";
-				PRODUCT_BUNDLE_IDENTIFIER = zjlch.ZJLFaceProject;
+				PRODUCT_BUNDLE_IDENTIFIER = zjlch.ZJLFaceProject1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";

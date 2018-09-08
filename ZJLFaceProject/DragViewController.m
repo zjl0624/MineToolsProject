@@ -30,14 +30,14 @@
 
 - (void)initUI {
 	circleButton = [[CircleButton alloc] initWithFrame:CGRectMake(ScreenWidth/2 - 30,(ScreenHeight - 64)/2 - 30, 60, 60)];
-	circleButton.delegate = self;
+//    circleButton.delegate = self;
 //	circleButton.frame = CGRectMake(ScreenWidth/2 - 30,(ScreenHeight - 64)/2 - 30, 60, 60);
 //	circleButton.layer.cornerRadius = 30;
 //	circleButton.backgroundColor = [UIColor redColor];
 	[self.view addSubview:circleButton];
-//	panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
-//	[circleButton addGestureRecognizer:panGesture];
-//	[circleButton addTarget:self action:@selector(circleButtonClicked) forControlEvents:UIControlEventTouchUpInside | UIControlEventTouchUpOutside];
+    panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
+    [circleButton addGestureRecognizer:panGesture];
+    [circleButton addTarget:self action:@selector(circleButtonClicked) forControlEvents:UIControlEventTouchUpInside | UIControlEventTouchUpOutside];
 	
 }
 - (void)moves:(CGPoint)point {
@@ -49,9 +49,9 @@
 	[ZJLHud showCustomHud:YES type:alertType title:@"点击了按钮"];
 }
 - (void)pan:(UIPanGestureRecognizer *)panGes {
+    NSLog(@"%ld",panGes.state);
 	CGPoint p = [panGesture translationInView:self.view];
-	NSLog(@"%f,%f--%f,%f",CGRectGetMinX(circleButton.frame),CGRectGetMinY(circleButton.frame),p.x,p.y);
-	
+//    NSLog(@"%f,%f--%f,%f",CGRectGetMinX(circleButton.frame),CGRectGetMinY(circleButton.frame),p.x,p.y);
 	circleButton.frame = CGRectMake(CGRectGetMinX(circleButton.frame) + p.x, CGRectGetMinY(circleButton.frame) + p.y, 60, 60);
 	[panGes setTranslation:CGPointZero inView:self.view];
 	

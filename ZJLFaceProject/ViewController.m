@@ -39,6 +39,8 @@
 #import "XMLViewController.h"
 #import "ClickRangeViewController.h"
 #import "BGViewController.h"
+#import "ModalViewController.h"
+#import "CoverStatusBarViewController.h"
 
 static NSString * const cellIdentifier = @"cell";
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource> {
@@ -188,8 +190,16 @@ static NSString * const cellIdentifier = @"cell";
         case 31:
             vc = [[BGViewController alloc] init];
             break;
-		default:
-			break;
+        case 32:{
+            vc = [[ModalViewController alloc] initWithNibName:@"ModalViewController" bundle:nil];
+            MyNaviVController *navi = [[MyNaviVController alloc] initWithRootViewController:vc];
+            [self presentViewController:navi animated:YES completion:nil];
+            return;
+        }
+        case 33:
+            vc = [[CoverStatusBarViewController alloc] initWithNibName:@"CoverStatusBarViewController" bundle:nil];
+            break;
+
 	}
 	[self.navigationController pushViewController:vc animated:YES];
 }
@@ -233,6 +243,8 @@ static NSString * const cellIdentifier = @"cell";
 	[dataArray addObject:@"解析xml"];
 	[dataArray addObject:@"扩大按钮点击范围"];
     [dataArray addObject:@"半透明遮罩"];
+    [dataArray addObject:@"横屏问题"];
+    [dataArray addObject:@"覆盖状态栏"];
 }
 
 @end

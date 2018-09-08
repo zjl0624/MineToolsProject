@@ -10,12 +10,42 @@
 
 @implementation CoverView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.windowLevel=UIWindowLevelAlert;
+        self.backgroundColor = [UIColor whiteColor];
+        [self makeKeyAndVisible];
+    }
+    return self;
 }
-*/
+
+- (id) init
+
+{
+    
+    CGRect f=[[UIScreen mainScreen] bounds];
+    
+    CGRect s=[[UIApplication sharedApplication] statusBarFrame];
+    
+    self = [super initWithFrame:CGRectMake(0, 0, f.size.width, s.size.height)];
+    
+    if (self != nil) {
+        
+        self.windowLevel=UIWindowLevelAlert;
+        
+        self.backgroundColor=[UIColor clearColor];
+        
+        
+        
+        
+        
+        [self makeKeyAndVisible];
+        
+    }
+    
+    return self;
+    
+}
 
 @end
