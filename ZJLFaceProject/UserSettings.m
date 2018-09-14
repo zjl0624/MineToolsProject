@@ -78,4 +78,12 @@ static id _instance;
 	[UserSettings sharedInstance].isPage = userSettings.isPage;
 	[UserSettings sharedInstance].allContentLength = userSettings.allContentLength;
 }
+
++ (void)removeFile {
+    NSFileManager *defaultManager = [NSFileManager defaultManager];
+    NSString *filePath = [NSTemporaryDirectory() stringByAppendingString:@"archiver.txt"];
+    if ([defaultManager isDeletableFileAtPath:filePath]) {
+        [defaultManager removeItemAtPath:filePath error:nil];
+    }
+}
 @end
