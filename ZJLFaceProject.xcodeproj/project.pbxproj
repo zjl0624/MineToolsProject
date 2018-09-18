@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1436E7D9215095F900690736 /* UIView+CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1436E7D8215095F900690736 /* UIView+CircleView.m */; };
 		143A0EA72141346500D1C12F /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143A0EA52141346400D1C12F /* ModalViewController.m */; };
 		143A0EA82141346500D1C12F /* ModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 143A0EA62141346400D1C12F /* ModalViewController.xib */; };
 		1444542121435E92006EC219 /* CoverStatusBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1444541F21435E92006EC219 /* CoverStatusBarViewController.m */; };
@@ -230,6 +231,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1436E7D7215095F900690736 /* UIView+CircleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+CircleView.h"; sourceTree = "<group>"; };
+		1436E7D8215095F900690736 /* UIView+CircleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+CircleView.m"; sourceTree = "<group>"; };
 		143A0EA42141346400D1C12F /* ModalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
 		143A0EA52141346400D1C12F /* ModalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
 		143A0EA62141346400D1C12F /* ModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalViewController.xib; sourceTree = "<group>"; };
@@ -1237,6 +1240,8 @@
 				5FCB51132043DADC00D9958D /* CicleImageViewController.h */,
 				5FCB51142043DADC00D9958D /* CicleImageViewController.m */,
 				5FCB51152043DADC00D9958D /* CicleImageViewController.xib */,
+				1436E7D7215095F900690736 /* UIView+CircleView.h */,
+				1436E7D8215095F900690736 /* UIView+CircleView.m */,
 			);
 			name = CircleImage;
 			sourceTree = "<group>";
@@ -1813,6 +1818,7 @@
 				5F8E4A8020EA11A900D00657 /* mztools.c in Sources */,
 				5F8E4A6F20EA11A900D00657 /* JPMethodSignature.m in Sources */,
 				5FEB543F1EEFAE2C0055163A /* main.m in Sources */,
+				1436E7D9215095F900690736 /* UIView+CircleView.m in Sources */,
 				5FEB54731EEFB3960055163A /* JsonToModelViewController.m in Sources */,
 				5FD6AF6520F84BE700D48727 /* OCModel.m in Sources */,
 				5F8B69E720453B12006E8E50 /* LocalNotification.m in Sources */,

@@ -8,6 +8,7 @@
 
 #import "CicleImageViewController.h"
 #import "UIImage+CircleImage.h"
+#import "UIView+CircleView.h"
 
 @interface CicleImageViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageview;
@@ -20,7 +21,9 @@
     [super viewDidLoad];
 	self.view.backgroundColor = [UIColor lightGrayColor];
 	UIImage *image = [UIImage imageNamed:@"2.jpg"];
-	[self.imageview setImage:[UIImage CircleImageWithImage:image]];
+    self.imageview.image = image;
+    [self.imageview circleView:UIRectCornerTopLeft|UIRectCornerTopRight cornerRadii:CGSizeMake(4, 4)];
+//    [self.imageview setImage:[UIImage CircleImageWithImage:image]];
 }
 
 - (void)didReceiveMemoryWarning {
