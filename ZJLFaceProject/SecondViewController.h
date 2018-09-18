@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+typedef void(^PassValueBlock)(NSString *text);
 @protocol passValueDelegate
 - (void)passTextFieldValue:(NSString *)text;
 @end
@@ -15,5 +16,7 @@
 @property (weak,nonatomic) id<passValueDelegate> delegate;
 
 @property (nonatomic,strong) NSString *propertyValue;
+
+@property (nonatomic,copy) PassValueBlock block;
 
 @end

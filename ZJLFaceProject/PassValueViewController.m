@@ -44,6 +44,9 @@
 			SecondViewController *vc = [[SecondViewController alloc] init];
 			vc.propertyValue = textField.text;
 			vc.delegate = self;
+            vc.block = ^(NSString *text) {
+                resultLabel.text = text;
+            };
 			[self.navigationController pushViewController:vc animated:YES];
 		}
 

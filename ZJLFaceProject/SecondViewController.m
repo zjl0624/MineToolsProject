@@ -38,16 +38,18 @@
 	}else if ([sender.titleLabel.text isEqualToString:@"代理传值"]){
 		if (![textField.text isEqualToString:@""]) {
 			[self.delegate passTextFieldValue:textField.text];
-			[self.navigationController popViewControllerAnimated:YES];
 		}
 		
-	}else {
+	}else if ([sender.titleLabel.text isEqualToString:@"通知传值"]){
 		if (![textField.text isEqualToString:@""]) {
 			[[NSNotificationCenter defaultCenter] postNotificationName:@"noti" object:nil userInfo:@{@"value":textField.text}];
-			[self.navigationController popViewControllerAnimated:YES];
-
 		}
-	}
+    }else if ([sender.titleLabel.text isEqualToString:@"block传值"]) {
+        if (![textField.text isEqualToString:@""]) {
+            self.block(textField.text);
+        }
+    }
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 
@@ -106,7 +108,10 @@
 	dataArray = [[NSMutableArray alloc] init];
 	[dataArray addObject:@"代理传值"];
 	[dataArray addObject:@"通知传值"];
+    [dataArray addObject:@"block传值"];
 }
 
-
+- (void)dealloc {
+    
+}
 @end
