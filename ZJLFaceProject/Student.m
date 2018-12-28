@@ -30,7 +30,9 @@ int eat(id self,SEL sel,NSString *paramA,NSString *paramB){
 		return [super resolveInstanceMethod:sel];
 	}
 }
-
+- (void)setName:(NSString *)name {
+    
+}
 @end
 
 

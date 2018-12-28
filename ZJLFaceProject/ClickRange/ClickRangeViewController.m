@@ -21,7 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	[self.testButton setTouchRangeWithTop:-45 left:-15 bottom:45 right:15];
+	[self.testButton setTouchRangeWithTop:-100 left:-15 bottom:45 right:15];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -34,6 +34,7 @@ static NSNumber *a;
 	self.strongStr = @"nihao";
 	NSLog(@"%p %p",test,&test);
 	NSLog(@"%p %p",_strongStr,&_strongStr);
+    [self collectionCopy];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,5 +43,13 @@ static NSNumber *a;
 }
 
 
+- (void)collectionCopy {
+    NSArray *arr = @[@"哈哈哈",@"呵呵呵"];
+    NSString *str = arr[0];
+    NSLog(@"%p %p",str,&str);
+    NSArray *newArr = [arr copy];
+    NSString *newStr = newArr[0];
+    NSLog(@"%p %p",newStr,&newStr);
+}
 
 @end

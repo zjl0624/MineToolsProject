@@ -41,6 +41,9 @@
 #import "BGViewController.h"
 #import "ModalViewController.h"
 #import "CoverStatusBarViewController.h"
+#import "IphonexViewController.h"
+#import "PhotoViewController.h"
+#import "LocationViewController.h"
 
 static NSString * const cellIdentifier = @"cell";
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource> {
@@ -199,7 +202,15 @@ static NSString * const cellIdentifier = @"cell";
         case 33:
             vc = [[CoverStatusBarViewController alloc] initWithNibName:@"CoverStatusBarViewController" bundle:nil];
             break;
-
+        case 34:
+            vc = [[IphonexViewController alloc] initWithNibName:@"IphonexViewController" bundle:nil];
+            break;
+        case 35:
+            vc = [[PhotoViewController alloc] initWithNibName:@"PhotoViewController" bundle:nil];
+            break;
+        case 36:
+            vc = [[LocationViewController alloc] init];
+            break;
 	}
 	[self.navigationController pushViewController:vc animated:YES];
 }
@@ -245,6 +256,9 @@ static NSString * const cellIdentifier = @"cell";
     [dataArray addObject:@"半透明遮罩"];
     [dataArray addObject:@"横屏问题"];
     [dataArray addObject:@"覆盖状态栏"];
+    [dataArray addObject:@"xib适配iphoneX"];
+    [dataArray addObject:@"系统相机"];
+    [dataArray addObject:@"后台定位"];
 }
 
 @end
