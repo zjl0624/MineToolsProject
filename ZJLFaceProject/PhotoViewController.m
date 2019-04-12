@@ -8,7 +8,7 @@
 
 #import "PhotoViewController.h"
 #import "UIImageView+AFNetworking.h"
-
+#import <Photos/Photos.h>
 @interface PhotoViewController ()<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 @property (strong,nonatomic) UIImagePickerController *imagePicker;
 @property (weak, nonatomic) IBOutlet UIImageView *iconImageView;
@@ -48,7 +48,24 @@
 }
 
 - (IBAction)saveAction:(id)sender {
-    UIImageWriteToSavedPhotosAlbum(self.iconImageView.image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
+//    UIImageWriteToSavedPhotosAlbum(self.iconImageView.image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
+    
+    [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
+        if (status == PHAuthorizationStatusAuthorized) {
+            [[PHPhotoLibrary sharedPhotoLibrary]performChanges:^{
+                [PHAssetChangeRequest creationRequestForAssetFromImage:self.iconImageView.image];
+            } completionHandler:^(BOOL success, NSError * _Nullable error) {
+                if (error) {
+                    NSLog(@"%@",@"保存失败");
+                } else {
+                    NSLog(@"%@",@"保存成功");
+                }
+            }];
+        } else {
+
+        }
+    }];
+
 
 }
 
