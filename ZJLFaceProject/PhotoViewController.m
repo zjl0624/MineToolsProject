@@ -7,12 +7,15 @@
 //
 
 #import "PhotoViewController.h"
+#import "UIImageView+AFNetworking.h"
 
 @interface PhotoViewController ()<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 @property (strong,nonatomic) UIImagePickerController *imagePicker;
+@property (weak, nonatomic) IBOutlet UIImageView *iconImageView;
 - (IBAction)xiangceAction:(id)sender;
 
 - (IBAction)xiangjiAction:(id)sender;
+- (IBAction)saveAction:(id)sender;
 
 @end
 
@@ -20,7 +23,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    NSString *imageUrl = @"http://p1.qzone.la/Upload/20160309/20160309193722609423.jpg";
+    [_iconImageView setImageWithURL:[NSURL URLWithString:imageUrl]];
 }
 
 
@@ -41,6 +45,20 @@
 - (IBAction)xiangjiAction:(id)sender {
     self.imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
     [self presentViewController:self.imagePicker animated:YES completion:nil];
+}
+
+- (IBAction)saveAction:(id)sender {
+    UIImageWriteToSavedPhotosAlbum(self.iconImageView.image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
+
+}
+
+-(void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo {
+    NSString *msg = nil ;
+    if(error){
+        msg = @"保存图片失败" ;
+    }else{
+        msg = @"保存图片成功" ;
+    }
 }
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     if (picker.sourceType == UIImagePickerControllerSourceTypeCamera) {

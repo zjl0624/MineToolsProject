@@ -271,7 +271,7 @@
 
 - (void)hideMenu {
 	[UIView animateWithDuration:0.25 animations:^{
-		menuView.frame = CGRectMake(0, ScreenHeight, ScreenWidth, 0);
+        self->menuView.frame = CGRectMake(0, ScreenHeight, ScreenWidth, 0);
 	}];
 }
 - (void)createSliderView {
