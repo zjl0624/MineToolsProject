@@ -66,7 +66,8 @@
 }
 
 - (void)createTable {
-	NSString *createSql = @"create table if not exists myTable(id integer primary key autoincrement, name text, age integer, address text)";
+//    NSString *createSql = @"create table if not exists myTable(id integer primary key autoincrement, name text, age integer, address text)";
+    NSString *createSql = @"create table if not exists region(id integer primary key, name text, parent_id integer)";
 	if (sqlite3_exec(db, [createSql UTF8String], NULL, NULL, &error) == SQLITE_OK) {
 		UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"创建表成功" preferredStyle:UIAlertControllerStyleAlert];
 		UIAlertAction *action = [UIAlertAction actionWithTitle:@"关闭" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
@@ -80,7 +81,7 @@
 }
 
 - (void)querySQL {
-	NSString *sql = @"select * from myTable";
+	NSString *sql = @"select * from region";
 	if (sqlite3_prepare_v2(db, [sql UTF8String], -1, &statement, nil) ==SQLITE_OK) {
 		while (sqlite3_step(statement) == SQLITE_ROW) {
 			int id = sqlite3_column_int(statement, 0);
@@ -91,13 +92,22 @@
 }
 
 - (void)insertSql {
-	NSString *sql = @"insert into myTable(name,age,address) values('哈哈','18','中国') ";
+//    NSString *sql = @"insert into myTable(name,age,address) values('哈哈','18','中国') ";
+    NSString *sql = [self read];
 	if (sqlite3_exec(db, [sql UTF8String], NULL, NULL, &error) == SQLITE_OK) {
 		NSLog(@"插入成功");
 	}else {
 		NSLog(@"%s",error);
 		sqlite3_free(error);
 	}
+}
+
+- (NSString *)read {
+    NSError *error;
+    NSStringEncoding gbkEncoding = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000);
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"sql" ofType:@"txt"];
+    NSString *content = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:&error];
+    return content;
 }
 
 @end

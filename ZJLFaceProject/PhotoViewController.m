@@ -52,6 +52,7 @@
     
     [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
         if (status == PHAuthorizationStatusAuthorized) {
+            
             [[PHPhotoLibrary sharedPhotoLibrary]performChanges:^{
                 [PHAssetChangeRequest creationRequestForAssetFromImage:self.iconImageView.image];
             } completionHandler:^(BOOL success, NSError * _Nullable error) {
@@ -65,6 +66,8 @@
 
         }
     }];
+
+    
 
 
 }

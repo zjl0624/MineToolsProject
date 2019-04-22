@@ -22,6 +22,7 @@
 		14BE18EB21748459008825B1 /* IphonexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BE18E921748459008825B1 /* IphonexViewController.m */; };
 		14BE18EC21748459008825B1 /* IphonexViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14BE18EA21748459008825B1 /* IphonexViewController.xib */; };
 		14DAD739211A6F7400C9EB3F /* BGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DAD738211A6F7400C9EB3F /* BGViewController.m */; };
+		14DE082E226D546F00D838DF /* sql.txt in Resources */ = {isa = PBXBuildFile; fileRef = 14DE082D226D546F00D838DF /* sql.txt */; };
 		20E0E0E67DD094DEE36DF490 /* libPods-ZJLFaceProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD85B6481D041909EA8FA49 /* libPods-ZJLFaceProject.a */; };
 		5F01245D1FA9BDA30007D4B3 /* DragViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F01245C1FA9BDA30007D4B3 /* DragViewController.m */; };
 		5F0124601FA9BF870007D4B3 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F01245F1FA9BF870007D4B3 /* BaseViewController.m */; };
@@ -264,6 +265,7 @@
 		14BE18EA21748459008825B1 /* IphonexViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IphonexViewController.xib; sourceTree = "<group>"; };
 		14DAD737211A6F7400C9EB3F /* BGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGViewController.h; sourceTree = "<group>"; };
 		14DAD738211A6F7400C9EB3F /* BGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGViewController.m; sourceTree = "<group>"; };
+		14DE082D226D546F00D838DF /* sql.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sql.txt; sourceTree = "<group>"; };
 		1A8FFB583F3CA3E48218E9DA /* Pods-ZJLFaceProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJLFaceProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZJLFaceProject/Pods-ZJLFaceProject.release.xcconfig"; sourceTree = "<group>"; };
 		5F01245B1FA9BDA30007D4B3 /* DragViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragViewController.h; sourceTree = "<group>"; };
 		5F01245C1FA9BDA30007D4B3 /* DragViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragViewController.m; sourceTree = "<group>"; };
@@ -775,6 +777,7 @@
 		5F48783E1EF2293100CCE3B4 /* SaveData */ = {
 			isa = PBXGroup;
 			children = (
+				14DE082D226D546F00D838DF /* sql.txt */,
 				5F48783F1EF2294D00CCE3B4 /* SaveDataMainViewController.h */,
 				5F4878401EF2294D00CCE3B4 /* SaveDataMainViewController.m */,
 				5F4878421EF22C5300CCE3B4 /* UserDefaultViewController.h */,
@@ -1633,6 +1636,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14DE082E226D546F00D838DF /* sql.txt in Resources */,
 				5F49A1301F42C3F300044718 /* back.jpg in Resources */,
 				5F49A12B1F42900900044718 /* ContentCollectionViewCell.xib in Resources */,
 				5FA8130D20FD837E0090171E /* content.xml in Resources */,
