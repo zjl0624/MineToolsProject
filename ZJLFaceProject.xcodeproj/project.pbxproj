@@ -19,6 +19,7 @@
 		1444542121435E92006EC219 /* CoverStatusBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1444541F21435E92006EC219 /* CoverStatusBarViewController.m */; };
 		1444542221435E92006EC219 /* CoverStatusBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1444542021435E92006EC219 /* CoverStatusBarViewController.xib */; };
 		144454252143604C006EC219 /* CoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 144454242143604C006EC219 /* CoverView.m */; };
+		144DD84C226EE88500DAA0B3 /* UseQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144DD84B226EE88500DAA0B3 /* UseQueueViewController.m */; };
 		14BE18EB21748459008825B1 /* IphonexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BE18E921748459008825B1 /* IphonexViewController.m */; };
 		14BE18EC21748459008825B1 /* IphonexViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14BE18EA21748459008825B1 /* IphonexViewController.xib */; };
 		14DAD739211A6F7400C9EB3F /* BGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DAD738211A6F7400C9EB3F /* BGViewController.m */; };
@@ -260,6 +261,8 @@
 		1444542021435E92006EC219 /* CoverStatusBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoverStatusBarViewController.xib; sourceTree = "<group>"; };
 		144454232143604C006EC219 /* CoverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoverView.h; sourceTree = "<group>"; };
 		144454242143604C006EC219 /* CoverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoverView.m; sourceTree = "<group>"; };
+		144DD84A226EE88500DAA0B3 /* UseQueueViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UseQueueViewController.h; sourceTree = "<group>"; };
+		144DD84B226EE88500DAA0B3 /* UseQueueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UseQueueViewController.m; sourceTree = "<group>"; };
 		14BE18E821748459008825B1 /* IphonexViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IphonexViewController.h; sourceTree = "<group>"; };
 		14BE18E921748459008825B1 /* IphonexViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IphonexViewController.m; sourceTree = "<group>"; };
 		14BE18EA21748459008825B1 /* IphonexViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IphonexViewController.xib; sourceTree = "<group>"; };
@@ -1506,6 +1509,8 @@
 				5F1B88EC20E36A1000B34B52 /* GCDSyncQueueViewController.m */,
 				5F1B88EE20E36E8400B34B52 /* GCDAsyncQueueViewController.h */,
 				5F1B88EF20E36E8400B34B52 /* GCDAsyncQueueViewController.m */,
+				144DD84A226EE88500DAA0B3 /* UseQueueViewController.h */,
+				144DD84B226EE88500DAA0B3 /* UseQueueViewController.m */,
 			);
 			name = GCD;
 			sourceTree = "<group>";
@@ -1764,6 +1769,7 @@
 				5F6401C72106BCD800040CCD /* UIButton+Enlarge.m in Sources */,
 				5FF03D881F3AE44800C003DF /* FirstTableViewCell.m in Sources */,
 				5FA9C40C2043EF01002EEB44 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				144DD84C226EE88500DAA0B3 /* UseQueueViewController.m in Sources */,
 				5FA8130A20FD80C40090171E /* XMLViewController.m in Sources */,
 				5FCE600520FC7A2300DA18E5 /* BaseModel.m in Sources */,
 				5F5A15A01F3D9E8B0048F147 /* ReaderViewController.m in Sources */,

@@ -10,6 +10,7 @@
 #import "GCDFinishAllAsyncViewController.h"
 #import "GCDSyncQueueViewController.h"
 #import "GCDAsyncQueueViewController.h"
+#import "UseQueueViewController.h"
 
 @interface GCDMainViewController ()<UITableViewDelegate,UITableViewDataSource> {
 	UITableView *tableview;
@@ -57,6 +58,8 @@
 		case 2:
 			vc = [[GCDAsyncQueueViewController alloc] init];
 			break;
+        case 3:
+            vc = [[UseQueueViewController alloc] init];
 		default:
 			break;
 	}
@@ -72,7 +75,7 @@
 	[dataArray addObject:@"多个异步请求全部执行完成"];
 	[dataArray addObject:@"串行队列"];
 	[dataArray addObject:@"并行队列"];
-
+    [dataArray addObject:@"自定义队列"];
 }
 
 @end
