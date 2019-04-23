@@ -34,6 +34,9 @@
     [_pauseButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [self.view addSubview:_pauseButton];
 //    [_pauseButton addTarget:self action:@selector(clickPause) forControlEvents:UIControlEventTouchUpInside];
+    for (NSInteger i = 0; i < 3; i++) {
+        [self clickInsert];
+    }
 }
 
 - (void)clickInsert {
@@ -45,8 +48,9 @@
             [weakSelf show:^{
                 NSLog(@"任务%ld完成",(long)weakSelf.index);
                 weakSelf.index++;
+                weakSelf.queue.suspended = NO;
             }];
-            weakSelf.queue.suspended = NO;
+
 
         }];
     });
