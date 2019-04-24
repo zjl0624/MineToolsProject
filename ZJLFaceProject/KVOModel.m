@@ -15,6 +15,7 @@ static id _instance;
 	static dispatch_once_t onceToken;
 	dispatch_once(&onceToken, ^{
 		_instance = [[self alloc] init];
+        [_instance configureModel];
 	});
 	return _instance;
 }
@@ -35,6 +36,10 @@ static id _instance;
 
 - (id)mutableCopyWithZone:(NSZone *)zone {
 	return _instance;
+}
+
+- (void)configureModel {
+    _array = [[NSMutableArray alloc] init];
 }
 
 - (void)changeText:(NSString *)text {

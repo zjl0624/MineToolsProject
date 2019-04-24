@@ -40,23 +40,32 @@
 	resultLabel = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMinX(textfield.frame), CGRectGetMaxY(textfield.frame) + 20, CGRectGetWidth(textfield.frame), 40)];
 	[self.view addSubview:resultLabel];
 	
-	[[KVOModel sharedKVOModel] addObserver:self forKeyPath:@"text" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:@"哈哈"];
+	[[KVOModel sharedKVOModel] addObserver:self forKeyPath:@"text" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:"str"];
+    [[KVOModel sharedKVOModel] addObserver:self forKeyPath:@"array" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:"array"];
 }
 
 
 #pragma mark - KVO
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
-	resultLabel.text = change[@"new"];
+    if (strcmp((char *)context, "str") == 0) {
+        resultLabel.text = change[@"new"];
+    }else if (strcmp((char *)context, "array") == 0) {
+        NSLog(@"%@",[KVOModel sharedKVOModel].array);
+    }
+
 }
 
 #pragma mark - private method
 - (void)textfieldChange {
-//	[[KVOModel sharedKVOModel] setText:textfield.text];
-	[[KVOModel sharedKVOModel] setValue:textfield.text forKey:@"text"];
-//	[[KVOModel sharedKVOModel] changeText:textfield.text];
+    [[KVOModel sharedKVOModel] setText:textfield.text];
+//    [[KVOModel sharedKVOModel] setValue:textfield.text forKey:@"text"];
+//    [[KVOModel sharedKVOModel] changeText:textfield.text];
+    [[KVOModel sharedKVOModel].array addObject:textfield.text];
+//    [KVOModel sharedKVOModel].array = [@[] mutableCopy];
 }
 
 - (void)dealloc {
 	[[KVOModel sharedKVOModel] removeObserver:self forKeyPath:@"text"];
+    [[KVOModel sharedKVOModel] removeObserver:self forKeyPath:@"array"];
 }
 @end

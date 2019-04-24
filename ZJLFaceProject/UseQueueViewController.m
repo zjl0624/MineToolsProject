@@ -50,11 +50,10 @@
                 weakSelf.index++;
                 weakSelf.queue.suspended = NO;
             }];
-
-
         }];
     });
-
+    NSArray *arr = _queue.operations;
+    NSLog(@"%@",arr);
 }
 
 - (void)clickPause {

@@ -12,6 +12,8 @@
 
 @property (nonatomic,strong) NSString *text;
 
+@property (nonatomic,strong) NSMutableArray *array;
+
 - (void)changeText:(NSString *)text;
 
 + (instancetype)sharedKVOModel;
