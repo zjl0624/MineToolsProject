@@ -60,8 +60,9 @@
     [[KVOModel sharedKVOModel] setText:textfield.text];
 //    [[KVOModel sharedKVOModel] setValue:textfield.text forKey:@"text"];
 //    [[KVOModel sharedKVOModel] changeText:textfield.text];
-    [[KVOModel sharedKVOModel].array addObject:textfield.text];
-//    [KVOModel sharedKVOModel].array = [@[] mutableCopy];
+    [[KVOModel sharedKVOModel].array addObject:textfield.text];//直接调用不触发kvo
+    NSMutableArray *array = [[KVOModel sharedKVOModel] mutableArrayValueForKey:@"array"];//用kvc取出来的数组 调用add就能出发kvo
+    [array addObject:textfield.text];
 }
 
 - (void)dealloc {
