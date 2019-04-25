@@ -24,14 +24,14 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:@"china_city_db" ofType:@"db"];
     _db = [[FMDatabase alloc] initWithPath:path];
     if ([_db open]) {
-        NSLog(@"创建数据库成功");
+        NSLog(@"打开数据库成功");
     }else {
-        NSLog(@"创建数据库失败");
+        NSLog(@"打开数据库失败");
     }
 }
 
 - (void)queryWithCode:(NSString *)code {
-    NSString *sql = [NSString stringWithFormat:@"select * from region where id = '%@'",code];
+    NSString *sql = [NSString stringWithFormat:@"select * from region where parent_id = '%@'",code];
     FMResultSet *result = [_db executeQuery:sql];
     while ([result next]) {
         NSString *city = [result objectForColumn:@"name"];
@@ -41,6 +41,6 @@
 
 
 - (IBAction)queryAction:(id)sender {
-    [self queryWithCode:@"110000"];
+    [self queryWithCode:@"0"];
 }
 @end
