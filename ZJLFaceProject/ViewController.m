@@ -35,7 +35,7 @@
 #import "CALyerViewController.h"
 #import "JSOCViewController.h"
 #import "URLSchemesViewController.h"
-#import "MapViewController.h"
+//#import "MapViewController.h"
 #import "XMLViewController.h"
 #import "ClickRangeViewController.h"
 #import "BGViewController.h"
@@ -43,7 +43,7 @@
 #import "CoverStatusBarViewController.h"
 #import "IphonexViewController.h"
 #import "PhotoViewController.h"
-#import "LocationViewController.h"
+//#import "LocationViewController.h"
 
 static NSString * const cellIdentifier = @"cell";
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource> {
@@ -181,9 +181,9 @@ static NSString * const cellIdentifier = @"cell";
 		case 27:
 			vc = [[URLSchemesViewController alloc] initWithNibName:@"URLSchemesViewController" bundle:nil];
 			break;
-		case 28:
-			vc = [[MapViewController alloc] init];
-			break;
+//        case 28:
+//            vc = [[MapViewController alloc] init];
+//            break;
 		case 29:
 			vc = [[XMLViewController alloc] initWithNibName:@"XMLViewController" bundle:nil];
 			break;
@@ -208,9 +208,9 @@ static NSString * const cellIdentifier = @"cell";
         case 35:
             vc = [[PhotoViewController alloc] initWithNibName:@"PhotoViewController" bundle:nil];
             break;
-        case 36:
-            vc = [[LocationViewController alloc] init];
-            break;
+//        case 36:
+//            vc = [[LocationViewController alloc] init];
+//            break;
 	}
 	[self.navigationController pushViewController:vc animated:YES];
 }

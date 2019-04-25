@@ -11,7 +11,7 @@
 #import "MyNaviVController.h"
 #import "ViewController.h"
 #import "JPEngine.h"
-#import "AMapFoundationKit.h"
+//#import "AMapFoundationKit.h"
 
 @interface AppDelegate ()
 
