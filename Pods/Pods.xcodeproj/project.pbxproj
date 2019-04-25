@@ -7,21 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1759F78B5CE058C49A526CA0C820F150 /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 91893D40185E0EFA40FC217BE44A7C0D /* FMDB.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2B6040DEEA3BA5CEC94E05E016C03300 /* Pods-ZJLFaceProjectTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2284CACC64AFE049ABCABCA2AC4675FE /* Pods-ZJLFaceProjectTests-dummy.m */; };
-		3253F81EBDA889C2FDE1FAD24F3697E8 /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 638E465E4B27490B0FB423614C3ADD11 /* FMDatabase.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3367F093F18D31B29A1335FA8EDC1267 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 400AFB42920EB39709666D3F1A73D6C2 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		525DCC332CC1F9DF1CC05205DB23C463 /* Pods-ZJLFaceProjectUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A426899A513EF85F5D008F09AEA0BD4 /* Pods-ZJLFaceProjectUITests-dummy.m */; };
-		5287A9A3E6EC4E7E906F769F579C83BC /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C30F9E55829B027C4913D1F19D68C /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		859D7ED69D00170EDE2B3E01FBFB675A /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCC0EED53ED8D7C1931178E0E4269B4 /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		8EFD21116F189E6C8076CE39CB273584 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 69CC8B63F837EA7B053AB8BA07253A25 /* FMResultSet.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9918385E99AA20D66120837F7CB8C197 /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 33F15B71183AD666DFC49D907F769ACF /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B585ECE5945353A680A2B18EB92FE45D /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D2DD52CB174E1DC79111C38E770F6FC8 /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		BF2EA588215D2FEA9773567A41732CA9 /* Pods-ZJLFaceProject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DFF22F8926E2CC0421507607A723D2 /* Pods-ZJLFaceProject-dummy.m */; };
-		C02CA53F474AE7476ADE5CB11849EF14 /* FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D76813CB39ACC402A9EE3DC12B4E682 /* FMDB-dummy.m */; };
-		D2882C4B699E1AE931D88B5C9C2D8D85 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C11A8F38580C7A7FF38ACB6A3B412884 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		D9A02C77779E09D3C31AB94BBFAE735B /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B69D4A7150AC2F65A57B7D04F092D4 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		ED8918386B5AD1743DEF1D2529390BCA /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AF3AEDDA16DD8E28B59FF0788FDDC03 /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FEE2A00F7F80B2558FC432DB72F01AE6 /* Pods-ZJLFaceProject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DFF22F8926E2CC0421507607A723D2 /* Pods-ZJLFaceProject-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,62 +17,40 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DD8AA75EFE8C02BE1887D09CA00F7125;
+			remoteGlobalIDString = 5159CF96FC6DA19F7D902363AF867479;
 			remoteInfo = "Pods-ZJLFaceProject";
-		};
-		802FAA2B72DDCB5EB94303E654520A3A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F3B1490ADFF2E0A5A13B4C445576BB03;
-			remoteInfo = FMDB;
 		};
 		FA66E6EC4740105D0D9D5FFF840EA665 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DD8AA75EFE8C02BE1887D09CA00F7125;
+			remoteGlobalIDString = 5159CF96FC6DA19F7D902363AF867479;
 			remoteInfo = "Pods-ZJLFaceProject";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		01B350C9F8DEA5FF3CB444DBEF5AC2F2 /* Pods-ZJLFaceProjectUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZJLFaceProjectUITests-frameworks.sh"; sourceTree = "<group>"; };
-		1AF3AEDDA16DD8E28B59FF0788FDDC03 /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
 		1FDB92A12017A7F3916A2F9049411A42 /* Pods-ZJLFaceProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZJLFaceProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2284CACC64AFE049ABCABCA2AC4675FE /* Pods-ZJLFaceProjectTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZJLFaceProjectTests-dummy.m"; sourceTree = "<group>"; };
 		27F7E3E3B4C92055ED892593FD223039 /* Pods-ZJLFaceProjectTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZJLFaceProjectTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		33F15B71183AD666DFC49D907F769ACF /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
-		3BCC0EED53ED8D7C1931178E0E4269B4 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
 		3D4427A80DC15E4ADD73096ADC172A80 /* Pods-ZJLFaceProjectUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZJLFaceProjectUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		400AFB42920EB39709666D3F1A73D6C2 /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
+		49FF196BB1134DED139BE4B12038CA4C /* libPods-ZJLFaceProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ZJLFaceProject.a"; path = "libPods-ZJLFaceProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A13B6BDFD8735F67CF29658D89F5AD5 /* Pods-ZJLFaceProject-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZJLFaceProject-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5BDB1B4AF75626505AAEA550CFBB1207 /* libFMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFMDB.a; path = libFMDB.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5CB82B4D3C8805A27E6E71EEB8DA87E1 /* libPods-ZJLFaceProjectUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ZJLFaceProjectUITests.a"; path = "libPods-ZJLFaceProjectUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		638E465E4B27490B0FB423614C3ADD11 /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
 		649AF57C0E77C3D1A1BD18F63DB6CB40 /* Pods-ZJLFaceProject-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZJLFaceProject-frameworks.sh"; sourceTree = "<group>"; };
-		69CC8B63F837EA7B053AB8BA07253A25 /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
 		6A426899A513EF85F5D008F09AEA0BD4 /* Pods-ZJLFaceProjectUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZJLFaceProjectUITests-dummy.m"; sourceTree = "<group>"; };
-		6D76813CB39ACC402A9EE3DC12B4E682 /* FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMDB-dummy.m"; sourceTree = "<group>"; };
 		6F55FDE192B7103DE1F30D23A96214CB /* Pods-ZJLFaceProjectUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZJLFaceProjectUITests-resources.sh"; sourceTree = "<group>"; };
-		71B69D4A7150AC2F65A57B7D04F092D4 /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
-		8C82BF2DB738799E6124CA769257F0B6 /* libPods-ZJLFaceProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ZJLFaceProject.a"; path = "libPods-ZJLFaceProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		91893D40185E0EFA40FC217BE44A7C0D /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DAE7129A95377A3D182EDDBDD475044 /* Pods-ZJLFaceProjectTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZJLFaceProjectTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A1448204AE8E2DC37C8C36438BED7AD8 /* FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-prefix.pch"; sourceTree = "<group>"; };
 		A6DFF22F8926E2CC0421507607A723D2 /* Pods-ZJLFaceProject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZJLFaceProject-dummy.m"; sourceTree = "<group>"; };
 		A7FFE20BF86E670F5B4634CA182830D7 /* Pods-ZJLFaceProjectTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZJLFaceProjectTests-frameworks.sh"; sourceTree = "<group>"; };
-		A94189A9B3694D1A8F56DDDCCD6842DB /* libPods-ZJLFaceProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ZJLFaceProjectTests.a"; path = "libPods-ZJLFaceProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E873E614663E325550C990C77EF1F1 /* Pods-ZJLFaceProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZJLFaceProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		AA1474DB76859210CA8ED4A255FD4448 /* Pods-ZJLFaceProjectUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZJLFaceProjectUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		ABD7ED09297E1A2BC37051812FAF2E3A /* Pods-ZJLFaceProjectTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZJLFaceProjectTests-resources.sh"; sourceTree = "<group>"; };
-		B2AC8D08AB9E95E701EC049C53414AEB /* FMDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMDB.xcconfig; sourceTree = "<group>"; };
+		AD51C3F8A30A6D84E50A62D43C892EBD /* libPods-ZJLFaceProjectUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ZJLFaceProjectUITests.a"; path = "libPods-ZJLFaceProjectUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8EF44BA01D7935BF387608110354650 /* Pods-ZJLFaceProject-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZJLFaceProject-acknowledgements.plist"; sourceTree = "<group>"; };
-		C11A8F38580C7A7FF38ACB6A3B412884 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
 		CB0A9692113F185A58253FB0B2A0A87B /* Pods-ZJLFaceProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZJLFaceProject.debug.xcconfig"; sourceTree = "<group>"; };
-		D2DD52CB174E1DC79111C38E770F6FC8 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
-		DC7C30F9E55829B027C4913D1F19D68C /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
+		E5C917EB2D4B2289BC6ADB9C681B72AE /* libPods-ZJLFaceProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ZJLFaceProjectTests.a"; path = "libPods-ZJLFaceProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD75A7569CCCCE6D5A55270FEB9E3BC /* Pods-ZJLFaceProject-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZJLFaceProject-resources.sh"; sourceTree = "<group>"; };
 		F789673B0B80D6E46A414965B8E423E3 /* Pods-ZJLFaceProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZJLFaceProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F883DBC6A5DAAF6BC86CC6186EC2A9F6 /* Pods-ZJLFaceProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZJLFaceProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +58,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		23E57A6AB5D589E43390DF9E8AE43B36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		28AD9CB2ED445FD9EB1EC833B3D029FF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -100,20 +73,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		539D45A64339D0E08EC51B3586BE9C57 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8D764B845B07E700013073CDF97FF060 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E639C49C9AAA81C571710748025B0E12 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -155,26 +114,14 @@
 			path = "Target Support Files/Pods-ZJLFaceProject";
 			sourceTree = "<group>";
 		};
-		6713B356098580E3BB187FDFF3FB3781 /* Products */ = {
+		7CFD72B968BF54F8344C4A31291D2A7F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5BDB1B4AF75626505AAEA550CFBB1207 /* libFMDB.a */,
-				8C82BF2DB738799E6124CA769257F0B6 /* libPods-ZJLFaceProject.a */,
-				A94189A9B3694D1A8F56DDDCCD6842DB /* libPods-ZJLFaceProjectTests.a */,
-				5CB82B4D3C8805A27E6E71EEB8DA87E1 /* libPods-ZJLFaceProjectUITests.a */,
+				49FF196BB1134DED139BE4B12038CA4C /* libPods-ZJLFaceProject.a */,
+				E5C917EB2D4B2289BC6ADB9C681B72AE /* libPods-ZJLFaceProjectTests.a */,
+				AD51C3F8A30A6D84E50A62D43C892EBD /* libPods-ZJLFaceProjectUITests.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		6A65CEB166911CC900621A37BC272B1F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B2AC8D08AB9E95E701EC049C53414AEB /* FMDB.xcconfig */,
-				6D76813CB39ACC402A9EE3DC12B4E682 /* FMDB-dummy.m */,
-				A1448204AE8E2DC37C8C36438BED7AD8 /* FMDB-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/FMDB";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -182,18 +129,9 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
-				BFB8C92E749ED180124155E2270474D2 /* Pods */,
-				6713B356098580E3BB187FDFF3FB3781 /* Products */,
+				7CFD72B968BF54F8344C4A31291D2A7F /* Products */,
 				16B24CAE789DA09BDFCE0DCAFF10F1DC /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		BFB8C92E749ED180124155E2270474D2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DEA37EDFE575D4B41E183255F5C2B8C8 /* FMDB */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		C3975F9A5E4ABC0A0C2A5CB93A94CC68 /* Pods-ZJLFaceProjectTests */ = {
@@ -211,24 +149,6 @@
 			path = "Target Support Files/Pods-ZJLFaceProjectTests";
 			sourceTree = "<group>";
 		};
-		C89A6930D6DE6039F840782BFE7A2DFB /* standard */ = {
-			isa = PBXGroup;
-			children = (
-				638E465E4B27490B0FB423614C3ADD11 /* FMDatabase.h */,
-				DC7C30F9E55829B027C4913D1F19D68C /* FMDatabase.m */,
-				D2DD52CB174E1DC79111C38E770F6FC8 /* FMDatabaseAdditions.h */,
-				3BCC0EED53ED8D7C1931178E0E4269B4 /* FMDatabaseAdditions.m */,
-				1AF3AEDDA16DD8E28B59FF0788FDDC03 /* FMDatabasePool.h */,
-				400AFB42920EB39709666D3F1A73D6C2 /* FMDatabasePool.m */,
-				33F15B71183AD666DFC49D907F769ACF /* FMDatabaseQueue.h */,
-				C11A8F38580C7A7FF38ACB6A3B412884 /* FMDatabaseQueue.m */,
-				91893D40185E0EFA40FC217BE44A7C0D /* FMDB.h */,
-				69CC8B63F837EA7B053AB8BA07253A25 /* FMResultSet.h */,
-				71B69D4A7150AC2F65A57B7D04F092D4 /* FMResultSet.m */,
-			);
-			name = standard;
-			sourceTree = "<group>";
-		};
 		CB90CA3462C3A5A7731066C1FB947607 /* Pods-ZJLFaceProjectUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,35 +164,25 @@
 			path = "Target Support Files/Pods-ZJLFaceProjectUITests";
 			sourceTree = "<group>";
 		};
-		DEA37EDFE575D4B41E183255F5C2B8C8 /* FMDB */ = {
-			isa = PBXGroup;
-			children = (
-				C89A6930D6DE6039F840782BFE7A2DFB /* standard */,
-				6A65CEB166911CC900621A37BC272B1F /* Support Files */,
-			);
-			name = FMDB;
-			path = FMDB;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		8E0B0995C58FCBE723E45CCFDA3593A0 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3253F81EBDA889C2FDE1FAD24F3697E8 /* FMDatabase.h in Headers */,
-				B585ECE5945353A680A2B18EB92FE45D /* FMDatabaseAdditions.h in Headers */,
-				ED8918386B5AD1743DEF1D2529390BCA /* FMDatabasePool.h in Headers */,
-				9918385E99AA20D66120837F7CB8C197 /* FMDatabaseQueue.h in Headers */,
-				1759F78B5CE058C49A526CA0C820F150 /* FMDB.h in Headers */,
-				8EFD21116F189E6C8076CE39CB273584 /* FMResultSet.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
+		5159CF96FC6DA19F7D902363AF867479 /* Pods-ZJLFaceProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A693FFE0CB4EB449111C5C819601F4B /* Build configuration list for PBXNativeTarget "Pods-ZJLFaceProject" */;
+			buildPhases = (
+				FA53A40DFD03CA79D0311443F8399562 /* Sources */,
+				23E57A6AB5D589E43390DF9E8AE43B36 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ZJLFaceProject";
+			productName = "Pods-ZJLFaceProject";
+			productReference = 49FF196BB1134DED139BE4B12038CA4C /* libPods-ZJLFaceProject.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		63C988768392E6E78E6AE23D606D8587 /* Pods-ZJLFaceProjectTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C07D8C319C147AC065CFD08CE6D1250 /* Build configuration list for PBXNativeTarget "Pods-ZJLFaceProjectTests" */;
@@ -287,7 +197,7 @@
 			);
 			name = "Pods-ZJLFaceProjectTests";
 			productName = "Pods-ZJLFaceProjectTests";
-			productReference = A94189A9B3694D1A8F56DDDCCD6842DB /* libPods-ZJLFaceProjectTests.a */;
+			productReference = E5C917EB2D4B2289BC6ADB9C681B72AE /* libPods-ZJLFaceProjectTests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		8E4BBBFC845C07F2B23A2D007E07DF54 /* Pods-ZJLFaceProjectUITests */ = {
@@ -304,41 +214,7 @@
 			);
 			name = "Pods-ZJLFaceProjectUITests";
 			productName = "Pods-ZJLFaceProjectUITests";
-			productReference = 5CB82B4D3C8805A27E6E71EEB8DA87E1 /* libPods-ZJLFaceProjectUITests.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		DD8AA75EFE8C02BE1887D09CA00F7125 /* Pods-ZJLFaceProject */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0E3DD2FF0C54172947909FAA14401E88 /* Build configuration list for PBXNativeTarget "Pods-ZJLFaceProject" */;
-			buildPhases = (
-				78191B45D134752AAE65FD3175A53A80 /* Sources */,
-				E639C49C9AAA81C571710748025B0E12 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				92CA809D26844030CA2D180F5EBF93CA /* PBXTargetDependency */,
-			);
-			name = "Pods-ZJLFaceProject";
-			productName = "Pods-ZJLFaceProject";
-			productReference = 8C82BF2DB738799E6124CA769257F0B6 /* libPods-ZJLFaceProject.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		F3B1490ADFF2E0A5A13B4C445576BB03 /* FMDB */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BD5637FC9FFD0059BEB97F08F08E2B5F /* Build configuration list for PBXNativeTarget "FMDB" */;
-			buildPhases = (
-				2A83EB307F72A01A401794108C7D5A39 /* Sources */,
-				8D764B845B07E700013073CDF97FF060 /* Frameworks */,
-				8E0B0995C58FCBE723E45CCFDA3593A0 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = FMDB;
-			productName = FMDB;
-			productReference = 5BDB1B4AF75626505AAEA550CFBB1207 /* libFMDB.a */;
+			productReference = AD51C3F8A30A6D84E50A62D43C892EBD /* libPods-ZJLFaceProjectUITests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -358,12 +234,11 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 6713B356098580E3BB187FDFF3FB3781 /* Products */;
+			productRefGroup = 7CFD72B968BF54F8344C4A31291D2A7F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F3B1490ADFF2E0A5A13B4C445576BB03 /* FMDB */,
-				DD8AA75EFE8C02BE1887D09CA00F7125 /* Pods-ZJLFaceProject */,
+				5159CF96FC6DA19F7D902363AF867479 /* Pods-ZJLFaceProject */,
 				63C988768392E6E78E6AE23D606D8587 /* Pods-ZJLFaceProjectTests */,
 				8E4BBBFC845C07F2B23A2D007E07DF54 /* Pods-ZJLFaceProjectUITests */,
 			);
@@ -387,24 +262,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2A83EB307F72A01A401794108C7D5A39 /* Sources */ = {
+		FA53A40DFD03CA79D0311443F8399562 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5287A9A3E6EC4E7E906F769F579C83BC /* FMDatabase.m in Sources */,
-				859D7ED69D00170EDE2B3E01FBFB675A /* FMDatabaseAdditions.m in Sources */,
-				3367F093F18D31B29A1335FA8EDC1267 /* FMDatabasePool.m in Sources */,
-				D2882C4B699E1AE931D88B5C9C2D8D85 /* FMDatabaseQueue.m in Sources */,
-				C02CA53F474AE7476ADE5CB11849EF14 /* FMDB-dummy.m in Sources */,
-				D9A02C77779E09D3C31AB94BBFAE735B /* FMResultSet.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		78191B45D134752AAE65FD3175A53A80 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BF2EA588215D2FEA9773567A41732CA9 /* Pods-ZJLFaceProject-dummy.m in Sources */,
+				FEE2A00F7F80B2558FC432DB72F01AE6 /* Pods-ZJLFaceProject-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,19 +276,13 @@
 		76F8CE02B6EC656B914FF89695DECC77 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-ZJLFaceProject";
-			target = DD8AA75EFE8C02BE1887D09CA00F7125 /* Pods-ZJLFaceProject */;
+			target = 5159CF96FC6DA19F7D902363AF867479 /* Pods-ZJLFaceProject */;
 			targetProxy = 2C13E14E9845098C42A5E3576B87BFAB /* PBXContainerItemProxy */;
-		};
-		92CA809D26844030CA2D180F5EBF93CA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FMDB;
-			target = F3B1490ADFF2E0A5A13B4C445576BB03 /* FMDB */;
-			targetProxy = 802FAA2B72DDCB5EB94303E654520A3A /* PBXContainerItemProxy */;
 		};
 		DC98E3BA7EC081FD7779C60AEBA3F586 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-ZJLFaceProject";
-			target = DD8AA75EFE8C02BE1887D09CA00F7125 /* Pods-ZJLFaceProject */;
+			target = 5159CF96FC6DA19F7D902363AF867479 /* Pods-ZJLFaceProject */;
 			targetProxy = FA66E6EC4740105D0D9D5FFF840EA665 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -516,54 +372,27 @@
 			};
 			name = Debug;
 		};
-		373B6F057002609570CE5D7CA633C2BE /* Release */ = {
+		3920607AD0E99DC74148DA31D2996BAD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2AC8D08AB9E95E701EC049C53414AEB /* FMDB.xcconfig */;
+			baseConfigurationReference = F883DBC6A5DAAF6BC86CC6186EC2A9F6 /* Pods-ZJLFaceProject.release.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = FMDB;
-				PRODUCT_NAME = FMDB;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
-		};
-		AB6EC592E4681C80410E9EDF6D1A6597 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2AC8D08AB9E95E701EC049C53414AEB /* FMDB.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = FMDB;
-				PRODUCT_NAME = FMDB;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
 		};
 		AD8C004CBD80B30F9535378FD30BFC43 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -586,6 +415,27 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		C6F169E64340A1F5A9DC2AFA12E0EE6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB0A9692113F185A58253FB0B2A0A87B /* Pods-ZJLFaceProject.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 		CA0ABADD16C886C1330B7E9D7A028E20 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -612,49 +462,6 @@
 		D9E450B31592CBB5CF25DB743B7E3D17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F789673B0B80D6E46A414965B8E423E3 /* Pods-ZJLFaceProjectTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		EF7EF11D2792E08D12D0D4DAED5D9583 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F883DBC6A5DAAF6BC86CC6186EC2A9F6 /* Pods-ZJLFaceProject.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		F84A48BB67A917FE79120DF3080317ED /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB0A9692113F185A58253FB0B2A0A87B /* Pods-ZJLFaceProject.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -734,15 +541,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0E3DD2FF0C54172947909FAA14401E88 /* Build configuration list for PBXNativeTarget "Pods-ZJLFaceProject" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F84A48BB67A917FE79120DF3080317ED /* Debug */,
-				EF7EF11D2792E08D12D0D4DAED5D9583 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -770,11 +568,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BD5637FC9FFD0059BEB97F08F08E2B5F /* Build configuration list for PBXNativeTarget "FMDB" */ = {
+		8A693FFE0CB4EB449111C5C819601F4B /* Build configuration list for PBXNativeTarget "Pods-ZJLFaceProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AB6EC592E4681C80410E9EDF6D1A6597 /* Debug */,
-				373B6F057002609570CE5D7CA633C2BE /* Release */,
+				C6F169E64340A1F5A9DC2AFA12E0EE6B /* Debug */,
+				3920607AD0E99DC74148DA31D2996BAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

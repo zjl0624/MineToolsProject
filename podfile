@@ -6,7 +6,7 @@ target 'ZJLFaceProject' do
   # use_frameworks!
 
   # Pods for ZJLFaceProject
-  pod 'FMDB'
+  #pod 'FMDB'
   target 'ZJLFaceProjectTests' do
     inherit! :search_paths
     # Pods for testing

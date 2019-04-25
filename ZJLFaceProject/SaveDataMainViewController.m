@@ -11,6 +11,7 @@
 #import "SQLiteViewController.h"
 #import "ArchiverViewController.h"
 #import "KeychainViewController.h"
+#import "UseFMDBViewController.h"
 
 @interface SaveDataMainViewController ()<UITableViewDelegate,UITableViewDataSource> {
 	UITableView *tableview;
@@ -60,6 +61,9 @@
 		case 3:
 			vc = [[KeychainViewController alloc] init];
 			break;
+        case 4:
+            vc = [[UseFMDBViewController alloc] init];
+            break;
 		default:
 			break;
 	}
@@ -76,6 +80,7 @@
 	[dataArray addObject:@"数据库"];
 	[dataArray addObject:@"对象序列化"];
 	[dataArray addObject:@"Keychain"];
+    [dataArray addObject:@"FMDB"];
 	
 }
 @end

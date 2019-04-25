@@ -10,17 +10,29 @@
 		140F39BF2182C6C800768AAE /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 140F39BE2182C6C800768AAE /* PhotoViewController.m */; };
 		140F39C12182C75400768AAE /* PhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 140F39C02182C75400768AAE /* PhotoViewController.xib */; };
 		1436E7D9215095F900690736 /* UIView+CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1436E7D8215095F900690736 /* UIView+CircleView.m */; };
+		143895E022715F12007C7EA1 /* UseFMDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143895DE22715F12007C7EA1 /* UseFMDBViewController.m */; };
+		143895E122715F12007C7EA1 /* UseFMDBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 143895DF22715F12007C7EA1 /* UseFMDBViewController.xib */; };
 		143A0EA72141346500D1C12F /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143A0EA52141346400D1C12F /* ModalViewController.m */; };
 		143A0EA82141346500D1C12F /* ModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 143A0EA62141346400D1C12F /* ModalViewController.xib */; };
 		1444542121435E92006EC219 /* CoverStatusBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1444541F21435E92006EC219 /* CoverStatusBarViewController.m */; };
 		1444542221435E92006EC219 /* CoverStatusBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1444542021435E92006EC219 /* CoverStatusBarViewController.xib */; };
 		144454252143604C006EC219 /* CoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 144454242143604C006EC219 /* CoverView.m */; };
 		144DD84C226EE88500DAA0B3 /* UseQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144DD84B226EE88500DAA0B3 /* UseQueueViewController.m */; };
+		14BB2E582271617900C53B3B /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4878491EF251EB00CCE3B4 /* libsqlite3.0.tbd */; };
+		14BB2E592271617900C53B3B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F48784A1EF251EB00CCE3B4 /* libsqlite3.tbd */; };
+		14BB2E67227161C500C53B3B /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB2E5C227161C500C53B3B /* FMDatabaseQueue.m */; };
+		14BB2E68227161C500C53B3B /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB2E5F227161C500C53B3B /* FMDatabaseAdditions.m */; };
+		14BB2E69227161C500C53B3B /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB2E60227161C500C53B3B /* FMDatabase.m */; };
+		14BB2E6A227161C500C53B3B /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB2E64227161C500C53B3B /* FMDatabasePool.m */; };
+		14BB2E6B227161C500C53B3B /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB2E65227161C500C53B3B /* FMResultSet.m */; };
+		14BB2E6E2271641A00C53B3B /* china_city_db.db in Resources */ = {isa = PBXBuildFile; fileRef = 14BB2E6D2271641A00C53B3B /* china_city_db.db */; };
 		14BE18EB21748459008825B1 /* IphonexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BE18E921748459008825B1 /* IphonexViewController.m */; };
 		14BE18EC21748459008825B1 /* IphonexViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14BE18EA21748459008825B1 /* IphonexViewController.xib */; };
 		14DAD739211A6F7400C9EB3F /* BGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DAD738211A6F7400C9EB3F /* BGViewController.m */; };
 		14DE082E226D546F00D838DF /* sql.txt in Resources */ = {isa = PBXBuildFile; fileRef = 14DE082D226D546F00D838DF /* sql.txt */; };
-		36D20F3E38ED66D46511947C /* libPods-ZJLFaceProjectUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E52D48732D205731908D85B /* libPods-ZJLFaceProjectUITests.a */; };
+		240EED9DBEA381AC650BA310 /* libPods-ZJLFaceProjectUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9308D4BCEB87C22362E48148 /* libPods-ZJLFaceProjectUITests.a */; };
+		51DCC19BE2AEB1195587F2E1 /* libPods-ZJLFaceProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B26E1D025A2D494C16C58B /* libPods-ZJLFaceProjectTests.a */; };
+		59784A75028275D758E80D53 /* libPods-ZJLFaceProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E8DE22618A9E7DB3842310 /* libPods-ZJLFaceProject.a */; };
 		5F01245D1FA9BDA30007D4B3 /* DragViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F01245C1FA9BDA30007D4B3 /* DragViewController.m */; };
 		5F0124601FA9BF870007D4B3 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F01245F1FA9BF870007D4B3 /* BaseViewController.m */; };
 		5F0B4FCF1F441A8500150272 /* ProgressSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B4FCE1F441A8500150272 /* ProgressSliderView.m */; };
@@ -45,8 +57,6 @@
 		5F4878411EF2294D00CCE3B4 /* SaveDataMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4878401EF2294D00CCE3B4 /* SaveDataMainViewController.m */; };
 		5F4878441EF22C5300CCE3B4 /* UserDefaultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4878431EF22C5300CCE3B4 /* UserDefaultViewController.m */; };
 		5F4878471EF24FD800CCE3B4 /* SQLiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4878461EF24FD800CCE3B4 /* SQLiteViewController.m */; };
-		5F48784B1EF251EB00CCE3B4 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4878491EF251EB00CCE3B4 /* libsqlite3.0.tbd */; };
-		5F48784C1EF251EB00CCE3B4 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F48784A1EF251EB00CCE3B4 /* libsqlite3.tbd */; };
 		5F48784F1EF265AA00CCE3B4 /* ArchiverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F48784E1EF265AA00CCE3B4 /* ArchiverViewController.m */; };
 		5F4878521EF265E600CCE3B4 /* CustomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4878511EF265E600CCE3B4 /* CustomModel.m */; };
 		5F49A1261F428B9500044718 /* CollectionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F49A1251F428B9500044718 /* CollectionDelegate.m */; };
@@ -207,8 +217,6 @@
 		5FF9503B20F9A14800F141AB /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FF9503920F9A14800F141AB /* CoreTelephony.framework */; };
 		5FF9503D20F9A15500F141AB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FF9503C20F9A15500F141AB /* CoreLocation.framework */; };
 		5FF9503F20F9A18900F141AB /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FF9503E20F9A18900F141AB /* libc++.tbd */; };
-		AC452C7FACD1B2605BAC99B3 /* libPods-ZJLFaceProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE84957476D95239138084B /* libPods-ZJLFaceProject.a */; };
-		BB06BF8C4267428205B0742C /* libPods-ZJLFaceProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE801222EC979C963222BE79 /* libPods-ZJLFaceProjectTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -229,11 +237,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00B26E1D025A2D494C16C58B /* libPods-ZJLFaceProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZJLFaceProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		140F39BD2182C6C800768AAE /* PhotoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
 		140F39BE2182C6C800768AAE /* PhotoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 		140F39C02182C75400768AAE /* PhotoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoViewController.xib; sourceTree = "<group>"; };
 		1436E7D7215095F900690736 /* UIView+CircleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+CircleView.h"; sourceTree = "<group>"; };
 		1436E7D8215095F900690736 /* UIView+CircleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+CircleView.m"; sourceTree = "<group>"; };
+		143895DD22715F12007C7EA1 /* UseFMDBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UseFMDBViewController.h; sourceTree = "<group>"; };
+		143895DE22715F12007C7EA1 /* UseFMDBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UseFMDBViewController.m; sourceTree = "<group>"; };
+		143895DF22715F12007C7EA1 /* UseFMDBViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UseFMDBViewController.xib; sourceTree = "<group>"; };
 		143A0EA42141346400D1C12F /* ModalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
 		143A0EA52141346400D1C12F /* ModalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
 		143A0EA62141346400D1C12F /* ModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalViewController.xib; sourceTree = "<group>"; };
@@ -244,6 +256,18 @@
 		144454242143604C006EC219 /* CoverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoverView.m; sourceTree = "<group>"; };
 		144DD84A226EE88500DAA0B3 /* UseQueueViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UseQueueViewController.h; sourceTree = "<group>"; };
 		144DD84B226EE88500DAA0B3 /* UseQueueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UseQueueViewController.m; sourceTree = "<group>"; };
+		14BB2E5B227161C500C53B3B /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		14BB2E5C227161C500C53B3B /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		14BB2E5D227161C500C53B3B /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		14BB2E5E227161C500C53B3B /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		14BB2E5F227161C500C53B3B /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		14BB2E60227161C500C53B3B /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		14BB2E61227161C500C53B3B /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		14BB2E62227161C500C53B3B /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		14BB2E63227161C500C53B3B /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		14BB2E64227161C500C53B3B /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		14BB2E65227161C500C53B3B /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		14BB2E6D2271641A00C53B3B /* china_city_db.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = china_city_db.db; sourceTree = "<group>"; };
 		14BE18E821748459008825B1 /* IphonexViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IphonexViewController.h; sourceTree = "<group>"; };
 		14BE18E921748459008825B1 /* IphonexViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IphonexViewController.m; sourceTree = "<group>"; };
 		14BE18EA21748459008825B1 /* IphonexViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IphonexViewController.xib; sourceTree = "<group>"; };
@@ -251,10 +275,9 @@
 		14DAD738211A6F7400C9EB3F /* BGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGViewController.m; sourceTree = "<group>"; };
 		14DE082D226D546F00D838DF /* sql.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sql.txt; sourceTree = "<group>"; };
 		1A8FFB583F3CA3E48218E9DA /* Pods-ZJLFaceProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJLFaceProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZJLFaceProject/Pods-ZJLFaceProject.release.xcconfig"; sourceTree = "<group>"; };
-		3E52D48732D205731908D85B /* libPods-ZJLFaceProjectUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZJLFaceProjectUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3FE84957476D95239138084B /* libPods-ZJLFaceProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZJLFaceProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B6650DB8C491C914396A297 /* Pods-ZJLFaceProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJLFaceProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZJLFaceProjectTests/Pods-ZJLFaceProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		4BC2875086537AD5AAFD1F01 /* Pods-ZJLFaceProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJLFaceProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZJLFaceProjectTests/Pods-ZJLFaceProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		51E8DE22618A9E7DB3842310 /* libPods-ZJLFaceProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZJLFaceProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55E36997FB1B35FE6D890E60 /* Pods-ZJLFaceProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJLFaceProjectUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZJLFaceProjectUITests/Pods-ZJLFaceProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5B64ABA079162C56862C3D15 /* Pods-ZJLFaceProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJLFaceProjectUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZJLFaceProjectUITests/Pods-ZJLFaceProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5F01245B1FA9BDA30007D4B3 /* DragViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragViewController.h; sourceTree = "<group>"; };
@@ -596,7 +619,7 @@
 		5FF9503C20F9A15500F141AB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5FF9503E20F9A18900F141AB /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		7DC97600A40AEBCB67CC55A3 /* Pods-ZJLFaceProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJLFaceProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZJLFaceProject/Pods-ZJLFaceProject.debug.xcconfig"; sourceTree = "<group>"; };
-		DE801222EC979C963222BE79 /* libPods-ZJLFaceProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZJLFaceProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9308D4BCEB87C22362E48148 /* libPods-ZJLFaceProjectUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZJLFaceProjectUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -604,6 +627,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14BB2E582271617900C53B3B /* libsqlite3.0.tbd in Frameworks */,
+				14BB2E592271617900C53B3B /* libsqlite3.tbd in Frameworks */,
 				5FA8130F20FD8ECF0090171E /* libxml2.tbd in Frameworks */,
 				5F983EFE20FC34260076ED62 /* QuartzCore.framework in Frameworks */,
 				5F983EFC20FC34110076ED62 /* SystemConfiguration.framework in Frameworks */,
@@ -618,10 +643,8 @@
 				5FF9503520F9A12800F141AB /* GLKit.framework in Frameworks */,
 				5F8E4A8920EA11D500D00657 /* libz.1.tbd in Frameworks */,
 				5F8E4A8720EA11B500D00657 /* JavaScriptCore.framework in Frameworks */,
-				5F48784B1EF251EB00CCE3B4 /* libsqlite3.0.tbd in Frameworks */,
 				5F8E4A7020EA11A900D00657 /* libffi.a in Frameworks */,
-				5F48784C1EF251EB00CCE3B4 /* libsqlite3.tbd in Frameworks */,
-				AC452C7FACD1B2605BAC99B3 /* libPods-ZJLFaceProject.a in Frameworks */,
+				59784A75028275D758E80D53 /* libPods-ZJLFaceProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,7 +652,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB06BF8C4267428205B0742C /* libPods-ZJLFaceProjectTests.a in Frameworks */,
+				51DCC19BE2AEB1195587F2E1 /* libPods-ZJLFaceProjectTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,7 +660,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36D20F3E38ED66D46511947C /* libPods-ZJLFaceProjectUITests.a in Frameworks */,
+				240EED9DBEA381AC650BA310 /* libPods-ZJLFaceProjectUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -664,6 +687,24 @@
 				144454242143604C006EC219 /* CoverView.m */,
 			);
 			path = coverStatusBar;
+			sourceTree = "<group>";
+		};
+		14BB2E5A227161C500C53B3B /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				14BB2E5B227161C500C53B3B /* FMDatabase.h */,
+				14BB2E5C227161C500C53B3B /* FMDatabaseQueue.m */,
+				14BB2E5D227161C500C53B3B /* FMResultSet.h */,
+				14BB2E5E227161C500C53B3B /* FMDatabasePool.h */,
+				14BB2E5F227161C500C53B3B /* FMDatabaseAdditions.m */,
+				14BB2E60227161C500C53B3B /* FMDatabase.m */,
+				14BB2E61227161C500C53B3B /* FMDatabaseQueue.h */,
+				14BB2E62227161C500C53B3B /* FMDB.h */,
+				14BB2E63227161C500C53B3B /* FMDatabaseAdditions.h */,
+				14BB2E64227161C500C53B3B /* FMDatabasePool.m */,
+				14BB2E65227161C500C53B3B /* FMResultSet.m */,
+			);
+			path = fmdb;
 			sourceTree = "<group>";
 		};
 		14BE18E72174842E008825B1 /* XibIphoneX */ = {
@@ -752,6 +793,11 @@
 		5F48783E1EF2293100CCE3B4 /* SaveData */ = {
 			isa = PBXGroup;
 			children = (
+				14BB2E6D2271641A00C53B3B /* china_city_db.db */,
+				14BB2E5A227161C500C53B3B /* fmdb */,
+				143895DD22715F12007C7EA1 /* UseFMDBViewController.h */,
+				143895DE22715F12007C7EA1 /* UseFMDBViewController.m */,
+				143895DF22715F12007C7EA1 /* UseFMDBViewController.xib */,
 				14DE082D226D546F00D838DF /* sql.txt */,
 				5F48783F1EF2294D00CCE3B4 /* SaveDataMainViewController.h */,
 				5F4878401EF2294D00CCE3B4 /* SaveDataMainViewController.m */,
@@ -790,9 +836,9 @@
 				5F8E4A8620EA11B500D00657 /* JavaScriptCore.framework */,
 				5F4878491EF251EB00CCE3B4 /* libsqlite3.0.tbd */,
 				5F48784A1EF251EB00CCE3B4 /* libsqlite3.tbd */,
-				3FE84957476D95239138084B /* libPods-ZJLFaceProject.a */,
-				DE801222EC979C963222BE79 /* libPods-ZJLFaceProjectTests.a */,
-				3E52D48732D205731908D85B /* libPods-ZJLFaceProjectUITests.a */,
+				51E8DE22618A9E7DB3842310 /* libPods-ZJLFaceProject.a */,
+				00B26E1D025A2D494C16C58B /* libPods-ZJLFaceProjectTests.a */,
+				9308D4BCEB87C22362E48148 /* libPods-ZJLFaceProjectUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1597,6 +1643,7 @@
 				5F49A12B1F42900900044718 /* ContentCollectionViewCell.xib in Resources */,
 				5FA8130D20FD837E0090171E /* content.xml in Resources */,
 				5F0B4FDB1F4426EA00150272 /* leftSlider.jpg in Resources */,
+				143895E122715F12007C7EA1 /* UseFMDBViewController.xib in Resources */,
 				5F49A1401F42D38E00044718 /* application_default.png in Resources */,
 				5F82C59720E5D481000A4FA0 /* HorizontalscreenViewController.xib in Resources */,
 				5F8B69EC20453D98006E8E50 /* LocalNotificationViewController.xib in Resources */,
@@ -1620,6 +1667,7 @@
 				5F49A1371F42CCD100044718 /* application.jpg in Resources */,
 				1444542221435E92006EC219 /* CoverStatusBarViewController.xib in Resources */,
 				5F0B4FD11F441A9500150272 /* ProgressSliderView.xib in Resources */,
+				14BB2E6E2271641A00C53B3B /* china_city_db.db in Resources */,
 				5F151BE320F74C850086705C /* JSOCViewController.xib in Resources */,
 				5FEB54481EEFAE2C0055163A /* Main.storyboard in Resources */,
 				5FA3445C1F3C044E00DAE2F2 /* FirstCollectionViewCell.xib in Resources */,
@@ -1725,7 +1773,9 @@
 				5F8E4A7620EA11A900D00657 /* JPDevErrorView.m in Sources */,
 				5F1B88ED20E36A1000B34B52 /* GCDSyncQueueViewController.m in Sources */,
 				5FA9C4162043EF01002EEB44 /* AFURLResponseSerialization.m in Sources */,
+				14BB2E67227161C500C53B3B /* FMDatabaseQueue.m in Sources */,
 				5FF49C6F1EF1145100D04410 /* TimerViewController.m in Sources */,
+				14BB2E6A227161C500C53B3B /* FMDatabasePool.m in Sources */,
 				5F8E4A7F20EA11A900D00657 /* ioapi.c in Sources */,
 				5F8E4A7520EA11A900D00657 /* SGDirWatchdog.m in Sources */,
 				5F8E4A6120EA11A900D00657 /* JPCGBitmapContext.m in Sources */,
@@ -1828,9 +1878,11 @@
 				5F87AA991FA9ABA8004221AB /* ZJLHud.m in Sources */,
 				5F8E4A6C20EA11A900D00657 /* JPUIKit.m in Sources */,
 				5FA9C41E2043F8ED002EEB44 /* UseAFNetworkingViewController.m in Sources */,
+				14BB2E68227161C500C53B3B /* FMDatabaseAdditions.m in Sources */,
 				5F8B69EB20453D98006E8E50 /* LocalNotificationViewController.m in Sources */,
 				5F0F3EED1F41715600587097 /* TestScrollerViewController.m in Sources */,
 				5FA9C40F2043EF01002EEB44 /* UIProgressView+AFNetworking.m in Sources */,
+				14BB2E69227161C500C53B3B /* FMDatabase.m in Sources */,
 				5F8E4A8120EA11A900D00657 /* unzip.c in Sources */,
 				5F48784F1EF265AA00CCE3B4 /* ArchiverViewController.m in Sources */,
 				5FF49C761EF1270600D04410 /* GCDFinishAllAsyncViewController.m in Sources */,
@@ -1844,6 +1896,7 @@
 				5F4878441EF22C5300CCE3B4 /* UserDefaultViewController.m in Sources */,
 				5F5A15981F3D4B8C0048F147 /* AnimationViewController.m in Sources */,
 				5FA9C4142043EF01002EEB44 /* AFSecurityPolicy.m in Sources */,
+				14BB2E6B227161C500C53B3B /* FMResultSet.m in Sources */,
 				5F8E4A6820EA11A900D00657 /* JPCoreGraphics.m in Sources */,
 				5F8E4A8020EA11A900D00657 /* mztools.c in Sources */,
 				5F8E4A6F20EA11A900D00657 /* JPMethodSignature.m in Sources */,
@@ -1853,6 +1906,7 @@
 				5FD6AF6520F84BE700D48727 /* OCModel.m in Sources */,
 				5F8B69E720453B12006E8E50 /* LocalNotification.m in Sources */,
 				5F01245D1FA9BDA30007D4B3 /* DragViewController.m in Sources */,
+				143895E022715F12007C7EA1 /* UseFMDBViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2038,7 +2092,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZJLFaceProject/JSPatch/Extensions/JPLibffi/libffi",
 				);
-				OTHER_LDFLAGS = "-lsqlite3.0";
+				OTHER_LDFLAGS = (
+					"-lsqlite3.0",
+					"$(inheriter)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = zjlch.ZJLFaceProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2073,7 +2130,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZJLFaceProject/JSPatch/Extensions/JPLibffi/libffi",
 				);
-				OTHER_LDFLAGS = "-lsqlite3.0";
+				OTHER_LDFLAGS = (
+					"-lsqlite3.0",
+					"$(inheriter)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = zjlch.ZJLFaceProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
