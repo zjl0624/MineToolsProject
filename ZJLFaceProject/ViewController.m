@@ -44,6 +44,7 @@
 #import "IphonexViewController.h"
 #import "PhotoViewController.h"
 //#import "LocationViewController.h"
+#import "SideBarViewController.h"
 
 static NSString * const cellIdentifier = @"cell";
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource> {
@@ -211,6 +212,9 @@ static NSString * const cellIdentifier = @"cell";
 //        case 36:
 //            vc = [[LocationViewController alloc] init];
 //            break;
+        case 37:
+            vc = [[SideBarViewController alloc] init];
+            break;
 	}
 	[self.navigationController pushViewController:vc animated:YES];
 }
@@ -259,6 +263,7 @@ static NSString * const cellIdentifier = @"cell";
     [dataArray addObject:@"xib适配iphoneX"];
     [dataArray addObject:@"系统相机"];
     [dataArray addObject:@"后台定位"];
+    [dataArray addObject:@"侧边栏"];
 }
 
 @end

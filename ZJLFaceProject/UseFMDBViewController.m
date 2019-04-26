@@ -35,12 +35,13 @@
     FMResultSet *result = [_db executeQuery:sql];
     while ([result next]) {
         NSString *city = [result objectForColumn:@"name"];
-        NSLog(@"名字：%@",city);
+        NSString *code = [result objectForColumn:@"id"];
+        NSLog(@"名字：%@ id:%@",city,code);
     }
 }
 
 
 - (IBAction)queryAction:(id)sender {
-    [self queryWithCode:@"0"];
+    [self queryWithCode:@"110100"];
 }
 @end

@@ -18,6 +18,8 @@
 		1444542221435E92006EC219 /* CoverStatusBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1444542021435E92006EC219 /* CoverStatusBarViewController.xib */; };
 		144454252143604C006EC219 /* CoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 144454242143604C006EC219 /* CoverView.m */; };
 		144DD84C226EE88500DAA0B3 /* UseQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144DD84B226EE88500DAA0B3 /* UseQueueViewController.m */; };
+		14A65A3D22729E340028B1F2 /* SideBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A65A3C22729E340028B1F2 /* SideBarViewController.m */; };
+		14A65A4022729E4A0028B1F2 /* SideBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A65A3F22729E4A0028B1F2 /* SideBar.m */; };
 		14BB2E582271617900C53B3B /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4878491EF251EB00CCE3B4 /* libsqlite3.0.tbd */; };
 		14BB2E592271617900C53B3B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F48784A1EF251EB00CCE3B4 /* libsqlite3.tbd */; };
 		14BB2E67227161C500C53B3B /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB2E5C227161C500C53B3B /* FMDatabaseQueue.m */; };
@@ -256,6 +258,10 @@
 		144454242143604C006EC219 /* CoverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoverView.m; sourceTree = "<group>"; };
 		144DD84A226EE88500DAA0B3 /* UseQueueViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UseQueueViewController.h; sourceTree = "<group>"; };
 		144DD84B226EE88500DAA0B3 /* UseQueueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UseQueueViewController.m; sourceTree = "<group>"; };
+		14A65A3B22729E340028B1F2 /* SideBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SideBarViewController.h; sourceTree = "<group>"; };
+		14A65A3C22729E340028B1F2 /* SideBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SideBarViewController.m; sourceTree = "<group>"; };
+		14A65A3E22729E4A0028B1F2 /* SideBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SideBar.h; sourceTree = "<group>"; };
+		14A65A3F22729E4A0028B1F2 /* SideBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SideBar.m; sourceTree = "<group>"; };
 		14BB2E5B227161C500C53B3B /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		14BB2E5C227161C500C53B3B /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
 		14BB2E5D227161C500C53B3B /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
@@ -689,20 +695,31 @@
 			path = coverStatusBar;
 			sourceTree = "<group>";
 		};
+		14A65A3A22729E0D0028B1F2 /* SideBar */ = {
+			isa = PBXGroup;
+			children = (
+				14A65A3B22729E340028B1F2 /* SideBarViewController.h */,
+				14A65A3C22729E340028B1F2 /* SideBarViewController.m */,
+				14A65A3E22729E4A0028B1F2 /* SideBar.h */,
+				14A65A3F22729E4A0028B1F2 /* SideBar.m */,
+			);
+			path = SideBar;
+			sourceTree = "<group>";
+		};
 		14BB2E5A227161C500C53B3B /* fmdb */ = {
 			isa = PBXGroup;
 			children = (
+				14BB2E62227161C500C53B3B /* FMDB.h */,
 				14BB2E5B227161C500C53B3B /* FMDatabase.h */,
-				14BB2E5C227161C500C53B3B /* FMDatabaseQueue.m */,
-				14BB2E5D227161C500C53B3B /* FMResultSet.h */,
-				14BB2E5E227161C500C53B3B /* FMDatabasePool.h */,
-				14BB2E5F227161C500C53B3B /* FMDatabaseAdditions.m */,
 				14BB2E60227161C500C53B3B /* FMDatabase.m */,
 				14BB2E61227161C500C53B3B /* FMDatabaseQueue.h */,
-				14BB2E62227161C500C53B3B /* FMDB.h */,
-				14BB2E63227161C500C53B3B /* FMDatabaseAdditions.h */,
-				14BB2E64227161C500C53B3B /* FMDatabasePool.m */,
+				14BB2E5C227161C500C53B3B /* FMDatabaseQueue.m */,
+				14BB2E5D227161C500C53B3B /* FMResultSet.h */,
 				14BB2E65227161C500C53B3B /* FMResultSet.m */,
+				14BB2E5E227161C500C53B3B /* FMDatabasePool.h */,
+				14BB2E64227161C500C53B3B /* FMDatabasePool.m */,
+				14BB2E63227161C500C53B3B /* FMDatabaseAdditions.h */,
+				14BB2E5F227161C500C53B3B /* FMDatabaseAdditions.m */,
 			);
 			path = fmdb;
 			sourceTree = "<group>";
@@ -1337,6 +1354,7 @@
 		5FEB543C1EEFAE2C0055163A /* ZJLFaceProject */ = {
 			isa = PBXGroup;
 			children = (
+				14A65A3A22729E0D0028B1F2 /* SideBar */,
 				140F39BC2182C6AA00768AAE /* Photo */,
 				14BE18E72174842E008825B1 /* XibIphoneX */,
 				1444541D21435E62006EC219 /* coverStatusBar */,
@@ -1872,6 +1890,7 @@
 				5F8E4A7120EA11A900D00657 /* JPLocker.m in Sources */,
 				5FEB54761EEFBA690055163A /* JsonModel.m in Sources */,
 				5FD6AF6A20F86C9800D48727 /* URLSchemesViewController.m in Sources */,
+				14A65A4022729E4A0028B1F2 /* SideBar.m in Sources */,
 				5FCF20ED1F414CB900F5CB7C /* SaveIndex.m in Sources */,
 				5F4878411EF2294D00CCE3B4 /* SaveDataMainViewController.m in Sources */,
 				5F8E4A6320EA11A900D00657 /* JPCGContext.m in Sources */,
@@ -1887,6 +1906,7 @@
 				5F48784F1EF265AA00CCE3B4 /* ArchiverViewController.m in Sources */,
 				5FF49C761EF1270600D04410 /* GCDFinishAllAsyncViewController.m in Sources */,
 				5F8E4A6E20EA11A900D00657 /* JPDispatch.m in Sources */,
+				14A65A3D22729E340028B1F2 /* SideBarViewController.m in Sources */,
 				5FF03D911F3AE4EB00C003DF /* SecondModel.m in Sources */,
 				5F4878521EF265E600CCE3B4 /* CustomModel.m in Sources */,
 				5F49A1261F428B9500044718 /* CollectionDelegate.m in Sources */,

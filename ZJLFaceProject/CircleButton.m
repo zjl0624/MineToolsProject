@@ -34,6 +34,10 @@
 	}
 }
 
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+}
+
 - (void)circleButtonClicked {
 	if (self.delegate && isClick == YES) {
 		[self.delegate clickButton:self];
