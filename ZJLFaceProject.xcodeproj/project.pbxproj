@@ -18,6 +18,8 @@
 		1444542221435E92006EC219 /* CoverStatusBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1444542021435E92006EC219 /* CoverStatusBarViewController.xib */; };
 		144454252143604C006EC219 /* CoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 144454242143604C006EC219 /* CoverView.m */; };
 		144DD84C226EE88500DAA0B3 /* UseQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144DD84B226EE88500DAA0B3 /* UseQueueViewController.m */; };
+		14676ECD2275818F0034EC4C /* 123.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14676ECC2275818F0034EC4C /* 123.jpg */; };
+		14676ECF227581C90034EC4C /* 29.png in Resources */ = {isa = PBXBuildFile; fileRef = 14676ECE227581C90034EC4C /* 29.png */; };
 		14A65A3D22729E340028B1F2 /* SideBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A65A3C22729E340028B1F2 /* SideBarViewController.m */; };
 		14A65A4022729E4A0028B1F2 /* SideBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A65A3F22729E4A0028B1F2 /* SideBar.m */; };
 		14BB2E582271617900C53B3B /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4878491EF251EB00CCE3B4 /* libsqlite3.0.tbd */; };
@@ -30,6 +32,9 @@
 		14BB2E6E2271641A00C53B3B /* china_city_db.db in Resources */ = {isa = PBXBuildFile; fileRef = 14BB2E6D2271641A00C53B3B /* china_city_db.db */; };
 		14BE18EB21748459008825B1 /* IphonexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BE18E921748459008825B1 /* IphonexViewController.m */; };
 		14BE18EC21748459008825B1 /* IphonexViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14BE18EA21748459008825B1 /* IphonexViewController.xib */; };
+		14D32905227580020077BEEC /* WaterMarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D32903227580020077BEEC /* WaterMarkViewController.m */; };
+		14D32906227580020077BEEC /* WaterMarkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14D32904227580020077BEEC /* WaterMarkViewController.xib */; };
+		14D32909227580170077BEEC /* WaterMarkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D32908227580170077BEEC /* WaterMarkTool.m */; };
 		14DAD739211A6F7400C9EB3F /* BGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DAD738211A6F7400C9EB3F /* BGViewController.m */; };
 		14DE082E226D546F00D838DF /* sql.txt in Resources */ = {isa = PBXBuildFile; fileRef = 14DE082D226D546F00D838DF /* sql.txt */; };
 		240EED9DBEA381AC650BA310 /* libPods-ZJLFaceProjectUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9308D4BCEB87C22362E48148 /* libPods-ZJLFaceProjectUITests.a */; };
@@ -258,6 +263,8 @@
 		144454242143604C006EC219 /* CoverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoverView.m; sourceTree = "<group>"; };
 		144DD84A226EE88500DAA0B3 /* UseQueueViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UseQueueViewController.h; sourceTree = "<group>"; };
 		144DD84B226EE88500DAA0B3 /* UseQueueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UseQueueViewController.m; sourceTree = "<group>"; };
+		14676ECC2275818F0034EC4C /* 123.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 123.jpg; sourceTree = "<group>"; };
+		14676ECE227581C90034EC4C /* 29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 29.png; sourceTree = "<group>"; };
 		14A65A3B22729E340028B1F2 /* SideBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SideBarViewController.h; sourceTree = "<group>"; };
 		14A65A3C22729E340028B1F2 /* SideBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SideBarViewController.m; sourceTree = "<group>"; };
 		14A65A3E22729E4A0028B1F2 /* SideBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SideBar.h; sourceTree = "<group>"; };
@@ -277,6 +284,11 @@
 		14BE18E821748459008825B1 /* IphonexViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IphonexViewController.h; sourceTree = "<group>"; };
 		14BE18E921748459008825B1 /* IphonexViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IphonexViewController.m; sourceTree = "<group>"; };
 		14BE18EA21748459008825B1 /* IphonexViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IphonexViewController.xib; sourceTree = "<group>"; };
+		14D32902227580020077BEEC /* WaterMarkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterMarkViewController.h; sourceTree = "<group>"; };
+		14D32903227580020077BEEC /* WaterMarkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterMarkViewController.m; sourceTree = "<group>"; };
+		14D32904227580020077BEEC /* WaterMarkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WaterMarkViewController.xib; sourceTree = "<group>"; };
+		14D32907227580170077BEEC /* WaterMarkTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterMarkTool.h; sourceTree = "<group>"; };
+		14D32908227580170077BEEC /* WaterMarkTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterMarkTool.m; sourceTree = "<group>"; };
 		14DAD737211A6F7400C9EB3F /* BGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGViewController.h; sourceTree = "<group>"; };
 		14DAD738211A6F7400C9EB3F /* BGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGViewController.m; sourceTree = "<group>"; };
 		14DE082D226D546F00D838DF /* sql.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sql.txt; sourceTree = "<group>"; };
@@ -732,6 +744,20 @@
 				14BE18EA21748459008825B1 /* IphonexViewController.xib */,
 			);
 			path = XibIphoneX;
+			sourceTree = "<group>";
+		};
+		14D3290122757FB20077BEEC /* WaterMark */ = {
+			isa = PBXGroup;
+			children = (
+				14676ECE227581C90034EC4C /* 29.png */,
+				14676ECC2275818F0034EC4C /* 123.jpg */,
+				14D32902227580020077BEEC /* WaterMarkViewController.h */,
+				14D32903227580020077BEEC /* WaterMarkViewController.m */,
+				14D32904227580020077BEEC /* WaterMarkViewController.xib */,
+				14D32907227580170077BEEC /* WaterMarkTool.h */,
+				14D32908227580170077BEEC /* WaterMarkTool.m */,
+			);
+			path = WaterMark;
 			sourceTree = "<group>";
 		};
 		14DAD736211A6EBF00C9EB3F /* bgView */ = {
@@ -1354,6 +1380,7 @@
 		5FEB543C1EEFAE2C0055163A /* ZJLFaceProject */ = {
 			isa = PBXGroup;
 			children = (
+				14D3290122757FB20077BEEC /* WaterMark */,
 				14A65A3A22729E0D0028B1F2 /* SideBar */,
 				140F39BC2182C6AA00768AAE /* Photo */,
 				14BE18E72174842E008825B1 /* XibIphoneX */,
@@ -1658,6 +1685,7 @@
 			files = (
 				14DE082E226D546F00D838DF /* sql.txt in Resources */,
 				5F49A1301F42C3F300044718 /* back.jpg in Resources */,
+				14676ECF227581C90034EC4C /* 29.png in Resources */,
 				5F49A12B1F42900900044718 /* ContentCollectionViewCell.xib in Resources */,
 				5FA8130D20FD837E0090171E /* content.xml in Resources */,
 				5F0B4FDB1F4426EA00150272 /* leftSlider.jpg in Resources */,
@@ -1668,7 +1696,9 @@
 				5FEB544D1EEFAE2C0055163A /* LaunchScreen.storyboard in Resources */,
 				5FCB51172043DADC00D9958D /* CicleImageViewController.xib in Resources */,
 				140F39C12182C75400768AAE /* PhotoViewController.xib in Resources */,
+				14676ECD2275818F0034EC4C /* 123.jpg in Resources */,
 				5F0B4FD31F4423F700150272 /* rightback.jpg in Resources */,
+				14D32906227580020077BEEC /* WaterMarkViewController.xib in Resources */,
 				5F5A15991F3D4B8C0048F147 /* AnimationViewController.xib in Resources */,
 				5F49A1391F42CCE300044718 /* approval_default.png in Resources */,
 				5FCB0A3E20E0C40400A8D839 /* AvPlayerViewController.xib in Resources */,
@@ -1870,6 +1900,7 @@
 				5FD6AF7720F8A66000D48727 /* Student+AddProperty.m in Sources */,
 				5FA9C40E2043EF01002EEB44 /* UIImageView+AFNetworking.m in Sources */,
 				5FA9C41A2043EF26002EEB44 /* NetManger.m in Sources */,
+				14D32909227580170077BEEC /* WaterMarkTool.m in Sources */,
 				5F8E4A6A20EA11A900D00657 /* JPUIGraphics.m in Sources */,
 				5F450BC3203FB0550039593B /* MagicCoinViewController.m in Sources */,
 				5F8E4A7720EA11A900D00657 /* JPDevMenu.m in Sources */,
@@ -1897,6 +1928,7 @@
 				5F87AA991FA9ABA8004221AB /* ZJLHud.m in Sources */,
 				5F8E4A6C20EA11A900D00657 /* JPUIKit.m in Sources */,
 				5FA9C41E2043F8ED002EEB44 /* UseAFNetworkingViewController.m in Sources */,
+				14D32905227580020077BEEC /* WaterMarkViewController.m in Sources */,
 				14BB2E68227161C500C53B3B /* FMDatabaseAdditions.m in Sources */,
 				5F8B69EB20453D98006E8E50 /* LocalNotificationViewController.m in Sources */,
 				5F0F3EED1F41715600587097 /* TestScrollerViewController.m in Sources */,
