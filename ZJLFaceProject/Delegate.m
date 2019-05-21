@@ -1,6 +1,6 @@
 //
 //  Delegate.m
-//  ZJLFaceProject
+//  CustomDataSourceAndDelegate
 //
 //  Created by zjl on 2017/8/11.
 //  Copyright © 2017年 zjlzjl. All rights reserved.
@@ -12,6 +12,8 @@
 	TableviewCellHeightBlock _cellHeightBlock;
 	TableviewSectionHeaderHeightBlock _tableviewSectionHeaderHeightBlock;
 	TableviewSectionFooterHeightBlock _tableviewSectionFooterHeightBlock;
+	TableviewSectionHeaderViewBlock _tableviewSectionHeaderViewBlock;
+	TableviewSectionFooterViewBlock _tableviewSectionFooterViewBlock;
 }
 
 @end
@@ -24,19 +26,24 @@
 			 TableviewCellHeightBlock:(TableviewCellHeightBlock)cellHeightBlock
 	TableviewSectionHeaderHeightBlock:(TableviewSectionHeaderHeightBlock)sectionHeaderHeightBlock
 	TableviewSectionFooterHeightBlock:(TableviewSectionFooterHeightBlock)sectionFooterHeightBlock {
+	return [self initWithSelectedBlock:selectedBlock TableviewCellHeightBlock:cellHeightBlock TableviewSectionHeaderHeightBlock:sectionHeaderHeightBlock TableviewSectionFooterHeightBlock:sectionFooterHeightBlock TableviewSectionHeaderViewBlock:nil TableviewSectionFooterViewBlock:nil];
+}
+
+- (instancetype)initWithSelectedBlock:(SelectedBlock)selectedBlock TableviewCellHeightBlock:(TableviewCellHeightBlock)cellHeightBlock TableviewSectionHeaderHeightBlock:(TableviewSectionHeaderHeightBlock)sectionHeaderHeightBlock TableviewSectionFooterHeightBlock:(TableviewSectionFooterHeightBlock)sectionFooterHeightBlock TableviewSectionHeaderViewBlock:(TableviewSectionHeaderViewBlock)sectionHeaderViewBlock TableviewSectionFooterViewBlock:(TableviewSectionFooterViewBlock)sectionFooterViewBlock{
 	self = [super init];
 	if (self) {
 		_selectedBlock = selectedBlock;
 		_cellHeightBlock = cellHeightBlock;
 		_tableviewSectionHeaderHeightBlock = sectionHeaderHeightBlock;
 		_tableviewSectionFooterHeightBlock = sectionFooterHeightBlock;
+		_tableviewSectionHeaderViewBlock = sectionHeaderViewBlock;
+		_tableviewSectionFooterViewBlock = sectionFooterViewBlock;
 	}
 	return self;
 }
 
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 	if (_selectedBlock) {
 		_selectedBlock(indexPath);
 	}
@@ -63,6 +70,22 @@
 		return _tableviewSectionFooterHeightBlock(section);
 	}else {
 		return 0;
+	}
+}
+
+- (nullable UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+	if(_tableviewSectionHeaderViewBlock){
+		return _tableviewSectionHeaderViewBlock(section);
+	}else{
+		return [[UIView alloc] init];
+	}
+}
+
+- (nullable UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+	if(_tableviewSectionFooterViewBlock){
+		return _tableviewSectionFooterViewBlock(section);
+	}else{
+		return [[UIView alloc] init];
 	}
 }
 

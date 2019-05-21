@@ -46,6 +46,7 @@
 //#import "LocationViewController.h"
 #import "SideBarViewController.h"
 #import "WaterMarkViewController.h"
+#import "TableInTableViewController.h"
 
 static NSString * const cellIdentifier = @"cell";
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource> {
@@ -219,6 +220,9 @@ static NSString * const cellIdentifier = @"cell";
         case 38:
             vc = [[WaterMarkViewController alloc] init];
             break;
+        case 39:
+            vc = [[TableInTableViewController alloc] init];
+            break;
 	}
 	[self.navigationController pushViewController:vc animated:YES];
 }
@@ -269,6 +273,7 @@ static NSString * const cellIdentifier = @"cell";
     [dataArray addObject:@"后台定位"];
     [dataArray addObject:@"侧边栏"];
     [dataArray addObject:@"图片加水印"];
+    [dataArray addObject:@"tableview里面套tableview"];
 }
 
 @end

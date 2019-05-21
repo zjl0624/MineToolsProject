@@ -106,15 +106,15 @@
 	collectonview.hidden = YES;
 	collectonview.backgroundColor = [UIColor whiteColor];
 	__weak TableViewController *weakself = self;
-	collectionDataSource = [[DataSource alloc] initWithDataArray:collectionDataArray numberOfSection:1 cellIDConfigureBlock:^NSString *(NSIndexPath *indexPath, id model) {
-		return @"cell";
-	} cellConfigure:^(NSIndexPath *indexPath, id model, id cell) {
-		
-	} ReusableViewIDConfigureBlock:^NSDictionary *(NSIndexPath *indexPath) {
-		return @{UICollectionElementKindSectionHeader:@"header",UICollectionElementKindSectionFooter:@"footer"};
-	} ReusableViewConfigureBlock:^NSDictionary *(NSIndexPath *indexPath) {
-		return @{UICollectionElementKindSectionHeader:[weakself createCollectionHeaderView],UICollectionElementKindSectionFooter:[weakself createCollectionFooterView]};
-	}];
+//    collectionDataSource = [[DataSource alloc] initWithDataArray:collectionDataArray numberOfSection:1 cellIDConfigureBlock:^NSString *(NSIndexPath *indexPath, id model) {
+//        return @"cell";
+//    } cellConfigure:^(NSIndexPath *indexPath, id model, id cell) {
+//        
+//    } ReusableViewIDConfigureBlock:^NSDictionary *(NSIndexPath *indexPath) {
+//        return @{UICollectionElementKindSectionHeader:@"header",UICollectionElementKindSectionFooter:@"footer"};
+//    } ReusableViewConfigureBlock:^NSDictionary *(NSIndexPath *indexPath) {
+//        return @{UICollectionElementKindSectionHeader:[weakself createCollectionHeaderView],UICollectionElementKindSectionFooter:[weakself createCollectionFooterView]};
+//    }];
 	collectonview.dataSource = collectionDataSource;
 	collectDelegate = [[Delegate alloc] initWithSelectedBlock:^(NSIndexPath *indexPath) {
 		NSLog(@"点了collectview");
