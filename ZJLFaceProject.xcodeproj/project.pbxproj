@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1407B326239F48AC0063B1B5 /* LaunchScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1407B325239F48AC0063B1B5 /* LaunchScreenViewController.m */; };
 		140F39BF2182C6C800768AAE /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 140F39BE2182C6C800768AAE /* PhotoViewController.m */; };
 		140F39C12182C75400768AAE /* PhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 140F39C02182C75400768AAE /* PhotoViewController.xib */; };
 		1436E7D9215095F900690736 /* UIView+CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1436E7D8215095F900690736 /* UIView+CircleView.m */; };
@@ -18,7 +19,14 @@
 		1444542221435E92006EC219 /* CoverStatusBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1444542021435E92006EC219 /* CoverStatusBarViewController.xib */; };
 		144454252143604C006EC219 /* CoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 144454242143604C006EC219 /* CoverView.m */; };
 		144DD84C226EE88500DAA0B3 /* UseQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144DD84B226EE88500DAA0B3 /* UseQueueViewController.m */; };
+		1450531F2485F1DC00FB333E /* SDAVAssetExportSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 1450531E2485F1DC00FB333E /* SDAVAssetExportSession.m */; };
 		1459BAC7229246F3006CE470 /* TableInTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1459BAC6229246F3006CE470 /* TableInTableViewController.m */; };
+		14621C992474E00000C45CB9 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14621C982474E00000C45CB9 /* WKWebViewController.m */; };
+		14621CA32474E0EB00C45CB9 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 14621C9A2474E0EB00C45CB9 /* index.html */; };
+		14621CA42474E0EC00C45CB9 /* zx-editor.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 14621C9D2474E0EB00C45CB9 /* zx-editor.min.css */; };
+		14621CA52474E0EC00C45CB9 /* zx-editor.css in Resources */ = {isa = PBXBuildFile; fileRef = 14621C9E2474E0EB00C45CB9 /* zx-editor.css */; };
+		14621CA62474E0EC00C45CB9 /* zx-editor.js in Resources */ = {isa = PBXBuildFile; fileRef = 14621CA02474E0EB00C45CB9 /* zx-editor.js */; };
+		14621CA72474E0EC00C45CB9 /* zx-editor.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 14621CA12474E0EB00C45CB9 /* zx-editor.min.js */; };
 		14676ECD2275818F0034EC4C /* 123.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14676ECC2275818F0034EC4C /* 123.jpg */; };
 		14676ECF227581C90034EC4C /* 29.png in Resources */ = {isa = PBXBuildFile; fileRef = 14676ECE227581C90034EC4C /* 29.png */; };
 		14A5F3BF2292594B00E76186 /* TableInTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A5F3BD2292594B00E76186 /* TableInTableViewCell.m */; };
@@ -250,6 +258,8 @@
 
 /* Begin PBXFileReference section */
 		00B26E1D025A2D494C16C58B /* libPods-ZJLFaceProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZJLFaceProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1407B324239F48AC0063B1B5 /* LaunchScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchScreenViewController.h; sourceTree = "<group>"; };
+		1407B325239F48AC0063B1B5 /* LaunchScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchScreenViewController.m; sourceTree = "<group>"; };
 		140F39BD2182C6C800768AAE /* PhotoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
 		140F39BE2182C6C800768AAE /* PhotoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 		140F39C02182C75400768AAE /* PhotoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoViewController.xib; sourceTree = "<group>"; };
@@ -268,8 +278,18 @@
 		144454242143604C006EC219 /* CoverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoverView.m; sourceTree = "<group>"; };
 		144DD84A226EE88500DAA0B3 /* UseQueueViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UseQueueViewController.h; sourceTree = "<group>"; };
 		144DD84B226EE88500DAA0B3 /* UseQueueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UseQueueViewController.m; sourceTree = "<group>"; };
+		1450531D2485F1DC00FB333E /* SDAVAssetExportSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDAVAssetExportSession.h; sourceTree = "<group>"; };
+		1450531E2485F1DC00FB333E /* SDAVAssetExportSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDAVAssetExportSession.m; sourceTree = "<group>"; };
 		1459BAC5229246F3006CE470 /* TableInTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableInTableViewController.h; sourceTree = "<group>"; };
 		1459BAC6229246F3006CE470 /* TableInTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableInTableViewController.m; sourceTree = "<group>"; };
+		14621C972474E00000C45CB9 /* WKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
+		14621C982474E00000C45CB9 /* WKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
+		14621C9A2474E0EB00C45CB9 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		14621C9D2474E0EB00C45CB9 /* zx-editor.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = "zx-editor.min.css"; path = "css/zx-editor.min.css"; sourceTree = "<group>"; };
+		14621C9E2474E0EB00C45CB9 /* zx-editor.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = "zx-editor.css"; path = "css/zx-editor.css"; sourceTree = "<group>"; };
+		14621CA02474E0EB00C45CB9 /* zx-editor.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "zx-editor.js"; path = "js/zx-editor.js"; sourceTree = "<group>"; };
+		14621CA12474E0EB00C45CB9 /* zx-editor.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "zx-editor.min.js"; path = "js/zx-editor.min.js"; sourceTree = "<group>"; };
+		14621CA22474E0EB00C45CB9 /* zx-editor.min.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = "zx-editor.min.js.map"; path = "js/zx-editor.min.js.map"; sourceTree = "<group>"; };
 		14676ECC2275818F0034EC4C /* 123.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 123.jpg; sourceTree = "<group>"; };
 		14676ECE227581C90034EC4C /* 29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 29.png; sourceTree = "<group>"; };
 		14A5F3BC2292594B00E76186 /* TableInTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableInTableViewCell.h; sourceTree = "<group>"; };
@@ -597,7 +617,7 @@
 		5FD6AF7320F8771900D48727 /* UIViewController+ExchangeViewDidLoadImp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ExchangeViewDidLoadImp.m"; sourceTree = "<group>"; };
 		5FD6AF7520F8A66000D48727 /* Student+AddProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Student+AddProperty.h"; sourceTree = "<group>"; };
 		5FD6AF7620F8A66000D48727 /* Student+AddProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Student+AddProperty.m"; sourceTree = "<group>"; };
-		5FEB543A1EEFAE2C0055163A /* ZJLFaceProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJLFaceProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FEB543A1EEFAE2C0055163A /* ZJLFaceProject1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJLFaceProject1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FEB543E1EEFAE2C0055163A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5FEB54401EEFAE2C0055163A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5FEB54411EEFAE2C0055163A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -718,6 +738,53 @@
 				144454242143604C006EC219 /* CoverView.m */,
 			);
 			path = coverStatusBar;
+			sourceTree = "<group>";
+		};
+		14621C962474DFD300C45CB9 /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				14621CA82474E3BD00C45CB9 /* New Group */,
+				14621C9B2474E0EB00C45CB9 /* dist */,
+				14621C9A2474E0EB00C45CB9 /* index.html */,
+				14621C972474E00000C45CB9 /* WKWebViewController.h */,
+				14621C982474E00000C45CB9 /* WKWebViewController.m */,
+			);
+			name = WKWebView;
+			sourceTree = "<group>";
+		};
+		14621C9B2474E0EB00C45CB9 /* dist */ = {
+			isa = PBXGroup;
+			children = (
+				14621C9D2474E0EB00C45CB9 /* zx-editor.min.css */,
+				14621C9E2474E0EB00C45CB9 /* zx-editor.css */,
+				14621CA02474E0EB00C45CB9 /* zx-editor.js */,
+				14621CA12474E0EB00C45CB9 /* zx-editor.min.js */,
+				14621CA22474E0EB00C45CB9 /* zx-editor.min.js.map */,
+				14621C9C2474E0EB00C45CB9 /* css */,
+				14621C9F2474E0EB00C45CB9 /* js */,
+			);
+			path = dist;
+			sourceTree = "<group>";
+		};
+		14621C9C2474E0EB00C45CB9 /* css */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = css;
+			sourceTree = "<group>";
+		};
+		14621C9F2474E0EB00C45CB9 /* js */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = js;
+			sourceTree = "<group>";
+		};
+		14621CA82474E3BD00C45CB9 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		14A65A3A22729E0D0028B1F2 /* SideBar */ = {
@@ -1323,6 +1390,8 @@
 		5FCB0A3920E0BFED00A8D839 /* Player */ = {
 			isa = PBXGroup;
 			children = (
+				1450531D2485F1DC00FB333E /* SDAVAssetExportSession.h */,
+				1450531E2485F1DC00FB333E /* SDAVAssetExportSession.m */,
 				5FCB0A3F20E0C90900A8D839 /* localvideo.mp4 */,
 				5FCB0A3A20E0C40400A8D839 /* AvPlayerViewController.h */,
 				5FCB0A3B20E0C40400A8D839 /* AvPlayerViewController.m */,
@@ -1383,7 +1452,7 @@
 		5FEB543B1EEFAE2C0055163A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5FEB543A1EEFAE2C0055163A /* ZJLFaceProject.app */,
+				5FEB543A1EEFAE2C0055163A /* ZJLFaceProject1.app */,
 				5FEB54531EEFAE2C0055163A /* ZJLFaceProjectTests.xctest */,
 				5FEB545E1EEFAE2C0055163A /* ZJLFaceProjectUITests.xctest */,
 			);
@@ -1393,6 +1462,7 @@
 		5FEB543C1EEFAE2C0055163A /* ZJLFaceProject */ = {
 			isa = PBXGroup;
 			children = (
+				14621C962474DFD300C45CB9 /* WKWebView */,
 				14D3290122757FB20077BEEC /* WaterMark */,
 				14A65A3A22729E0D0028B1F2 /* SideBar */,
 				140F39BC2182C6AA00768AAE /* Photo */,
@@ -1444,6 +1514,8 @@
 				5F01245F1FA9BF870007D4B3 /* BaseViewController.m */,
 				5F82C59820E6049E000A4FA0 /* MyNaviVController.h */,
 				5F82C59920E6049E000A4FA0 /* MyNaviVController.m */,
+				1407B324239F48AC0063B1B5 /* LaunchScreenViewController.h */,
+				1407B325239F48AC0063B1B5 /* LaunchScreenViewController.m */,
 			);
 			path = ZJLFaceProject;
 			sourceTree = "<group>";
@@ -1604,7 +1676,7 @@
 			);
 			name = ZJLFaceProject;
 			productName = ZJLFaceProject;
-			productReference = 5FEB543A1EEFAE2C0055163A /* ZJLFaceProject.app */;
+			productReference = 5FEB543A1EEFAE2C0055163A /* ZJLFaceProject1.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5FEB54521EEFAE2C0055163A /* ZJLFaceProjectTests */ = {
@@ -1656,7 +1728,7 @@
 				TargetAttributes = {
 					5FEB54391EEFAE2C0055163A = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = XV89F2LKD5;
+						DevelopmentTeam = Z775HF852Q;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -1684,6 +1756,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -1718,11 +1791,14 @@
 				5FCB51172043DADC00D9958D /* CicleImageViewController.xib in Resources */,
 				140F39C12182C75400768AAE /* PhotoViewController.xib in Resources */,
 				14676ECD2275818F0034EC4C /* 123.jpg in Resources */,
+				14621CA42474E0EC00C45CB9 /* zx-editor.min.css in Resources */,
+				14621CA32474E0EB00C45CB9 /* index.html in Resources */,
 				5F0B4FD31F4423F700150272 /* rightback.jpg in Resources */,
 				14D32906227580020077BEEC /* WaterMarkViewController.xib in Resources */,
 				14A5F3C02292594B00E76186 /* TableInTableViewCell.xib in Resources */,
 				5F5A15991F3D4B8C0048F147 /* AnimationViewController.xib in Resources */,
 				5F49A1391F42CCE300044718 /* approval_default.png in Resources */,
+				14621CA72474E0EC00C45CB9 /* zx-editor.min.js in Resources */,
 				5FCB0A3E20E0C40400A8D839 /* AvPlayerViewController.xib in Resources */,
 				5F151BE520F750E90086705C /* Test.html in Resources */,
 				5F8E4A7920EA11A900D00657 /* README.md in Resources */,
@@ -1731,6 +1807,7 @@
 				5F8E4A8520EA11A900D00657 /* packer.php in Resources */,
 				5F49A1351F42C71C00044718 /* MenuView.xib in Resources */,
 				14C069D922925F3E00E71FAC /* TableInTableContentTableViewCell.xib in Resources */,
+				14621CA52474E0EC00C45CB9 /* zx-editor.css in Resources */,
 				5FCD105120EE166400EBB33A /* RecordingVideoViewController.xib in Resources */,
 				5FA9C41F2043F8ED002EEB44 /* UseAFNetworkingViewController.xib in Resources */,
 				5FEB544A1EEFAE2C0055163A /* Assets.xcassets in Resources */,
@@ -1742,6 +1819,7 @@
 				5F151BE320F74C850086705C /* JSOCViewController.xib in Resources */,
 				5FEB54481EEFAE2C0055163A /* Main.storyboard in Resources */,
 				5FA3445C1F3C044E00DAE2F2 /* FirstCollectionViewCell.xib in Resources */,
+				14621CA62474E0EC00C45CB9 /* zx-editor.js in Resources */,
 				5FD6AF6B20F86C9800D48727 /* URLSchemesViewController.xib in Resources */,
 				5F8E4A7D20EA11A900D00657 /* JSPatch.js in Resources */,
 				5F5A15A41F3DA9000048F147 /* 冰火魔厨.txt in Resources */,
@@ -1889,6 +1967,7 @@
 				5F8E4A7820EA11A900D00657 /* JPDevTipView.m in Sources */,
 				5F87AA9C1FA9ABD4004221AB /* CustomHudView.m in Sources */,
 				5F8E4A5D20EA11A900D00657 /* JPBlockWrapper.m in Sources */,
+				1407B326239F48AC0063B1B5 /* LaunchScreenViewController.m in Sources */,
 				5F7300E420F4A41000B1782A /* FBViewController.m in Sources */,
 				5F49A13D1F42CDE500044718 /* MenuCollectionViewCell.m in Sources */,
 				5F8E4A6D20EA11A900D00657 /* JPCleaner.m in Sources */,
@@ -1947,6 +2026,7 @@
 				5F8E4A7120EA11A900D00657 /* JPLocker.m in Sources */,
 				5FEB54761EEFBA690055163A /* JsonModel.m in Sources */,
 				5FD6AF6A20F86C9800D48727 /* URLSchemesViewController.m in Sources */,
+				14621C992474E00000C45CB9 /* WKWebViewController.m in Sources */,
 				14A65A4022729E4A0028B1F2 /* SideBar.m in Sources */,
 				5FCF20ED1F414CB900F5CB7C /* SaveIndex.m in Sources */,
 				5F4878411EF2294D00CCE3B4 /* SaveDataMainViewController.m in Sources */,
@@ -1966,6 +2046,7 @@
 				5F8E4A6E20EA11A900D00657 /* JPDispatch.m in Sources */,
 				14A65A3D22729E340028B1F2 /* SideBarViewController.m in Sources */,
 				5FF03D911F3AE4EB00C003DF /* SecondModel.m in Sources */,
+				1450531F2485F1DC00FB333E /* SDAVAssetExportSession.m in Sources */,
 				5F4878521EF265E600CCE3B4 /* CustomModel.m in Sources */,
 				5F49A1261F428B9500044718 /* CollectionDelegate.m in Sources */,
 				5FF03D8B1F3AE45500C003DF /* SecondTableViewCell.m in Sources */,
@@ -2153,7 +2234,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XV89F2LKD5;
+				DEVELOPMENT_TEAM = Z775HF852Q;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/AMapFoundation",
@@ -2174,8 +2255,8 @@
 					"-lsqlite3.0",
 					"$(inheriter)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = zjlch.ZJLFaceProject;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = zjlch.ZJLFaceProject1;
+				PRODUCT_NAME = ZJLFaceProject1;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
@@ -2191,7 +2272,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XV89F2LKD5;
+				DEVELOPMENT_TEAM = Z775HF852Q;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/AMapFoundation",
@@ -2212,8 +2293,8 @@
 					"-lsqlite3.0",
 					"$(inheriter)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = zjlch.ZJLFaceProject;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = zjlch.ZJLFaceProject1;
+				PRODUCT_NAME = ZJLFaceProject1;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};

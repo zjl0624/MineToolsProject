@@ -13,7 +13,9 @@
 #import "JPEngine.h"
 //#import "AMapFoundationKit.h"
 
-@interface AppDelegate ()
+@interface AppDelegate () {
+    UIView *launchView;
+}
 
 @end
 
@@ -22,6 +24,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	// Override point for customization after application launch.
+    
+    [self getLaunchImage];
 	self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 //	[JPEngine startEngine];
 //	NSString *sourcePath = [[NSBundle mainBundle] pathForResource:@"demo" ofType:@"js"];
@@ -98,5 +102,28 @@
 	// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+
+- (void)getLaunchImage {
+    
+    UIViewController *viewController = [[UIStoryboard storyboardWithName:@"LaunchScreen" bundle:nil] instantiateViewControllerWithIdentifier:@"LaunchScreen"];
+    launchView = viewController.view;
+    UIWindow *mainWindow = [UIApplication sharedApplication].keyWindow;
+    launchView.frame = [UIApplication sharedApplication].keyWindow.frame;
+    [mainWindow addSubview:launchView];
+    UIImageView *imageView=[[UIImageView alloc]init];
+    imageView.backgroundColor = [UIColor blueColor];
+    //根据需求添加约束最好
+    imageView.frame = CGRectMake(0, 0, 100, 100);
+    imageView.backgroundColor=[UIColor whiteColor];
+    [launchView addSubview:imageView];
+    [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(removeADView) userInfo:nil repeats:NO];
+}
+ 
+-(void)removeADView
+ 
+{
+    [launchView removeFromSuperview];
+    //设置rootViewController的代码
+}
 
 @end

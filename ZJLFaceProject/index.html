@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="./dist/css/zx-editor.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+<!--    <div style="color:#404040">xxxx</div>-->
+<!--    <div style="color:#404040">xxxx</div>-->
+<!--    <div style="color:#404040">xxxx</div>-->
+<!--    <div style="color:#404040">xxxx</div>-->
+<!--    <div style="color:#404040">xxxx</div>-->
+<!--    <div style="color:#404040">xxxx</div>-->
+<div id="editorContainer"></div>
+
+<script src="./dist/js/zx-editor.js"></script>
+<script>
+  function handleSubmitClick(){
+      var a = zxEditor.getHtml();
+      console.log(a)
+      if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+          window.webkit.messageHandlers.showsearchbar.postMessage(a);//调用ios方法
+      } else if (/(Android)/i.test(navigator.userAgent)) {
+          window.android.hasSearchBtn(a);//android 是java和js协商定义的调用对象, hasSearchBtn 是方法名,serchCar 是参数
+      }
+  }
+  document.getElementsByTagName('body')[0].innerHTML += '<div style="position: fixed;bottom:0;right:0;z-index: 1000;height:50px;border:1px solid #f5f5f5;border-radius: 4px;padding: 0 10px;line-height: 50px" onclick="handleSubmitClick()">完成</div>'
+  var zxEditor = new ZxEditor('#editorContainer', {
+      fixed: true
+  })
+    document.getElementsByClassName('zx-editor-content-wrapper')[0].style.height='300px'
+    document.getElementsByClassName('zx-editor-content-wrapper')[0].style.marginBottom='auto'
+    document.getElementsByClassName('zx-editor-content-wrapper')[0].style.minHeight='auto'
+    document.getElementsByClassName('text-style-btn')[0].style.display='none'
+    // document.getElementsByClassName('inner-wrapper')[0].style.minHeight='auto'
+
+</script>
+</body>
+</html>

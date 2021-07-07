@@ -8,6 +8,7 @@
 
 #import "RecordingVideoViewController.h"
 #import <AVFoundation/AVFoundation.h>
+#import "SDAVAssetExportSession.h"
 @interface RecordingVideoViewController ()<AVCaptureFileOutputRecordingDelegate>
 - (IBAction)startAction:(id)sender;
 @property (nonatomic,strong) AVCaptureSession *captureSession;
@@ -16,7 +17,7 @@
 @property (nonatomic,strong) AVCaptureMovieFileOutput *caputureMovieFileOutput;//输出对象
 
 @property (nonatomic,strong) AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;//预览层
-
+@property (nonatomic,strong) AVURLAsset *avAsset;
 @end
 
 @implementation RecordingVideoViewController
@@ -35,14 +36,14 @@
 	NSError *error;
 	// 创建会话 (AVCaptureSession) 对象。
 	_captureSession = [[AVCaptureSession alloc] init];
-	if ([_captureSession canSetSessionPreset:AVCaptureSessionPreset640x480]) {
+	if ([_captureSession canSetSessionPreset:AVCaptureSessionPreset1920x1080]) {
 		// 设置会话的 sessionPreset 属性, 这个属性影响视频的分辨率
-		[_captureSession setSessionPreset:AVCaptureSessionPreset640x480];
+		[_captureSession setSessionPreset:AVCaptureSessionPreset1920x1080];
 	}
 	
 	// 获取摄像头输入设备， 创建 AVCaptureDeviceInput 对象
 	// 在获取摄像头的时候，摄像头分为前后摄像头，我们创建了一个方法通过用摄像头的位置来获取摄像头
-	AVCaptureDevice *videoCaptureDevice = [self getCameraDeviceWithPosition:AVCaptureDevicePositionBack];
+	AVCaptureDevice *videoCaptureDevice = [self getCameraDeviceWithPosition:AVCaptureDevicePositionFront];
 	if (!videoCaptureDevice) {
 		NSLog(@"---- 取得后置摄像头时出现问题---- ");
 		return;
@@ -102,14 +103,15 @@
 - (AVCaptureDevice *)getCameraDeviceWithPosition:(AVCaptureDevicePosition)pos {
 //	AVCaptureDevice *videoDevice = [AVCaptureDevice defaultDeviceWithDeviceType:AVCaptureDeviceTypeBuiltInDuoCamera mediaType:AVMediaTypeVideo position:AVCaptureDevicePositionBack];
 	AVCaptureDevice *videoDevice = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
-	if ( ! videoDevice ) {
-		// If the back dual camera is not available, default to the back wide angle camera.
-		videoDevice = [AVCaptureDevice defaultDeviceWithDeviceType:AVCaptureDeviceTypeBuiltInWideAngleCamera mediaType:AVMediaTypeVideo position:AVCaptureDevicePositionBack];
-		// In some cases where users break their phones, the back wide angle camera is not available. In this case, we should default to the front wide angle camera.
-		if ( ! videoDevice ) {
-			videoDevice = [AVCaptureDevice defaultDeviceWithDeviceType:AVCaptureDeviceTypeBuiltInWideAngleCamera mediaType:AVMediaTypeVideo position:AVCaptureDevicePositionFront];
-		}
-	}
+    videoDevice = [AVCaptureDevice defaultDeviceWithDeviceType:AVCaptureDeviceTypeBuiltInWideAngleCamera mediaType:AVMediaTypeVideo position:pos];
+//	if ( ! videoDevice ) {
+//		// If the back dual camera is not available, default to the back wide angle camera.
+//		videoDevice = [AVCaptureDevice defaultDeviceWithDeviceType:AVCaptureDeviceTypeBuiltInWideAngleCamera mediaType:AVMediaTypeVideo position:AVCaptureDevicePositionBack];
+//		// In some cases where users break their phones, the back wide angle camera is not available. In this case, we should default to the front wide angle camera.
+//		if ( ! videoDevice ) {
+//			videoDevice = [AVCaptureDevice defaultDeviceWithDeviceType:AVCaptureDeviceTypeBuiltInWideAngleCamera mediaType:AVMediaTypeVideo position:AVCaptureDevicePositionBack];
+//		}
+//	}
 	return videoDevice;
 //	switch ([AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo]) {        case AVAuthorizationStatusAuthorized:         {
 //		return [AVCaptureDevice defaultDeviceWithDeviceType:AVCaptureDeviceTypeBuiltInDuoCamera mediaType:AVMediaTypeVideo position:pos];
@@ -159,7 +161,7 @@
 		
 		// 路径转换成 URL 要用这个方法，用 NSBundle 方法转换成 URL 的话可能会出现读取不到路径的错误
 		NSURL *fileUrl=[NSURL fileURLWithPath:outputFielPath];
-		
+		_avAsset = [[AVURLAsset alloc] initWithURL:fileUrl options:nil];
 		// 往路径的 URL 开始写入录像 Buffer ,边录边写
 		[self.caputureMovieFileOutput startRecordingToOutputFileURL:fileUrl recordingDelegate:self];
 	}
@@ -180,9 +182,52 @@
 - (void)captureOutput:(AVCaptureFileOutput *)captureOutput didFinishRecordingToOutputFileAtURL:(NSURL *)outputFileURL fromConnections:(NSArray *)connections error:(NSError *)error
 {
 	NSLog(@"---- 录制结束 ----");
-	NSString *outputFielPath=[NSTemporaryDirectory() stringByAppendingString:@"123.mp4"];
-	NSDictionary *outputFileAttributes = [[NSFileManager defaultManager] attributesOfItemAtPath:outputFielPath error:nil];
-	NSLog (@"file size: %f", (unsigned long long)[outputFileAttributes fileSize]/1024.00 /1024.00);
+	NSString *outputFielPath=[NSTemporaryDirectory() stringByAppendingString:@"236.mp4"];
+    // 路径转换成 URL 要用这个方法，用 NSBundle 方法转换成 URL 的话可能会出现读取不到路径的错误
+    NSURL *fileUrl=[NSURL fileURLWithPath:outputFielPath];
+	NSDictionary *outputFileAttributes = [[NSFileManager defaultManager] attributesOfItemAtPath:[NSTemporaryDirectory() stringByAppendingString:@"123.mp4"] error:nil];
+    NSLog (@"file size（压缩前）: %f", (unsigned long long)[outputFileAttributes fileSize]/1024.00 /1024.00);
+    
+    SDAVAssetExportSession *encoder = [SDAVAssetExportSession.alloc initWithAsset:_avAsset];
+    encoder.outputFileType = AVFileTypeMPEG4;
+    encoder.outputURL = fileUrl;
+    encoder.videoSettings = @
+    {
+        AVVideoCodecKey: AVVideoCodecH264,
+        AVVideoWidthKey: @640,
+        AVVideoHeightKey: @480,
+        AVVideoCompressionPropertiesKey: @
+        {
+            AVVideoAverageBitRateKey: @3000000,
+            AVVideoProfileLevelKey: AVVideoProfileLevelH264High40,
+        },
+    };
+    encoder.audioSettings = @
+    {
+        AVFormatIDKey: @(kAudioFormatMPEG4AAC),
+        AVNumberOfChannelsKey: @2,
+        AVSampleRateKey: @44100,
+        AVEncoderBitRateKey: @128000,
+    };
+
+    [encoder exportAsynchronouslyWithCompletionHandler:^
+    {
+        if (encoder.status == AVAssetExportSessionStatusCompleted)
+        {
+            NSDictionary *outputFileAttributes = [[NSFileManager defaultManager] attributesOfItemAtPath:outputFielPath error:nil];
+            NSLog (@"file size(压缩后): %f", (unsigned long long)[outputFileAttributes fileSize]/1024.00 /1024.00);
+            NSLog(@"Video export succeeded");
+        }
+        else if (encoder.status == AVAssetExportSessionStatusCancelled)
+        {
+            NSLog(@"Video export cancelled");
+        }
+        else
+        {
+            NSLog(@"Video export failed with error: %@ (%d)", encoder.error.localizedDescription, encoder.error.code);
+        }
+    }];
+	
 }
 
 - (void)captureOutput:(AVCaptureFileOutput *)output didResumeRecordingToOutputFileAtURL:(NSURL *)fileURL fromConnections:(NSArray<AVCaptureConnection *> *)connections {

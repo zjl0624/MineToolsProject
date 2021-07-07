@@ -26,7 +26,7 @@ char rightKey;
 	CGFloat leftNum = [objc_getAssociatedObject(self, &leftKey) floatValue];
 	CGFloat bottomNum = [objc_getAssociatedObject(self, &bottomKey) floatValue];
 	CGFloat rightNum = [objc_getAssociatedObject(self, &rightKey) floatValue];
-	CGRect range = CGRectMake(self.bounds.origin.x + leftNum, self.bounds.origin.y + topNum, self.bounds.size.width - leftNum + rightNum, self.bounds.size.height - topNum + bottomNum);
+	CGRect range = CGRectMake(self.bounds.origin.x - leftNum, self.bounds.origin.y - topNum, self.bounds.size.width + leftNum + rightNum, self.bounds.size.height + topNum + bottomNum);
 	if (CGRectContainsPoint(range, point)) {
 		return self;
 	}else {

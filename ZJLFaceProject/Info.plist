@@ -2,14 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>用一哈相册</string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>用一哈相册</string>
-	<key>NSLocationUsageDescription</key>
-	<string>是否允许使用地理位置？</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>是否允许使用地理位置？</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>用一哈</string>
+	<key>NSCameraUsageDescription</key>
+	<string>用一哈相机</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -48,8 +44,16 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>是否允许使用地理位置？</string>
+	<key>NSLocationUsageDescription</key>
+	<string>是否允许使用地理位置？</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>是否允许使用地理位置？</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>用一哈相册</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>用一哈相册</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>location</string>
